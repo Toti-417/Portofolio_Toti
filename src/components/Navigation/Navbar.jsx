@@ -24,13 +24,13 @@ export default function Navbar({ sections, activeSection }) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#top" className="flex items-center gap-2.5 group">
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-teal-500 to-blue-600 p-[1px] flex items-center justify-center shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform">
-            <div className="w-full h-full bg-[#070913] rounded-[7px] flex items-center justify-center">
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-400 font-mono text-sm">
-                TP
-              </span>
-            </div>
+        <a href="#top" className="flex items-center gap-3 group">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-400 to-blue-600 p-[1.5px] flex items-center justify-center shadow-md shadow-teal-500/30 group-hover:scale-105 transition-transform overflow-hidden shrink-0">
+            <img
+              src="/assets/toti-photo.png"
+              alt="Toti Putra Pratama"
+              className="w-full h-full object-cover object-top rounded-[10px]"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-bold text-slate-100 text-sm tracking-wide font-sans group-hover:text-teal-300 transition-colors">

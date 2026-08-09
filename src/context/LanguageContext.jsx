@@ -911,6 +911,14 @@ export function LanguageProvider({ children }) {
     })
   }
 
+  const deleteGalleryItem = (id) => {
+    setGalleryItems((prev) => {
+      const updated = prev.filter((item) => item.id !== id)
+      localStorage.setItem('toti_live_gallery_items', JSON.stringify(updated))
+      return updated
+    })
+  }
+
   const saveToCodeFile = async () => {
     setSaveStatus('saving')
     try {
@@ -959,6 +967,7 @@ export function LanguageProvider({ children }) {
         allTranslations,
         galleryItems,
         updateGalleryItem,
+        deleteGalleryItem,
         isEditMode,
         toggleEditMode,
         updateTranslation,

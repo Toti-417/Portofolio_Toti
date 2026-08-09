@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext'
 import EditableText from '../components/EditableText'
 
 export default function FieldGallerySection() {
-  const { lang, t, galleryItems, updateGalleryItem, isEditMode } = useLanguage()
+  const { lang, t, galleryItems, updateGalleryItem, deleteGalleryItem, isEditMode } = useLanguage()
   const galleryT = t.gallery
   const isId = lang === 'id'
 
@@ -46,6 +46,14 @@ export default function FieldGallerySection() {
       setSelectedPhoto({ ...editingPhotoModal })
     }
     setEditingPhotoModal(null)
+  }
+
+  const handleDeletePhoto = (id) => {
+    if (window.confirm('🗑️ Hapus foto ini dari portofolio?\n\nFoto akan dihilangkan dari tampilan. Klik "Simpan ke Code" setelah itu agar perubahan tersimpan permanen.')) {
+      deleteGalleryItem(id)
+      setEditingPhotoModal(null)
+      setSelectedPhoto(null)
+    }
   }
 
   return (
@@ -331,19 +339,30 @@ export default function FieldGallerySection() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-end gap-3 pt-3 border-t border-white/10">
+              <div className="flex items-center justify-between gap-3 pt-3 border-t border-white/10">
+                {/* Left: Delete Button */}
                 <button
-                  onClick={() => setEditingPhotoModal(null)}
-                  className="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-xs font-mono hover:bg-slate-700"
+                  onClick={() => handleDeletePhoto(editingPhotoModal.id)}
+                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-red-900/40 hover:bg-red-600/50 text-red-300 hover:text-red-100 text-xs font-mono font-bold border border-red-500/30 hover:border-red-400/60 transition-all"
                 >
-                  Batal
+                  🗑️ Hapus Foto Ini
                 </button>
-                <button
-                  onClick={handleSavePhotoEdit}
-                  className="px-5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-mono font-bold shadow-md shadow-amber-400/20"
-                >
-                  Update Teks Foto Ini
-                </button>
+
+                {/* Right: Cancel & Save */}
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => setEditingPhotoModal(null)}
+                    className="px-4 py-2 rounded-xl bg-slate-800 text-slate-300 text-xs font-mono hover:bg-slate-700"
+                  >
+                    Batal
+                  </button>
+                  <button
+                    onClick={handleSavePhotoEdit}
+                    className="px-5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-mono font-bold shadow-md shadow-amber-400/20"
+                  >
+                    Update Teks Foto Ini
+                  </button>
+                </div>
               </div>
             </motion.div>
           </motion.div>

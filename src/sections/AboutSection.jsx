@@ -20,8 +20,8 @@ export default function AboutSection() {
         >
           <div className="glass-card rounded-2xl p-6 border border-white/10 relative overflow-hidden">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 font-mono text-lg">
-                📡
+              <div className="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="/icon/BTS/telekomunikasi.png" alt="Telecom" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-slate-100 font-bold text-base">
@@ -39,8 +39,8 @@ export default function AboutSection() {
 
           <div className="glass-card rounded-2xl p-6 border border-white/10 relative overflow-hidden">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 font-mono text-lg">
-                📊
+              <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="/icon/icon data.png" alt="Data Analytics" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-slate-100 font-bold text-base">
@@ -58,8 +58,8 @@ export default function AboutSection() {
 
           <div className="glass-card rounded-2xl p-6 border border-white/10 relative overflow-hidden">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-mono text-lg">
-                🎯
+              <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center overflow-hidden p-1.5 shrink-0">
+                <img src="/icon/icon ranking.png" alt="Precision" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-slate-100 font-bold text-base">

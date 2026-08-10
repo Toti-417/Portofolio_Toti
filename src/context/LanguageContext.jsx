@@ -68,7 +68,7 @@ export const translations = {
       "p2": "Through managing multi-billion rupiah site rollouts, I realized that the sharpest operational improvements come from turning operational data into actionable intelligence. That insight drove my transition into data analytics.",
       "p3": "Today, I build custom Power BI dashboards for real-time project tracking, design automated workflows with N8N and Power Automate, and leverage SQL and Python to extract precise insights from raw operational logs.",
       "currentStatusTitle": "Current Academic Pursuit:",
-      "currentStatusDesc": "Finishing Bachelor of Informatics Engineering (Semester 8) — Universitas Esa Unggul, Bekasi."
+      "currentStatusDesc": "Finishing Bachelor of Informatics Engineering (Semester 9) — Universitas Esa Unggul, Bekasi."
     },
     "skills": {
       "badge": "// TECHNICAL ARSENAL",
@@ -321,42 +321,42 @@ export const translations = {
           "name": "Power BI Data Analyst Specialization",
           "issuer": "Microsoft / Professional Credential",
           "year": "2024",
-          "icon": "📊",
+          "icon": "/icon/Power BI.png",
           "category": "Data Visualization"
         },
         {
           "name": "Python for Data Science & Analytics",
           "issuer": "Coursera / Industry Credential",
           "year": "2024",
-          "icon": "🐍",
+          "icon": "/icon/pyhton.png",
           "category": "Data Science"
         },
         {
           "name": "SQL Querying & Database Fundamentals",
           "issuer": "HackerRank Certified",
           "year": "2024",
-          "icon": "🗄️",
+          "icon": "/icon/my sql.png",
           "category": "Database Systems"
         },
         {
           "name": "Project Management & Budget Control",
           "issuer": "Professional Credential",
           "year": "2023",
-          "icon": "📋",
+          "icon": "/icon/icon data.png",
           "category": "Project Engineering"
         },
         {
           "name": "N8N Workflow & API Automation",
           "issuer": "Automation Credential",
           "year": "2024",
-          "icon": "🔄",
+          "icon": "/icon/N8N.png",
           "category": "Workflow Systems"
         },
         {
           "name": "Telecom Network & Radio Access Assurance",
           "issuer": "Industry Professional",
           "year": "2023",
-          "icon": "📡",
+          "icon": "/icon/BTS/telekomunikasi.png",
           "category": "Telecom Assurance"
         }
       ]
@@ -740,42 +740,42 @@ export const translations = {
           "name": "Spesialisasi Power BI Data Analyst",
           "issuer": "Microsoft / Kredensial Profesional",
           "year": "2024",
-          "icon": "📊",
+          "icon": "/icon/Power BI.png",
           "category": "Visualisasi Data"
         },
         {
           "name": "Python untuk Data Science & Analitik",
           "issuer": "Coursera / Kredensial Industri",
           "year": "2024",
-          "icon": "🐍",
+          "icon": "/icon/pyhton.png",
           "category": "Sains Data"
         },
         {
           "name": "SQL Querying & Dasar Basis Data",
           "issuer": "HackerRank Certified",
           "year": "2024",
-          "icon": "🗄️",
+          "icon": "/icon/my sql.png",
           "category": "Sistem Basis Data"
         },
         {
           "name": "Manajemen Proyek & Kontrol Anggaran",
           "issuer": "Kredensial Profesional",
           "year": "2023",
-          "icon": "📋",
+          "icon": "/icon/icon data.png",
           "category": "Teknik Proyek"
         },
         {
           "name": "N8N Workflow & Otomasi API",
           "issuer": "Kredensial Otomasi",
           "year": "2024",
-          "icon": "🔄",
+          "icon": "/icon/N8N.png",
           "category": "Sistem Otomasi"
         },
         {
           "name": "Jaringan Telekomunikasi & Access Assurance",
           "issuer": "Praktisi Industri",
           "year": "2023",
-          "icon": "📡",
+          "icon": "/icon/BTS/telekomunikasi.png",
           "category": "Asuransi Jaringan"
         }
       ]
@@ -854,7 +854,15 @@ export function LanguageProvider({ children }) {
     const saved = localStorage.getItem('toti_live_translations')
     if (saved) {
       try {
-        return JSON.parse(saved)
+        const parsed = JSON.parse(saved)
+        // Automatically migrate if using old icons
+        const enCerts = parsed?.en?.certificates?.items || []
+        const needsReset = enCerts.some(item => !item.icon || !item.icon.startsWith('/'))
+        if (needsReset) {
+          localStorage.removeItem('toti_live_translations')
+          return translations
+        }
+        return parsed
       } catch (e) {
         console.error('Failed to parse saved live translations:', e)
       }

@@ -10,6 +10,23 @@ const colors = [
   { gradient: 'from-emerald-500/20 to-emerald-500/5', border: 'border-emerald-500/30', tag: 'text-emerald-300 bg-emerald-500/10 border-emerald-500/20' },
 ]
 
+const getSkillIcon = (name) => {
+  if (!name) return null
+  const norm = name.toLowerCase().trim()
+  if (norm.includes('power bi')) return '/icon/Power BI.png'
+  if (norm.includes('mysql') || norm.includes('my sql')) return '/icon/my sql.png'
+  if (norm.includes('python') || norm.includes('pyhton')) return '/icon/pyhton.png'
+  if (norm.includes('javascript') || norm.includes('java script') || norm.includes('java scrip')) return '/icon/java scrip.png'
+  if (norm.includes('n8n')) return '/icon/N8N.png'
+  if (norm.includes('power automate')) return '/icon/power Automate.png'
+  if (norm.includes('google workspace')) return '/icon/google workspace.png'
+  if (norm.includes('sap')) return '/icon/SAP.png'
+  if (norm.includes('bts') || norm.includes('telecom') || norm.includes('telekomunikasi') || norm.includes('huawei')) return '/icon/BTS/telekomunikasi.png'
+  if (norm.includes('spms') || norm.includes('crq')) return '/icon/icon ranking.png'
+  if (norm.includes('eatp') || norm.includes('acceptance')) return '/icon/icon data.png'
+  return null
+}
+
 export default function SkillsSection() {
   const { t } = useLanguage()
   const skillsT = t.skills
@@ -54,19 +71,31 @@ export default function SkillsSection() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {cat.skills.map((skill, sIdx) => (
-                  <div
-                    key={skill.name}
-                    className="p-3 rounded-xl bg-slate-950/60 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors"
-                  >
-                    <span className="text-sm font-medium text-slate-200">
-                      <EditableText path={`skills.categories.${idx}.skills.${sIdx}.name`} value={skill.name} />
-                    </span>
-                    <span className={`text-[11px] px-2 py-0.5 rounded font-mono ${colorObj.tag}`}>
-                      <EditableText path={`skills.categories.${idx}.skills.${sIdx}.tag`} value={skill.tag} />
-                    </span>
-                  </div>
-                ))}
+                {cat.skills.map((skill, sIdx) => {
+                  const skillIcon = getSkillIcon(skill.name)
+                  return (
+                    <div
+                      key={skill.name}
+                      className="p-3 rounded-xl bg-slate-950/60 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors"
+                    >
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        {skillIcon && (
+                          <img
+                            src={skillIcon}
+                            alt={skill.name}
+                            className="w-5 h-5 object-contain rounded flex-shrink-0"
+                          />
+                        )}
+                        <span className="text-sm font-medium text-slate-200 truncate">
+                          <EditableText path={`skills.categories.${idx}.skills.${sIdx}.name`} value={skill.name} />
+                        </span>
+                      </div>
+                      <span className={`text-[11px] px-2 py-0.5 rounded font-mono flex-shrink-0 ${colorObj.tag}`}>
+                        <EditableText path={`skills.categories.${idx}.skills.${sIdx}.tag`} value={skill.tag} />
+                      </span>
+                    </div>
+                  )
+                })}
               </div>
             </motion.div>
           )
@@ -75,4 +104,5 @@ export default function SkillsSection() {
     </section>
   )
 }
+
 

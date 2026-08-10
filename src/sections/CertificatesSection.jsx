@@ -46,8 +46,12 @@ export default function CertificatesSection() {
               </div>
 
               {/* Icon Frame */}
-              <div className="w-14 h-14 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-3xl mb-4 group-hover:scale-110 group-hover:border-teal-500/40 transition-all">
-                {cert.icon}
+              <div className="w-14 h-14 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:border-teal-500/40 transition-all overflow-hidden p-2">
+                {cert.icon && (cert.icon.startsWith('/') || cert.icon.endsWith('.png')) ? (
+                  <img src={cert.icon} alt={cert.name} className="w-full h-full object-contain" />
+                ) : (
+                  <span className="text-3xl">{cert.icon}</span>
+                )}
               </div>
 
               {/* Title & Issuer */}
@@ -81,8 +85,12 @@ export default function CertificatesSection() {
               onClick={(e) => e.stopPropagation()}
               className="bg-[#0b0f1f] border border-teal-500/30 rounded-2xl p-6 sm:p-8 max-w-lg w-full text-center shadow-2xl space-y-5"
             >
-              <div className="w-16 h-16 rounded-2xl bg-slate-900 border border-teal-500/30 flex items-center justify-center text-4xl mx-auto">
-                {selectedCert.icon}
+              <div className="w-16 h-16 rounded-2xl bg-slate-900 border border-teal-500/30 flex items-center justify-center mx-auto overflow-hidden p-2.5">
+                {selectedCert.icon && (selectedCert.icon.startsWith('/') || selectedCert.icon.endsWith('.png')) ? (
+                  <img src={selectedCert.icon} alt={selectedCert.name} className="w-full h-full object-contain" />
+                ) : (
+                  <span className="text-4xl">{selectedCert.icon}</span>
+                )}
               </div>
 
               <div>

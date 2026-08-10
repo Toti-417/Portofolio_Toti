@@ -1,16 +1,5 @@
 export const initialGalleryItems = [
   {
-    "id": "tsel-1",
-    "company": "Telkomsel",
-    "date": "Feb 2025",
-    "titleEn": "Office Regional Telkomsel Jawa Tengah & DIY",
-    "titleId": "Kantor Regional Telkomsel Jawa Tengah & DIY",
-    "descEn": "Regional Technical Support and Network Operations Center base operations in Semarang.",
-    "descId": "Kantor Pusat Operasi  Network Operations Center Regional Jateng & DIY",
-    "img": "/gallery/telkomsel/2025_02_18_08_05_11_IMG_5401.jpg",
-    "tag": "Operations Center"
-  },
-  {
     "id": "tsel-2",
     "company": "Telkomsel",
     "date": "Jul 2025",
@@ -20,17 +9,6 @@ export const initialGalleryItems = [
     "descId": "Audit lapangan pada rectifier daya BTS, baterai cadangan, dan koneksi kabel rooftop.",
     "img": "/gallery/telkomsel/2025_07_02_11_36_35_IMG_6459.jpg",
     "tag": "BTS Power Audit"
-  },
-  {
-    "id": "tsel-3",
-    "company": "Telkomsel",
-    "date": "Aug 2025",
-    "titleEn": "Technical Support Analytics & KPI Review",
-    "titleId": "Review Data Kinerja & KPI Technical Support",
-    "descEn": "Analyzing operational metrics, network ticket escalations, and performance dashboards.",
-    "descId": "Menganalisis matriks operasional, eskalasi tiket jaringan, dan dashboard performa.",
-    "img": "/gallery/telkomsel/2025_08_13_10_01_55_IMG_6684.jpg",
-    "tag": "Operational Analytics"
   },
   {
     "id": "tsel-4",

@@ -4,7 +4,9 @@ import { useLanguage } from '../context/LanguageContext'
 import EditableText from '../components/EditableText'
 
 const styles = [
+  { accent: 'from-red-500/25 via-rose-500/10 to-transparent', border: 'border-red-500/40' },
   { accent: 'from-teal-500/20 via-cyan-500/10 to-transparent', border: 'border-teal-500/30' },
+  { accent: 'from-purple-500/20 via-indigo-500/10 to-transparent', border: 'border-purple-500/30' },
   { accent: 'from-blue-500/20 via-indigo-500/10 to-transparent', border: 'border-blue-500/30' },
   { accent: 'from-amber-500/20 via-orange-500/10 to-transparent', border: 'border-amber-500/30' },
 ]

@@ -19,7 +19,7 @@ export const translations = {
       "letsTalk": "Let's Talk"
     },
     "hero": {
-      "badge": "PROJECT ENGINEER → DATA ANALYST",
+      "badge": "PROJECT ENGINEER · DATA ANALYST · AI AUTOMATION",
       "titleStart": "Turning Network Signals into",
       "titleEnd": "Data-Driven Intelligence",
       "bio": "leading telecommunications infrastructure for Telkomsel projects up to",
@@ -174,6 +174,41 @@ export const translations = {
       "closePreview": "Close Preview",
       "items": [
         {
+          "id": "ran-ops-copilot",
+          "title": "RAN-Ops Copilot & Smart BTS Sentinel",
+          "category": "Enterprise AI & Telecom Automation",
+          "description": "Enterprise-grade operational platform connecting Telkomsel field teams directly with Linux server systems via WhatsApp. Features an autonomous AI Agent (TOTI COPILOT) with Function Calling capabilities to query database logs, auto-generate official Balmon interference regulatory documents (DOCX/PDF), and trigger real-time SSH intrusion alerts.",
+          "impact": "Analyzed 597 BTS vandalism incidents (IDR 12.1 Billion loss exposure), reduced Balmon document generation from 2 hours to <15 seconds, and delivers 100% zero-friction mobile operations.",
+          "tags": [
+            "Node.js",
+            "Express",
+            "Socket.io",
+            "MySQL",
+            "WhatsApp Baileys",
+            "Gemini Flash AI",
+            "Huawei MML",
+            "Linux / SSH Trap"
+          ],
+          "metrics": [
+            {
+              "label": "Asset Loss Exposure",
+              "val": "Rp 12.1 M"
+            },
+            {
+              "label": "Incident Records",
+              "val": "597 Kasus"
+            },
+            {
+              "label": "Doc Generation",
+              "val": "< 15 Detik"
+            },
+            {
+              "label": "Operations Access",
+              "val": "100% WhatsApp"
+            }
+          ]
+        },
+        {
           "id": "power-bi-monitor",
           "title": "Power BI Real-Time Project Monitor",
           "category": "Data Analytics & Visualization",
@@ -193,6 +228,30 @@ export const translations = {
             {
               "label": "Data Source",
               "val": "Telkomsel SPMS"
+            }
+          ]
+        },
+        {
+          "id": "huawei-mml-balmon",
+          "title": "Huawei MML Parser & Regulatory Balmon Generator",
+          "category": "Telecom Systems Automation",
+          "description": "Automated engine parsing complex raw Huawei iMAE MML command logs (DSP RETPORT, LST BRD, LST RRU) for 1,400+ sites across Central Java, extracting hardware specs (Antennas, RRU, SFP 10GE, RET, Band Config GSM/L900/L1800) and generating regulatory Balmon Kominfo interference complaint dossiers automatically.",
+          "impact": "Eliminated manual multi-site hardware audits across 1,400+ sites with 100% accuracy and regulatory compliance.",
+          "tags": [
+            "Node.js",
+            "MML Regex Engine",
+            "Docx Templates",
+            "Huawei iMAE",
+            "Regulatory Compliance"
+          ],
+          "metrics": [
+            {
+              "label": "Sites Processed",
+              "val": "1,400+ Sites"
+            },
+            {
+              "label": "Audit Accuracy",
+              "val": "100%"
             }
           ]
         },
@@ -438,7 +497,7 @@ export const translations = {
       "letsTalk": "Hubungi Saya"
     },
     "hero": {
-      "badge": "PROJECT ENGINEER → DATA ANALYST",
+      "badge": "PROJECT ENGINEER · DATA ANALYST · AI AUTOMATION",
       "titleStart": "Mengubah Sinyal Jaringan Menjadi",
       "titleEnd": "Keputusan Berbasis Data",
       "bio": "mengelola infrastruktur telekomunikasi untuk proyek Telkomsel senilai hingga",
@@ -593,6 +652,41 @@ export const translations = {
       "closePreview": "Tutup Pratinjau",
       "items": [
         {
+          "id": "ran-ops-copilot",
+          "title": "RAN-Ops Copilot & Smart BTS Sentinel",
+          "category": "Otomasi Telekomunikasi & Agentic AI",
+          "description": "Platform otomasi operasional level enterprise yang menghubungkan tim lapangan Telkomsel dengan server Linux melalui WhatsApp tanpa perlu buka laptop. Dilengkapi AI Agent otonom (TOTI COPILOT) dengan kemampuan Function Calling untuk query log basis data, pembuatan Surat Resmi Pengaduan Balmon Kominfo (DOCX/PDF) otomatis, dan alarm keamanan login SSH server real-time.",
+          "impact": "Menganalisis 597 kasus pencurian/vandalisme material BTS (kerugian Rp 12,1 Miliar), memangkas pembuatan berkas Balmon dari 2 jam menjadi <15 detik, dan menyajikan 100% operasional zero-friction di chat WA.",
+          "tags": [
+            "Node.js",
+            "Express",
+            "Socket.io",
+            "MySQL",
+            "WhatsApp Baileys",
+            "Gemini Flash AI",
+            "Huawei MML",
+            "Linux / SSH Trap"
+          ],
+          "metrics": [
+            {
+              "label": "Nilai Aset Terpantau",
+              "val": "Rp 12,1 M"
+            },
+            {
+              "label": "Kasus Dianalisis",
+              "val": "597 Kasus"
+            },
+            {
+              "label": "Waktu Buat Dokumen",
+              "val": "< 15 Detik"
+            },
+            {
+              "label": "Akses Operasional",
+              "val": "100% WhatsApp"
+            }
+          ]
+        },
+        {
           "id": "power-bi-monitor",
           "title": "Power BI Real-Time Project Monitor",
           "category": "Analitik Data & Visualisasi",
@@ -612,6 +706,30 @@ export const translations = {
             {
               "label": "Sumber Data",
               "val": "Telkomsel SPMS"
+            }
+          ]
+        },
+        {
+          "id": "huawei-mml-balmon",
+          "title": "Huawei MML Parser & Regulatory Balmon Generator",
+          "category": "Otomasi Sistem Telekomunikasi",
+          "description": "Engine otomatisasi pemroses ribuan baris log MML Huawei (DSP RETPORT, LST BRD, LST RRU) untuk audit 1.400+ site di Jawa Tengah (Antena, RRU, SFP 10GE, RET, Band GSM/L900/L1800) dan auto-generate Surat Resmi Balmon Kominfo (DOCX/PDF) dalam hitungan detik.",
+          "impact": "Menghapus audit manual multi-site pada 1.400+ site dengan akurasi 100% dan kepatuhan regulasi SDPPI Kominfo.",
+          "tags": [
+            "Node.js",
+            "MML Regex Engine",
+            "Docx Templates",
+            "Huawei iMAE",
+            "Regulatory Compliance"
+          ],
+          "metrics": [
+            {
+              "label": "Site Diproses",
+              "val": "1.400+ Sites"
+            },
+            {
+              "label": "Akurasi Audit",
+              "val": "100%"
             }
           ]
         },

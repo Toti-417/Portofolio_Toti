@@ -65,6 +65,7 @@ function saveContentPlugin() {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [react(), tailwindcss(), saveContentPlugin()],
   server: {
     watch: {

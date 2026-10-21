@@ -360,7 +360,7 @@ export const translations = {
           "id": "huawei-mml-balmon",
           "title": "Huawei MML Parser & Regulatory Balmon Generator",
           "category": "Telecom Systems Automation",
-          "image": null,
+          "image": "./projects/report_balmon_generator.png",
           "dashboardPurpose": "Automated engine parsing complex raw Huawei iMAE MML command logs for 1,400+ sites across Central Java, extracting hardware specs and generating regulatory Balmon Kominfo interference complaint dossiers automatically.",
           "description": "Automated engine parsing complex raw Huawei iMAE MML command logs (DSP RETPORT, LST BRD, LST RRU) for 1,400+ sites across Central Java, extracting hardware specs (Antennas, RRU, SFP 10GE, RET, Band Config GSM/L900/L1800) and generating regulatory Balmon Kominfo interference complaint dossiers automatically.",
           "impact": "Eliminated manual multi-site hardware audits across 1,400+ sites with 100% accuracy and regulatory compliance.",
@@ -388,7 +388,8 @@ export const translations = {
               "label": "Format Output",
               "val": "DOCX & PDF"
             }
-          ]
+          ],
+          "imageLabel": "Huawei MML Parser & Balmon Complaint Dossier"
         },
         {
           "id": "blacksite-rollout",
@@ -993,7 +994,7 @@ export const translations = {
           "id": "huawei-mml-balmon",
           "title": "Huawei MML Parser & Regulatory Balmon Generator",
           "category": "Otomasi Sistem Telekomunikasi",
-          "image": null,
+          "image": "./projects/report_balmon_generator.png",
           "dashboardPurpose": "Engine pemrosesan raw log MML Huawei untuk mengekstraksi data perangkat keras dan menghasilkan berkas surat aduan resmi ke Balmon Kominfo secara otomatis.",
           "description": "Engine otomatisasi pemroses ribuan baris log MML Huawei (DSP RETPORT, LST BRD, LST RRU) untuk audit 1.400+ site di Jawa Tengah (Antena, RRU, SFP 10GE, RET, Band GSM/L900/L1800) dan auto-generate Surat Resmi Balmon Kominfo (DOCX/PDF) dalam hitungan detik.",
           "impact": "Menghapus audit manual multi-site pada 1.400+ site dengan akurasi 100% dan kepatuhan regulasi SDPPI Kominfo.",
@@ -1021,7 +1022,8 @@ export const translations = {
               "label": "Format Output",
               "val": "DOCX & PDF"
             }
-          ]
+          ],
+          "imageLabel": "Dokumen Laporan Balmon & Audit Log MML Huawei"
         },
         {
           "id": "blacksite-rollout",

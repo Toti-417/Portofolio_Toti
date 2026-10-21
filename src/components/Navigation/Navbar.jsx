@@ -77,14 +77,33 @@ export default function Navbar({ sections, activeSection }) {
             <span className={lang === 'id' ? 'font-bold text-teal-300' : 'text-slate-400'}>ID</span>
           </button>
 
-          <a
-            href="/assets/CV_Toti_Putra_Pratama_EN.pdf"
-            download
-            className="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-teal-500/40 transition-all flex items-center gap-1.5"
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            {t.nav.downloadCv}
-          </a>
+          <div className="relative group/cv">
+            <button
+              className="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-teal-500/40 transition-all flex items-center gap-1.5"
+            >
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>{t.nav.downloadCv}</span>
+              <span className="text-[10px] font-mono text-teal-300 bg-teal-500/10 px-1 py-0.2 rounded border border-teal-500/20">ID/EN</span>
+            </button>
+            <div className="absolute right-0 top-full mt-1.5 w-48 bg-[#0b0f1f] border border-teal-500/30 rounded-xl p-1.5 shadow-2xl opacity-0 pointer-events-none group-hover/cv:opacity-100 group-hover/cv:pointer-events-auto transition-all duration-200 z-50">
+              <a
+                href="./assets/CV_Toti_Putra_Pratama_ID.pdf"
+                download="CV_Toti_Putra_Pratama_ID.pdf"
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
+              >
+                <span>🇮🇩</span>
+                <span className="font-medium">Versi Indonesia (ID)</span>
+              </a>
+              <a
+                href="./assets/CV_Toti_Putra_Pratama_EN.pdf"
+                download="CV_Toti_Putra_Pratama_EN.pdf"
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
+              >
+                <span>🇬🇧</span>
+                <span className="font-medium">English Version (EN)</span>
+              </a>
+            </div>
+          </div>
           <a
             href="#contact"
             className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 shadow-md shadow-teal-500/20 hover:shadow-teal-500/30 transition-all"
@@ -134,13 +153,24 @@ export default function Navbar({ sections, activeSection }) {
             )
           })}
           <div className="pt-3 border-t border-white/10 flex gap-2">
-            <a
-              href="/assets/CV_Toti_Putra_Pratama_EN.pdf"
-              download
-              className="flex-1 py-2 text-center rounded-lg text-xs font-medium bg-slate-800 text-slate-200 border border-white/10"
-            >
-              {t.nav.downloadCv}
-            </a>
+            <div className="flex-1 flex gap-1.5">
+              <a
+                href="./assets/CV_Toti_Putra_Pratama_ID.pdf"
+                download="CV_Toti_Putra_Pratama_ID.pdf"
+                className="flex-1 py-2 text-center rounded-lg text-xs font-medium bg-slate-800 text-teal-300 border border-teal-500/30 flex items-center justify-center gap-1"
+              >
+                <span>🇮🇩</span>
+                <span>CV (ID)</span>
+              </a>
+              <a
+                href="./assets/CV_Toti_Putra_Pratama_EN.pdf"
+                download="CV_Toti_Putra_Pratama_EN.pdf"
+                className="flex-1 py-2 text-center rounded-lg text-xs font-medium bg-slate-800 text-slate-200 border border-white/10 flex items-center justify-center gap-1"
+              >
+                <span>🇬🇧</span>
+                <span>CV (EN)</span>
+              </a>
+            </div>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}

@@ -163,71 +163,196 @@ export const translations = {
       ]
     },
     "projects": {
-      "badge": "// FEATURED DEPLOYMENTS",
+      "badge": "// FEATURED DEPLOYMENTS & LIVE SYSTEMS",
       "titleStart": "Featured Engineering &",
       "titleEnd": "Analytics Projects",
-      "subtitle": "Showcasing solutions developed at the intersection of telecommunications operations and data analytics.",
+      "subtitle": "Showcasing live operational dashboards, spatial intelligence radar, and telecom automation systems deployed for Telkomsel networks.",
       "viewDetails": "View Details & Metrics",
       "impactLabel": "Key Impact:",
-      "modalTitle": "MEASURABLE IMPACT:",
+      "modalTitle": "MEASURABLE IMPACT & RESULTS:",
       "closeModal": "Close Modal",
       "closePreview": "Close Preview",
       "items": [
         {
+          "id": "interference-radar-dashboard",
+          "title": "Telecom LTE Interference Radar & 24-Hr Geo-Spatial Matrix",
+          "category": "Telecom Systems & Geospatial Intelligence",
+          "image": "./projects/dashboard_interference_map.png",
+          "secondaryImage": "./projects/dashboard_interference_matrix.png",
+          "imageLabel": "Satellite Radar Interference Map (Leaflet)",
+          "secondaryImageLabel": "24-Hour LTE Hourly Heatmap Matrix",
+          "dashboardPurpose": "Visualizes the geographic distribution of 254+ interference-affected BTS sites in real time, accompanied by a 24-hour hourly matrix (00:00 - 23:00 WIB). Radio Network Optimization (RNO) engineers use this dashboard to distinguish between intermittent jammers, illegal repeaters, radar signals, and internal intermodulation, enabling targeted field investigations and automated regulatory filing.",
+          "description": "Interactive geospatial and temporal LTE interference intelligence system monitoring 254+ Telkomsel BTS sites across all regional clusters in Central Java & DIY. Combines high-resolution Leaflet satellite mapping with 24-hour hourly heatmap matrices across all bands (L900, L1800, L2100, L2300) to isolate external jamming, frequency drift, and hardware noise.",
+          "impact": "Reduced interference localization from days to minutes across 254+ critical BTS nodes, with instant on-demand WhatsApp bot reporting (!interference).",
+          "tags": [
+            "Leaflet.js",
+            "Node.js / Express",
+            "MML Regex Engine",
+            "24-Hr Heatmap",
+            "Tailscale SSL",
+            "Puppeteer Renderer"
+          ],
+          "metrics": [
+            {
+              "label": "Monitored BTS",
+              "val": "254+ Sites"
+            },
+            {
+              "label": "LTE Bands",
+              "val": "L9, L18, L21, L23"
+            },
+            {
+              "label": "Temporal Depth",
+              "val": "24-Hr Hourly"
+            },
+            {
+              "label": "Ops Interface",
+              "val": "WA Bot (!interference)"
+            }
+          ]
+        },
+        {
+          "id": "ret-antenna-assessment",
+          "title": "Automated RET Antenna Tilt & Open Port Live Assessment System",
+          "category": "Remote RF Engineering & Hardware Auditing",
+          "image": "./projects/table_ret_assessment.png",
+          "secondaryImage": null,
+          "imageLabel": "Executive RET Assessment Matrix & Regional Port Audit",
+          "dashboardPurpose": "Delivers an executive consolidation matrix of Remote Electrical Tilt (RET) health across 6 NOP operational divisions, identifying open physical ports and verifying electrical tilt angles against engineering baselines to prevent cell overshooting and maintain coverage purity.",
+          "description": "Autonomous hardware auditing engine assessing Remote Electrical Tilt (RET) antenna configurations, open physical ports, and tilt degradation across thousands of Telkomsel BTS sectors spanning Central Java-DIY and 6 NOP operational divisions (Semarang, Solo, Purwokerto, Kudus, Pekalongan, Magelang).",
+          "impact": "100% automated RET tilt auditing without manual tower climbing, live bidirectional Google Sheets sync, and instant WhatsApp verification (!ret).",
+          "tags": [
+            "Node.js",
+            "Huawei DSP RETPORT",
+            "Google Sheets API",
+            "Puppeteer Table Renderer",
+            "RF Engineering"
+          ],
+          "metrics": [
+            {
+              "label": "NOP Coverage",
+              "val": "6 Regional NOPs"
+            },
+            {
+              "label": "Verified Sectors",
+              "val": "73+ Audited"
+            },
+            {
+              "label": "Data Pipeline",
+              "val": "Google Sheets Live"
+            },
+            {
+              "label": "Audit Execution",
+              "val": "< 5 Seconds"
+            }
+          ]
+        },
+        {
+          "id": "ran-quality-scorecard",
+          "title": "Executive RAN Quality Scorecard & 24-Hour Multi-Metric Chart Engine",
+          "category": "RAN Performance Analytics & KPI Engine",
+          "image": "./projects/chart_quality.png",
+          "secondaryImage": null,
+          "imageLabel": "7-Day Quality Scorecard & 24-Hr Dual-Axis Trend Chart",
+          "dashboardPurpose": "Visualizes the direct correlation between payload volume spikes (GB) and accessibility/retainability KPIs over a 24-hour cycle on a unified dual-axis canvas, giving leadership instant visibility into network health and traffic degradation without manual spreadsheet work.",
+          "description": "RAN performance intelligence scorecard tracking rolling 7-day Quality Scores across critical network KPIs (Payload Data, Accessibility/CSSR, Retainability/DCR, User Throughput) coupled with dynamic 24-hour dual-axis trend charts rendered on server-side headless browser.",
+          "impact": "Eliminated manual daily KPI spreadsheet charts; renders audit-ready dual-axis analytics in under 3 seconds for executive WhatsApp distribution (!quality).",
+          "tags": [
+            "Chart.js",
+            "Headless Chromium",
+            "Network Analytics",
+            "KPI Correlation",
+            "WhatsApp Automation"
+          ],
+          "metrics": [
+            {
+              "label": "Score Window",
+              "val": "7-Day Rolling"
+            },
+            {
+              "label": "Hourly Metrics",
+              "val": "24-Hr Dual Axis"
+            },
+            {
+              "label": "Tracked KPIs",
+              "val": "Payload, CSSR, DCR, Thp"
+            },
+            {
+              "label": "Render Latency",
+              "val": "< 3 Seconds"
+            }
+          ]
+        },
+        {
           "id": "ran-ops-copilot",
-          "title": "RAN-Ops Copilot & Smart BTS Sentinel",
+          "title": "RAN-Ops Copilot & WhatsApp Telecom Automation Server",
           "category": "Enterprise AI & Telecom Automation",
-          "description": "Enterprise-grade operational platform connecting Telkomsel field teams directly with Linux server systems via WhatsApp. Features an autonomous AI Agent (TOTI COPILOT) with Function Calling capabilities to query database logs, auto-generate official Balmon interference regulatory documents (DOCX/PDF), and trigger real-time SSH intrusion alerts.",
-          "impact": "Analyzed 597 BTS vandalism incidents (IDR 12.1 Billion loss exposure), reduced Balmon document generation from 2 hours to <15 seconds, and delivers 100% zero-friction mobile operations.",
+          "image": "./projects/dashboard_bot_controller.png",
+          "secondaryImage": null,
+          "imageLabel": "Web Control Panel & Health Monitor WA Bot Server",
+          "dashboardPurpose": "Centralized web GUI control center monitoring WhatsApp Baileys socket states, Ubuntu server CPU/RAM usage, one-click PM2 daemon management, and real-time execution logs for field commands across Central Java.",
+          "description": "Enterprise operational automation platform connecting Telkomsel field teams directly with Linux server infrastructure via WhatsApp without laptops. Powered by autonomous AI Agent (TOTI COPILOT) with Function Calling, live PM2 process daemon management, and web-based control GUI.",
+          "impact": "Delivers 99.9% operational availability with zero-downtime background workers, orchestrating 8+ telecom automation modules in a single interface.",
           "tags": [
             "Node.js",
             "Express",
             "Socket.io",
-            "MySQL",
-            "WhatsApp Baileys",
-            "Gemini Flash AI",
-            "Huawei MML",
-            "Linux / SSH Trap"
+            "PM2 Daemon",
+            "Tailscale Funnel",
+            "Linux Administration"
           ],
           "metrics": [
             {
-              "label": "Asset Loss Exposure",
-              "val": "Rp 12.1 M"
+              "label": "Server Uptime",
+              "val": "99.9% Available"
             },
+            {
+              "label": "Connection",
+              "val": "WebSockets Real-Time"
+            },
+            {
+              "label": "Remote Access",
+              "val": "Tailscale Funnel SSL"
+            },
+            {
+              "label": "Response Speed",
+              "val": "< 500 ms"
+            }
+          ]
+        },
+        {
+          "id": "bts-vandalism-dashboard",
+          "title": "BTS Security & Vandalism Monitoring Analytics Dashboard",
+          "category": "Asset Security & Spatial Risk Analytics",
+          "image": "./projects/dashboard_vandalism.png",
+          "secondaryImage": null,
+          "imageLabel": "Incident Risk Heatmap & Loss Forensic Dashboard",
+          "dashboardPurpose": "Maps vulnerability hotspots, recurring incident patterns across operational NOP clusters, and financial impact quantification to guide proactive security deployments, insurance claims, and law enforcement interventions.",
+          "description": "Geospatial and financial risk intelligence platform tracking theft and vandalism incidents targeting Telkomsel tower infrastructure (copper grounding, lithium batteries, rectifiers, feeder cables) analyzing 597 incidents totaling IDR 12.1 Billion.",
+          "impact": "Pinpointed recurring loss patterns across 597 high-risk nodes, accelerating preventative mitigation and providing executive forensic audits.",
+          "tags": [
+            "Laravel / PHP",
+            "MySQL",
+            "Leaflet Maps",
+            "Data Analytics",
+            "Asset Protection"
+          ],
+          "metrics": [
             {
               "label": "Incident Records",
               "val": "597 Kasus"
             },
             {
-              "label": "Doc Generation",
-              "val": "< 15 Detik"
+              "label": "Loss Exposure",
+              "val": "Rp 12.1 M"
             },
             {
-              "label": "Operations Access",
-              "val": "100% WhatsApp"
-            }
-          ]
-        },
-        {
-          "id": "power-bi-monitor",
-          "title": "Power BI Real-Time Project Monitor",
-          "category": "Data Analytics & Visualization",
-          "description": "Developed a real-time executive dashboard for Telkomsel project monitoring, enabling leadership to track site rollout progress, vendor performance, and milestone bottlenecks live across multiple regions.",
-          "impact": "Replaced manual weekly Excel reports with live automated tracking.",
-          "tags": [
-            "Power BI",
-            "SPMS",
-            "Data Modeling",
-            "KPI Tracking"
-          ],
-          "metrics": [
-            {
-              "label": "Tracking Mode",
-              "val": "Real-Time"
+              "label": "Risk Mitigation",
+              "val": "Cluster Heatmap"
             },
             {
-              "label": "Data Source",
-              "val": "Telkomsel SPMS"
+              "label": "Incident Alerts",
+              "val": "Automated Dispatch"
             }
           ]
         },
@@ -235,6 +360,8 @@ export const translations = {
           "id": "huawei-mml-balmon",
           "title": "Huawei MML Parser & Regulatory Balmon Generator",
           "category": "Telecom Systems Automation",
+          "image": null,
+          "dashboardPurpose": "Automated engine parsing complex raw Huawei iMAE MML command logs for 1,400+ sites across Central Java, extracting hardware specs and generating regulatory Balmon Kominfo interference complaint dossiers automatically.",
           "description": "Automated engine parsing complex raw Huawei iMAE MML command logs (DSP RETPORT, LST BRD, LST RRU) for 1,400+ sites across Central Java, extracting hardware specs (Antennas, RRU, SFP 10GE, RET, Band Config GSM/L900/L1800) and generating regulatory Balmon Kominfo interference complaint dossiers automatically.",
           "impact": "Eliminated manual multi-site hardware audits across 1,400+ sites with 100% accuracy and regulatory compliance.",
           "tags": [
@@ -252,29 +379,14 @@ export const translations = {
             {
               "label": "Audit Accuracy",
               "val": "100%"
-            }
-          ]
-        },
-        {
-          "id": "bts-material-flow",
-          "title": "BTS Material Flow Automation (N8N)",
-          "category": "Workflow Automation",
-          "description": "Designed an automated workflow system for BTS equipment inbound-outbound logistics using N8N & Power Automate. Eliminates manual input errors and accelerates material dispatch for field contractors.",
-          "impact": "Cut administrative processing time significantly while preventing material stockouts.",
-          "tags": [
-            "N8N",
-            "Power Automate",
-            "REST API",
-            "Google Sheets API"
-          ],
-          "metrics": [
-            {
-              "label": "Workflow",
-              "val": "End-to-End"
             },
             {
-              "label": "Accuracy",
-              "val": "High Precision"
+              "label": "Doc Generation",
+              "val": "< 15 Detik"
+            },
+            {
+              "label": "Format Output",
+              "val": "DOCX & PDF"
             }
           ]
         },
@@ -282,6 +394,8 @@ export const translations = {
           "id": "blacksite-rollout",
           "title": "Blacksite Batch Rollout & Document Tracker",
           "category": "Project Engineering",
+          "image": null,
+          "dashboardPurpose": "Executive rollout tracker monitoring end-to-end milestone progress from initial physical site deployment through eATP sign-off and final documentation closure.",
           "description": "Managed end-to-end execution tracking for Telkomsel Blacksite Batch #1–#3 & Re-engineering rollout projects from initial site deployment through eATP approval and final documentation closure.",
           "impact": "Achieved 99% documentation accuracy and ranked #1 Leading Partner for Project Closure.",
           "tags": [
@@ -298,6 +412,47 @@ export const translations = {
             {
               "label": "Partner Rank",
               "val": "#1 Leader"
+            },
+            {
+              "label": "Schedule Rate",
+              "val": "85% Ahead"
+            },
+            {
+              "label": "Project Batches",
+              "val": "Batch #1 - #3"
+            }
+          ]
+        },
+        {
+          "id": "power-bi-monitor",
+          "title": "Power BI Real-Time Project Monitor",
+          "category": "Data Analytics & Visualization",
+          "image": null,
+          "dashboardPurpose": "Executive intelligence dashboard consolidating Telkomsel SPMS database records into interactive management KPIs.",
+          "description": "Developed a real-time executive dashboard for Telkomsel project monitoring, enabling leadership to track site rollout progress, vendor performance, and milestone bottlenecks live across multiple regions.",
+          "impact": "Replaced manual weekly Excel reports with live automated tracking.",
+          "tags": [
+            "Power BI",
+            "SPMS",
+            "Data Modeling",
+            "KPI Tracking"
+          ],
+          "metrics": [
+            {
+              "label": "Tracking Mode",
+              "val": "Real-Time"
+            },
+            {
+              "label": "Data Source",
+              "val": "Telkomsel SPMS"
+            },
+            {
+              "label": "Report Cycle",
+              "val": "Weekly -> Live"
+            },
+            {
+              "label": "Decisions",
+              "val": "Data-Driven"
             }
           ]
         }
@@ -641,71 +796,196 @@ export const translations = {
       ]
     },
     "projects": {
-      "badge": "// PORTOPOLIO PROYEK",
+      "badge": "// PORTOPOLIO PROYEK & SISTEM LIVE",
       "titleStart": "Proyek Unggulan Teknik &",
       "titleEnd": "Analitik Data",
-      "subtitle": "Menampilkan solusi inovatif yang dikembangkan dari integrasi operasional telekomunikasi dan analitik data.",
-      "viewDetails": "Lihat Detail & Metrik",
+      "subtitle": "Menampilkan solusi inovatif, dashboard operasional langsung, radar pemetaan spasial, dan otomasi telekomunikasi yang diterapkan di jaringan Telkomsel.",
+      "viewDetails": "Lihat Detail & Bukti",
       "impactLabel": "Dampak Utama:",
       "modalTitle": "METRIK & DAMPAK TERUKUR:",
       "closeModal": "Tutup Modal",
       "closePreview": "Tutup Pratinjau",
       "items": [
         {
-          "id": "ran-ops-copilot",
-          "title": "RAN-Ops Copilot & Smart BTS Sentinel",
-          "category": "Otomasi Telekomunikasi & Agentic AI",
-          "description": "Platform otomasi operasional level enterprise yang menghubungkan tim lapangan Telkomsel dengan server Linux melalui WhatsApp tanpa perlu buka laptop. Dilengkapi AI Agent otonom (TOTI COPILOT) dengan kemampuan Function Calling untuk query log basis data, pembuatan Surat Resmi Pengaduan Balmon Kominfo (DOCX/PDF) otomatis, dan alarm keamanan login SSH server real-time.",
-          "impact": "Menganalisis 597 kasus pencurian/vandalisme material BTS (kerugian Rp 12,1 Miliar), memangkas pembuatan berkas Balmon dari 2 jam menjadi <15 detik, dan menyajikan 100% operasional zero-friction di chat WA.",
+          "id": "interference-radar-dashboard",
+          "title": "Telecom LTE Interference Radar & 24-Hr Geo-Spatial Matrix",
+          "category": "Otomasi Telekomunikasi & Pemetaan Geospasial",
+          "image": "./projects/dashboard_interference_map.png",
+          "secondaryImage": "./projects/dashboard_interference_matrix.png",
+          "imageLabel": "Peta Radar Sebaran Interferensi BTS (Leaflet Satellite)",
+          "secondaryImageLabel": "Heatmap Matrix 24-Jam LTE (Per Jam & Per Band)",
+          "dashboardPurpose": "Fungsi Dashboard: Memetakan sebaran geografis 254+ site BTS terdampak interferensi secara real-time dan menyajikan matriks fluktuasi per jam (00:00 - 23:00 WIB). Dashboard ini digunakan oleh engineer Radio Network Optimization (RNO) dan tim operasional lapangan untuk membedakan antara jammer liar periodik, sinyal radar instansi, atau interferensi modulasi internal, serta langsung men-generate dokumen resmi komplain Balmon Kominfo.",
+          "description": "Sistem monitoring dan investigasi interferensi frekuensi LTE (L900, L1800, L2100, L2300) terintegrasi yang menggabungkan visualisasi peta satelit beresolusi tinggi dengan matriks temporal 24 jam. Mampu mendeteksi sumber noise spektrum lintas kluster di seluruh NOP Telkomsel Jawa Tengah & DIY secara akurat.",
+          "impact": "Memangkas waktu investigasi interferensi dari hitungan hari menjadi hitungan menit, mengidentifikasi 254+ titik noise kritis, dan terintegrasi otomatis ke WhatsApp Bot (!interference).",
           "tags": [
-            "Node.js",
-            "Express",
-            "Socket.io",
-            "MySQL",
-            "WhatsApp Baileys",
-            "Gemini Flash AI",
-            "Huawei MML",
-            "Linux / SSH Trap"
+            "Leaflet.js",
+            "Node.js / Express",
+            "MML Regex Engine",
+            "24-Hr Heatmap",
+            "Tailscale SSL",
+            "Puppeteer Renderer"
           ],
           "metrics": [
             {
-              "label": "Nilai Aset Terpantau",
-              "val": "Rp 12,1 M"
+              "label": "Site Terpantau",
+              "val": "254+ Sites"
             },
             {
-              "label": "Kasus Dianalisis",
-              "val": "597 Kasus"
+              "label": "Band LTE",
+              "val": "L9, L18, L21, L23"
             },
             {
-              "label": "Waktu Buat Dokumen",
-              "val": "< 15 Detik"
+              "label": "Analisis Waktu",
+              "val": "24 Jam Real-Time"
             },
             {
-              "label": "Akses Operasional",
-              "val": "100% WhatsApp"
+              "label": "Akses Lapangan",
+              "val": "Command Bot WA"
             }
           ]
         },
         {
-          "id": "power-bi-monitor",
-          "title": "Power BI Real-Time Project Monitor",
-          "category": "Analitik Data & Visualisasi",
-          "description": "Mengembangkan dashboard eksekutif real-time untuk pemantauan proyek Telkomsel, memungkinkan manajemen melacak progres rollout site, kinerja vendor, dan kendala lapangan secara langsung di berbagai wilayah.",
-          "impact": "Menggantikan laporan Excel mingguan manual dengan pelacakan otomatis real-time.",
+          "id": "ret-antenna-assessment",
+          "title": "Automated RET Antenna Tilt & Open Port Live Assessment System",
+          "category": "Audit Antena Jarak Jauh & Automasi RF",
+          "image": "./projects/table_ret_assessment.png",
+          "secondaryImage": null,
+          "imageLabel": "Tabel Penilaian Eksekutif RET & Audit Port Regional",
+          "dashboardPurpose": "Fungsi Dashboard/Tabel: Menyajikan matriks konsolidasi status RET per NOP secara real-time, mendeteksi port fisik antena yang terbuka (open port), serta memverifikasi kesesuaian sudut tilt elektrik terhadap database engineering. Digunakan untuk mencegah interferensi antar-sel (overshooting) dan menjamin kualitas coverage sinyal optimal.",
+          "description": "Engine audit konfigurasi Remote Electrical Tilt (RET) dan open port antena pada ribuan sektor BTS Telkomsel di Regional Jateng-DIY dan 6 NOP (Semarang, Solo, Purwokerto, Kudus, Pekalongan, Magelang). Menganalisis inkonsistensi hardware, port RET yang tidak terhubung, atau sudut kemiringan tilt yang mengalami anomali.",
+          "impact": "Otomatisasi audit RET 100% tanpa manual inspection di tower, sinkronisasi live dengan Google Sheets, dan verifikasi instan via bot WhatsApp (!ret).",
           "tags": [
-            "Power BI",
-            "SPMS",
-            "Data Modeling",
-            "KPI Tracking"
+            "Node.js",
+            "Huawei DSP RETPORT",
+            "Google Sheets API",
+            "Puppeteer Table Renderer",
+            "RF Engineering"
           ],
           "metrics": [
             {
-              "label": "Mode Pelacakan",
-              "val": "Real-Time"
+              "label": "Cakupan NOP",
+              "val": "6 NOP Regional"
             },
             {
-              "label": "Sumber Data",
-              "val": "Telkomsel SPMS"
+              "label": "Akurasi Audit",
+              "val": "100% Akurat"
+            },
+            {
+              "label": "Sinkronisasi",
+              "val": "Google Sheets Live"
+            },
+            {
+              "label": "Waktu Eksekusi",
+              "val": "< 5 Detik"
+            }
+          ]
+        },
+        {
+          "id": "ran-quality-scorecard",
+          "title": "Executive RAN Quality Scorecard & 24-Hour Multi-Metric Chart Engine",
+          "category": "Analitik Performa RAN & Visualisasi KPI",
+          "image": "./projects/chart_quality.png",
+          "secondaryImage": null,
+          "imageLabel": "Scorecard Kualitas 7-Hari & Grafik Trend KPI 24-Jam",
+          "dashboardPurpose": "Fungsi Dashboard/Chart: Memvisualisasikan korelasi antara lonjakan trafik payload (GB) dengan kestabilan accessibility (CSSR) dan retainability (DCR) sepanjang 24 jam secara berdampingan (dual-axis). Digunakan oleh lead engineer dan manajer regional untuk memantau kesehatan jaringan (network health) dan mendeteksi anomali degradasi trafik secara instan.",
+          "description": "Sistem analitik performa jaringan Radio Access Network (RAN) yang menghitung Quality Score harian & tren 7 hari untuk metrik kunci (Payload Data, Accessibility, Retainability, User Throughput). Dilengkapi generator grafik dual-axis 24 jam berbasis headless browser untuk mendeteksi degradasi performa.",
+          "impact": "Menghilangkan pembuatan grafik KPI manual di Excel, menghasilkan visualisasi siap-audit dalam 3 detik, dan langsung dikirim ke chat WhatsApp pimpinan (!quality).",
+          "tags": [
+            "Chart.js",
+            "Headless Chromium",
+            "Network Analytics",
+            "KPI Correlation",
+            "WhatsApp Automation"
+          ],
+          "metrics": [
+            {
+              "label": "Score Trend",
+              "val": "Rolling 7 Hari"
+            },
+            {
+              "label": "Resolusi Analisis",
+              "val": "24 Jam Hourly"
+            },
+            {
+              "label": "KPI Terpantau",
+              "val": "Payload, CSSR, DCR, Thp"
+            },
+            {
+              "label": "Waktu Render",
+              "val": "< 3 Detik"
+            }
+          ]
+        },
+        {
+          "id": "ran-ops-copilot",
+          "title": "RAN-Ops Copilot & WhatsApp Telecom Automation Server",
+          "category": "Otomasi Enterprise & Agentic AI",
+          "image": "./projects/dashboard_bot_controller.png",
+          "secondaryImage": null,
+          "imageLabel": "Web Control Panel & Health Monitor WA Bot Server",
+          "dashboardPurpose": "Fungsi Dashboard: Menyediakan panel kendali GUI web terpusat untuk memantau status koneksi WhatsApp Baileys, penggunaan memori/CPU server Ubuntu, restart daemon PM2 on-click, serta live logging aktivitas perintah teknisi dari seluruh Jawa Tengah.",
+          "description": "Platform otomasi operasional level enterprise yang menghubungkan teknisi lapangan Telkomsel dengan server Linux melalui WhatsApp tanpa perlu buka laptop. Dilengkapi AI Agent otonom (TOTI COPILOT) dengan Function Calling, monitoring daemon PM2, dan web controller interface.",
+          "impact": "Menjaga ketersediaan bot 99.9% tanpa downtime, mengintegrasikan 8+ modul otomatisasi telekomunikasi dalam satu antarmuka terpusat.",
+          "tags": [
+            "Node.js",
+            "Express",
+            "Socket.io",
+            "PM2 Daemon",
+            "Tailscale Funnel",
+            "Linux Administration"
+          ],
+          "metrics": [
+            {
+              "label": "Server Uptime",
+              "val": "99.9% Available"
+            },
+            {
+              "label": "Koneksi",
+              "val": "WebSockets Real-Time"
+            },
+            {
+              "label": "Akses Remote",
+              "val": "Tailscale Funnel SSL"
+            },
+            {
+              "label": "Respons Sistem",
+              "val": "< 500 ms"
+            }
+          ]
+        },
+        {
+          "id": "bts-vandalism-dashboard",
+          "title": "BTS Security & Vandalism Monitoring Analytics Dashboard",
+          "category": "Analitik Keamanan Aset & IoT Spasial",
+          "image": "./projects/dashboard_vandalism.png",
+          "secondaryImage": null,
+          "imageLabel": "Dashboard Analisis Kerugian & Hotspot Vandalisme BTS",
+          "dashboardPurpose": "Fungsi Dashboard: Memetakan sebaran titik rawan (vandalism hotspots), frekuensi kejadian berdasarkan kluster/NOP, dan estimasi kerugian finansial. Digunakan oleh tim asset protection & security Telkomsel untuk menentukan prioritas patroli pengamanan dan penindakan aparat berwenang.",
+          "description": "Platform analitik dan visualisasi geospasial pencurian dan vandalisme aset infrastruktur BTS Telkomsel (kabel feeder, baterai lithium, modul power rectifier, copper grounding). Menganalisis 597 kasus dengan total kerugian Rp 12,1 Miliar.",
+          "impact": "Mendeteksi pola pencurian material berulang, mempercepat mitigasi risiko di 597 titik rawan, dan memberikan laporan analitik akurat bagi pimpinan regional.",
+          "tags": [
+            "Laravel / PHP",
+            "MySQL",
+            "Leaflet Maps",
+            "Data Analytics",
+            "Asset Protection"
+          ],
+          "metrics": [
+            {
+              "label": "Kasus Terdokumentasi",
+              "val": "597 Kasus"
+            },
+            {
+              "label": "Eksposur Kerugian",
+              "val": "Rp 12.1 M"
+            },
+            {
+              "label": "Mitigasi",
+              "val": "Heatmap & Cluster Risk"
+            },
+            {
+              "label": "Integrasi",
+              "val": "WhatsApp Incident Alert"
             }
           ]
         },
@@ -713,6 +993,8 @@ export const translations = {
           "id": "huawei-mml-balmon",
           "title": "Huawei MML Parser & Regulatory Balmon Generator",
           "category": "Otomasi Sistem Telekomunikasi",
+          "image": null,
+          "dashboardPurpose": "Engine pemrosesan raw log MML Huawei untuk mengekstraksi data perangkat keras dan menghasilkan berkas surat aduan resmi ke Balmon Kominfo secara otomatis.",
           "description": "Engine otomatisasi pemroses ribuan baris log MML Huawei (DSP RETPORT, LST BRD, LST RRU) untuk audit 1.400+ site di Jawa Tengah (Antena, RRU, SFP 10GE, RET, Band GSM/L900/L1800) dan auto-generate Surat Resmi Balmon Kominfo (DOCX/PDF) dalam hitungan detik.",
           "impact": "Menghapus audit manual multi-site pada 1.400+ site dengan akurasi 100% dan kepatuhan regulasi SDPPI Kominfo.",
           "tags": [
@@ -730,29 +1012,14 @@ export const translations = {
             {
               "label": "Akurasi Audit",
               "val": "100%"
-            }
-          ]
-        },
-        {
-          "id": "bts-material-flow",
-          "title": "BTS Material Flow Automation (N8N)",
-          "category": "Otomasi Alur Kerja",
-          "description": "Merancang sistem alur kerja otomatis untuk logistik inbound-outbound material BTS menggunakan N8N & Power Automate. Menghilangkan kesalahan input manual dan mempercepat pengiriman material ke kontraktor.",
-          "impact": "Memangkas waktu proses administrasi secara signifikan dan mencegah kekurangan stok di lapangan.",
-          "tags": [
-            "N8N",
-            "Power Automate",
-            "REST API",
-            "Google Sheets API"
-          ],
-          "metrics": [
-            {
-              "label": "Alur Kerja",
-              "val": "End-to-End"
             },
             {
-              "label": "Akurasi",
-              "val": "Presisi Tinggi"
+              "label": "Waktu Buat Dokumen",
+              "val": "< 15 Detik"
+            },
+            {
+              "label": "Format Output",
+              "val": "DOCX & PDF"
             }
           ]
         },
@@ -760,6 +1027,8 @@ export const translations = {
           "id": "blacksite-rollout",
           "title": "Blacksite Batch Rollout & Document Tracker",
           "category": "Teknik Proyek",
+          "image": null,
+          "dashboardPurpose": "Sistem pelacak milestone proyek rollout dari awal instalasi lapangan, pengetesan eATP, hingga penutupan dokumen administratif mitra.",
           "description": "Mengelola pelacakan eksekusi proyek rollout Telkomsel Blacksite Batch #1–#3 & Re-engineering dari awal pengiriman site hingga persetujuan eATP dan penutupan dokumentasi akhir.",
           "impact": "Mencapai akurasi dokumentasi 99% dan meraih peringkat #1 Mitra Terbaik untuk Closing Proyek.",
           "tags": [
@@ -776,6 +1045,47 @@ export const translations = {
             {
               "label": "Peringkat Mitra",
               "val": "Juara #1"
+            },
+            {
+              "label": "Ketepatan Jadwal",
+              "val": "85% Ahead"
+            },
+            {
+              "label": "Tahapan Proyek",
+              "val": "Batch #1 - #3"
+            }
+          ]
+        },
+        {
+          "id": "power-bi-monitor",
+          "title": "Power BI Real-Time Project Monitor",
+          "category": "Analitik Data & Visualisasi",
+          "image": null,
+          "dashboardPurpose": "Dashboard eksekutif manajemen memantau progres harian, SLA vendor, dan status kendala lapangan berbasis sinkronisasi SPMS Telkomsel.",
+          "description": "Mengembangkan dashboard eksekutif real-time untuk pemantauan proyek Telkomsel, memungkinkan manajemen melacak progres rollout site, kinerja vendor, dan kendala lapangan secara langsung di berbagai wilayah.",
+          "impact": "Menggantikan laporan Excel mingguan manual dengan pelacakan otomatis real-time.",
+          "tags": [
+            "Power BI",
+            "SPMS",
+            "Data Modeling",
+            "KPI Tracking"
+          ],
+          "metrics": [
+            {
+              "label": "Mode Pelacakan",
+              "val": "Real-Time"
+            },
+            {
+              "label": "Sumber Data",
+              "val": "Telkomsel SPMS"
+            },
+            {
+              "label": "Siklus Laporan",
+              "val": "Mingguan -> Live"
+            },
+            {
+              "label": "Keputusan",
+              "val": "Berbasis Data"
             }
           ]
         }

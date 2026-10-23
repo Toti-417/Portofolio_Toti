@@ -14,17 +14,19 @@ const getSkillIcon = (name) => {
   if (!name) return null
   const norm = name.toLowerCase().trim()
   if (norm.includes('power bi')) return '/icon/Power BI.png'
-  if (norm.includes('mysql') || norm.includes('my sql')) return '/icon/my sql.png'
+  if (norm.includes('mysql') || norm.includes('my sql') || norm.includes('data')) return '/icon/my sql.png'
   if (norm.includes('python') || norm.includes('pyhton')) return '/icon/pyhton.png'
-  if (norm.includes('javascript') || norm.includes('java script') || norm.includes('java scrip')) return '/icon/java scrip.png'
+  if (norm.includes('javascript') || norm.includes('java script') || norm.includes('node') || norm.includes('api') || norm.includes('socket')) return '/icon/java scrip.png'
   if (norm.includes('n8n')) return '/icon/N8N.png'
   if (norm.includes('power automate')) return '/icon/power Automate.png'
+  if (norm.includes('ai') || norm.includes('llm') || norm.includes('agen')) return '/icon/icon data.png'
+  if (norm.includes('linux') || norm.includes('pm2') || norm.includes('gis') || norm.includes('leaflet') || norm.includes('spasial')) return '/icon/icon data.png'
   if (norm.includes('google workspace')) return '/icon/google workspace.png'
   if (norm.includes('sap')) return '/icon/SAP.png'
-  if (norm.includes('bts') || norm.includes('telecom') || norm.includes('telekomunikasi') || norm.includes('huawei')) return '/icon/BTS/telekomunikasi.png'
-  if (norm.includes('spms') || norm.includes('crq')) return '/icon/icon ranking.png'
-  if (norm.includes('eatp') || norm.includes('acceptance')) return '/icon/icon data.png'
-  return null
+  if (norm.includes('bts') || norm.includes('telecom') || norm.includes('telekomunikasi') || norm.includes('huawei') || norm.includes('ran') || norm.includes('rf') || norm.includes('ret') || norm.includes('prb') || norm.includes('spektrum')) return '/icon/BTS/telekomunikasi.png'
+  if (norm.includes('spms') || norm.includes('crq') || norm.includes('budget') || norm.includes('anggaran') || norm.includes('vendor') || norm.includes('sla')) return '/icon/icon ranking.png'
+  if (norm.includes('eatp') || norm.includes('acceptance') || norm.includes('autocad') || norm.includes('visio') || norm.includes('dossier')) return '/icon/icon data.png'
+  return '/icon/icon data.png'
 }
 
 export default function SkillsSection() {
@@ -76,9 +78,9 @@ export default function SkillsSection() {
                   return (
                     <div
                       key={skill.name}
-                      className="p-3 rounded-xl bg-slate-950/60 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors"
+                      className="p-2.5 sm:p-3 rounded-xl bg-slate-950/60 border border-white/5 flex items-center justify-between hover:border-white/20 transition-colors min-h-[52px]"
                     >
-                      <div className="flex items-center gap-2.5 min-w-0">
+                      <div className="flex items-center gap-2 sm:gap-2.5 min-w-0 flex-1 mr-2">
                         {skillIcon && (
                           <img
                             src={skillIcon}
@@ -86,11 +88,11 @@ export default function SkillsSection() {
                             className="w-5 h-5 object-contain rounded flex-shrink-0"
                           />
                         )}
-                        <span className="text-sm font-medium text-slate-200 truncate">
+                        <span className="text-xs sm:text-[13px] font-medium text-slate-200 leading-snug break-words">
                           <EditableText path={`skills.categories.${idx}.skills.${sIdx}.name`} value={skill.name} />
                         </span>
                       </div>
-                      <span className={`text-[11px] px-2 py-0.5 rounded font-mono flex-shrink-0 ${colorObj.tag}`}>
+                      <span className={`text-[10px] sm:text-[11px] px-2 py-0.5 rounded font-mono flex-shrink-0 self-center ${colorObj.tag}`}>
                         <EditableText path={`skills.categories.${idx}.skills.${sIdx}.tag`} value={skill.tag} />
                       </span>
                     </div>

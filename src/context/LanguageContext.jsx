@@ -76,90 +76,90 @@ export const translations = {
       "titleEnd": "Competencies",
       "subtitle": "Combining analytical toolsets with real-world telecommunications project engineering discipline.",
       "categories": [
-        {
-          "title": "Data & Analytics",
-          "skills": [
-            {
-              "name": "Power BI",
-              "tag": "Advanced"
-            },
-            {
-              "name": "MySQL",
-              "tag": "Proficient"
-            },
-            {
-              "name": "Python",
-              "tag": "Intermediate"
-            },
-            {
-              "name": "JavaScript",
-              "tag": "Intermediate"
-            }
-          ]
-        },
-        {
-          "title": "Automation & Workflow",
-          "skills": [
-            {
-              "name": "N8N",
-              "tag": "Advanced"
-            },
-            {
-              "name": "Power Automate",
-              "tag": "Advanced"
-            },
-            {
-              "name": "Google Workspace",
-              "tag": "Advanced"
-            },
-            {
-              "name": "SAP (Basic)",
-              "tag": "Fundamental"
-            }
-          ]
-        },
-        {
-          "title": "Telecom Systems",
-          "skills": [
-            {
-              "name": "Huawei iMAE Integration",
-              "tag": "Expert"
-            },
-            {
-              "name": "BTS Administration",
-              "tag": "Expert"
-            },
-            {
-              "name": "SPMS & CRQ",
-              "tag": "Expert"
-            },
-            {
-              "name": "eATP Acceptance",
-              "tag": "Expert"
-            }
-          ]
-        },
-        {
-          "title": "Engineering & PM",
-          "skills": [
-            {
-              "name": "AutoCAD & MS Visio",
-              "tag": "Advanced"
-            },
-            {
-              "name": "Budget Management",
-              "tag": "IDR 40B+"
-            },
-            {
-              "name": "Risk Assessment",
-              "tag": "Proficient"
-            },
-            {
-              "name": "Vendor & Contract",
-              "tag": "Expert"
-            }
-          ]
-        }
+                {
+                          "title": "Data & Analytics",
+                          "skills": [
+                                    {
+                                              "name": "Power BI & DAX",
+                                              "tag": "Advanced"
+                                    },
+                                    {
+                                              "name": "MySQL & Data Modeling",
+                                              "tag": "Proficient"
+                                    },
+                                    {
+                                              "name": "Python & Analytics",
+                                              "tag": "Intermediate"
+                                    },
+                                    {
+                                              "name": "GIS & Spatial Mapping",
+                                              "tag": "Proficient"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Backend & Automation",
+                          "skills": [
+                                    {
+                                              "name": "Node.js & REST APIs",
+                                              "tag": "Advanced"
+                                    },
+                                    {
+                                              "name": "N8N & Power Automate",
+                                              "tag": "Advanced"
+                                    },
+                                    {
+                                              "name": "AI & Agentic Pipelines",
+                                              "tag": "Proficient"
+                                    },
+                                    {
+                                              "name": "Linux Server & PM2",
+                                              "tag": "Proficient"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Telecom & RAN Systems",
+                          "skills": [
+                                    {
+                                              "name": "Huawei iMaster / iMAE",
+                                              "tag": "Expert"
+                                    },
+                                    {
+                                              "name": "BTS & eATP Acceptance",
+                                              "tag": "Expert"
+                                    },
+                                    {
+                                              "name": "RAN KPI Optimization",
+                                              "tag": "Expert"
+                                    },
+                                    {
+                                              "name": "RF Spectrum & RET Tilt",
+                                              "tag": "Expert"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Engineering & PM",
+                          "skills": [
+                                    {
+                                              "name": "SPMS & CRQ Governance",
+                                              "tag": "Expert"
+                                    },
+                                    {
+                                              "name": "Budget Mgmt (IDR 40B+)",
+                                              "tag": "Optimized"
+                                    },
+                                    {
+                                              "name": "Vendor & SLA Control",
+                                              "tag": "Expert"
+                                    },
+                                    {
+                                              "name": "AutoCAD & Dossier",
+                                              "tag": "Advanced"
+                                    }
+                          ]
+                }
       ]
     },
     "projects": {
@@ -392,10 +392,12 @@ export const translations = {
           "imageLabel": "Huawei MML Parser & Balmon Complaint Dossier"
         },
         {
-          "id": "blacksite-rollout",
-          "title": "Blacksite Batch Rollout & Document Tracker",
-          "category": "Project Engineering",
-          "image": null,
+      "id": "blacksite-rollout",
+      "title": "Blacksite Batch Rollout & Document Tracker",
+      "category": "Project Engineering",
+      "image": "./projects/dashboard_blacksite_tracker.png",
+      "secondaryImage": null,
+      "imageLabel": "Blacksite Rollout & eATP Deployment Verification Dashboard",
           "dashboardPurpose": "Executive rollout tracker monitoring end-to-end milestone progress from initial physical site deployment through eATP sign-off and final documentation closure.",
           "description": "Managed end-to-end execution tracking for Telkomsel Blacksite Batch #1–#3 & Re-engineering rollout projects from initial site deployment through eATP approval and final documentation closure.",
           "impact": "Achieved 99% documentation accuracy and ranked #1 Leading Partner for Project Closure.",
@@ -425,10 +427,12 @@ export const translations = {
           ]
         },
         {
-          "id": "power-bi-monitor",
-          "title": "Power BI Real-Time Project Monitor",
-          "category": "Data Analytics & Visualization",
-          "image": null,
+      "id": "power-bi-monitor",
+      "title": "Power BI Real-Time Project Monitor",
+      "category": "Data Analytics & Visualization",
+      "image": "./projects/dashboard_powerbi_monitor.png",
+      "secondaryImage": null,
+      "imageLabel": "Executive Telecom Project Monitoring Dashboard (Power BI)",
           "dashboardPurpose": "Executive intelligence dashboard consolidating Telkomsel SPMS database records into interactive management KPIs.",
           "description": "Developed a real-time executive dashboard for Telkomsel project monitoring, enabling leadership to track site rollout progress, vendor performance, and milestone bottlenecks live across multiple regions.",
           "impact": "Replaced manual weekly Excel reports with live automated tracking.",
@@ -710,90 +714,90 @@ export const translations = {
       "titleEnd": "Manajemen Utama",
       "subtitle": "Menggabungkan perangkat analitik data modern dengan disiplin teknik proyek telekomunikasi.",
       "categories": [
-        {
-          "title": "Data & Analitik",
-          "skills": [
-            {
-              "name": "Power BI",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "MySQL",
-              "tag": "Mahir"
-            },
-            {
-              "name": "Python",
-              "tag": "Menengah"
-            },
-            {
-              "name": "JavaScript",
-              "tag": "Menengah"
-            }
-          ]
-        },
-        {
-          "title": "Otomasi & Alur Kerja",
-          "skills": [
-            {
-              "name": "N8N",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "Power Automate",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "Google Workspace",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "SAP (Dasar)",
-              "tag": "Dasar"
-            }
-          ]
-        },
-        {
-          "title": "Sistem Telekomunikasi",
-          "skills": [
-            {
-              "name": "Integrasi Huawei iMAE",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Administrasi BTS",
-              "tag": "Ahli"
-            },
-            {
-              "name": "SPMS & CRQ",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Verifikasi eATP",
-              "tag": "Ahli"
-            }
-          ]
-        },
-        {
-          "title": "Teknik & Manajemen",
-          "skills": [
-            {
-              "name": "AutoCAD & MS Visio",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "Manajemen Anggaran",
-              "tag": "IDR 40B+"
-            },
-            {
-              "name": "Analisis Risiko",
-              "tag": "Mahir"
-            },
-            {
-              "name": "Manajemen Vendor & Kontrak",
-              "tag": "Ahli"
-            }
-          ]
-        }
+                {
+                          "title": "Data & Analitik",
+                          "skills": [
+                                    {
+                                              "name": "Power BI & DAX",
+                                              "tag": "Lanjutan"
+                                    },
+                                    {
+                                              "name": "MySQL & Arsitektur Data",
+                                              "tag": "Mahir"
+                                    },
+                                    {
+                                              "name": "Python & Analitik Data",
+                                              "tag": "Menengah"
+                                    },
+                                    {
+                                              "name": "Pemetaan Spasial GIS",
+                                              "tag": "Mahir"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Backend & Otomasi",
+                          "skills": [
+                                    {
+                                              "name": "Node.js & REST APIs",
+                                              "tag": "Lanjutan"
+                                    },
+                                    {
+                                              "name": "N8N & Power Automate",
+                                              "tag": "Lanjutan"
+                                    },
+                                    {
+                                              "name": "Integrasi AI & Pipeline LLM",
+                                              "tag": "Mahir"
+                                    },
+                                    {
+                                              "name": "Server Linux & PM2",
+                                              "tag": "Mahir"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Sistem Telekomunikasi & RAN",
+                          "skills": [
+                                    {
+                                              "name": "Huawei iMaster / iMAE",
+                                              "tag": "Ahli"
+                                    },
+                                    {
+                                              "name": "Administrasi BTS & eATP",
+                                              "tag": "Ahli"
+                                    },
+                                    {
+                                              "name": "Optimasi KPI RAN",
+                                              "tag": "Ahli"
+                                    },
+                                    {
+                                              "name": "Spektrum RF & Audit RET",
+                                              "tag": "Ahli"
+                                    }
+                          ]
+                },
+                {
+                          "title": "Teknik & Manajemen",
+                          "skills": [
+                                    {
+                                              "name": "Tata Kelola SPMS & CRQ",
+                                              "tag": "Ahli"
+                                    },
+                                    {
+                                              "name": "Manajemen Anggaran (40M+)",
+                                              "tag": "Optimal"
+                                    },
+                                    {
+                                              "name": "Kontrol Vendor & SLA",
+                                              "tag": "Ahli"
+                                    },
+                                    {
+                                              "name": "AutoCAD & Dokumen Dossier",
+                                              "tag": "Lanjutan"
+                                    }
+                          ]
+                }
       ]
     },
     "projects": {
@@ -1026,10 +1030,12 @@ export const translations = {
           "imageLabel": "Dokumen Laporan Balmon & Audit Log MML Huawei"
         },
         {
-          "id": "blacksite-rollout",
-          "title": "Blacksite Batch Rollout & Document Tracker",
-          "category": "Teknik Proyek",
-          "image": null,
+      "id": "blacksite-rollout",
+      "title": "Blacksite Batch Rollout & Document Tracker",
+      "category": "Teknik Proyek",
+      "image": "./projects/dashboard_blacksite_tracker.png",
+      "secondaryImage": null,
+      "imageLabel": "Dashboard Pelacakan Rollout Blacksite & Verifikasi eATP",
           "dashboardPurpose": "Sistem pelacak milestone proyek rollout dari awal instalasi lapangan, pengetesan eATP, hingga penutupan dokumen administratif mitra.",
           "description": "Mengelola pelacakan eksekusi proyek rollout Telkomsel Blacksite Batch #1–#3 & Re-engineering dari awal pengiriman site hingga persetujuan eATP dan penutupan dokumentasi akhir.",
           "impact": "Mencapai akurasi dokumentasi 99% dan meraih peringkat #1 Mitra Terbaik untuk Closing Proyek.",
@@ -1059,10 +1065,12 @@ export const translations = {
           ]
         },
         {
-          "id": "power-bi-monitor",
-          "title": "Power BI Real-Time Project Monitor",
-          "category": "Analitik Data & Visualisasi",
-          "image": null,
+      "id": "power-bi-monitor",
+      "title": "Power BI Real-Time Project Monitor",
+      "category": "Analitik Data & Visualisasi",
+      "image": "./projects/dashboard_powerbi_monitor.png",
+      "secondaryImage": null,
+      "imageLabel": "Dashboard Eksekutif Monitoring Proyek Telkomsel (Power BI)",
           "dashboardPurpose": "Dashboard eksekutif manajemen memantau progres harian, SLA vendor, dan status kendala lapangan berbasis sinkronisasi SPMS Telkomsel.",
           "description": "Mengembangkan dashboard eksekutif real-time untuk pemantauan proyek Telkomsel, memungkinkan manajemen melacak progres rollout site, kinerja vendor, dan kendala lapangan secara langsung di berbagai wilayah.",
           "impact": "Menggantikan laporan Excel mingguan manual dengan pelacakan otomatis real-time.",
@@ -1281,7 +1289,9 @@ export function LanguageProvider({ children }) {
   const [saveStatus, setSaveStatus] = useState(null) // null | 'saving' | 'success' | 'error'
 
   const [allTranslations, setAllTranslations] = useState(() => {
-    const saved = localStorage.getItem('toti_live_translations')
+    // Reset old translations cache to load new skills
+    localStorage.removeItem('toti_live_translations')
+    const saved = localStorage.getItem('toti_live_translations_v2')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

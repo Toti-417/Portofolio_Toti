@@ -5,6 +5,7 @@ export default function Navbar({ sections, activeSection }) {
   const { lang, toggleLanguage, t } = useLanguage()
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [cvMenuOpen, setCvMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {

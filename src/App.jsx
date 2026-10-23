@@ -3,7 +3,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import CustomCursor from './components/Cursor/CustomCursor'
 import Navbar from './components/Navigation/Navbar'
 import ParticleField from './components/Background/ParticleField'
-import LiveEditorToolbar from './components/LiveEditorToolbar'
 
 import CoverSection from './sections/CoverSection'
 import HeroSection from './sections/HeroSection'
@@ -108,9 +107,7 @@ export default function App() {
         {/* Navigation Bar (Appears only after entering) */}
         <Navbar sections={sections} activeSection={activeSection} />
 
-        {/* Live Visual Editor Dock */}
-        <LiveEditorToolbar />
-
+        
         {/* Main Content Sections */}
         <main className="relative z-10">
           <HeroSection />

@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import CustomCursor from './components/Cursor/CustomCursor'
 import Navbar from './components/Navigation/Navbar'
 import ParticleField from './components/Background/ParticleField'
 import LiveEditorToolbar from './components/LiveEditorToolbar'
 
+import CoverSection from './sections/CoverSection'
 import HeroSection from './sections/HeroSection'
 import AboutSection from './sections/AboutSection'
 import SkillsSection from './sections/SkillsSection'
@@ -27,6 +29,7 @@ const sections = [
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('')
+  const [showIntroBanner, setShowIntroBanner] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,37 +51,79 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Allow scrolling to also dismiss the intro banner
+  useEffect(() => {
+    if (!showIntroBanner) return
+
+    const handleWheel = (e) => {
+      if (Math.abs(e.deltaY) > 20) {
+        setShowIntroBanner(false)
+      }
+    }
+
+    const handleKeyDown = (e) => {
+      if (['Space', 'Enter', 'ArrowDown', 'PageDown'].includes(e.code)) {
+        setShowIntroBanner(false)
+      }
+    }
+
+    window.addEventListener('wheel', handleWheel, { passive: true })
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('wheel', handleWheel)
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [showIntroBanner])
+
   return (
     <div className="relative min-h-screen bg-[#070913] text-slate-100 font-sans selection:bg-teal-500/30 selection:text-teal-200 overflow-x-hidden">
       {/* Sleek Custom Cursor */}
       <CustomCursor />
 
-      {/* 3D Ambient Particle Mesh Background */}
+      {/* 3D Ambient WebGL Fluid Smoke Shader Background (Always active & interactive) */}
       <ParticleField />
 
       {/* Radial Glow Ambient Effect */}
       <div className="fixed inset-0 bg-radial-gradient pointer-events-none z-0" />
-      <div className="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0" />
+      <div className="fixed inset-0 bg-grid-pattern pointer-events-none opacity-15 z-0" />
 
-      {/* Navigation */}
-      <Navbar sections={sections} activeSection={activeSection} />
+      {/* Pure Fullscreen Magazine Intro Cover Banner */}
+      <AnimatePresence>
+        {showIntroBanner && (
+          <CoverSection onEnter={() => setShowIntroBanner(false)} />
+        )}
+      </AnimatePresence>
 
-      {/* Live Visual Editor Dock */}
-      <LiveEditorToolbar />
+      {/* Main Website Contents: Completely hidden during intro so zero silhouettes bleed through */}
+      <motion.div
+        initial={false}
+        animate={{
+          opacity: showIntroBanner ? 0 : 1,
+          pointerEvents: showIntroBanner ? 'none' : 'auto',
+          transition: { duration: 0.6, delay: showIntroBanner ? 0 : 0.2 }
+        }}
+        className={showIntroBanner ? 'hidden' : 'block'}
+      >
+        {/* Navigation Bar (Appears only after entering) */}
+        <Navbar sections={sections} activeSection={activeSection} />
 
-      {/* Main Content Layout */}
-      <main className="relative z-10">
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <FieldGallerySection />
-        <CertificatesSection />
-        <WhyMeSection />
-        <ContactSection />
-      </main>
+        {/* Live Visual Editor Dock */}
+        <LiveEditorToolbar />
+
+        {/* Main Content Sections */}
+        <main className="relative z-10">
+          <HeroSection />
+          <AboutSection />
+          <SkillsSection />
+          <ProjectsSection />
+          <ExperienceSection />
+          <FieldGallerySection />
+          <CertificatesSection />
+          <WhyMeSection />
+          <ContactSection />
+        </main>
+      </motion.div>
     </div>
   )
 }
-

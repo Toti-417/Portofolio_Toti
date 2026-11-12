@@ -13,11 +13,57 @@ const styles = [
   { accent: 'from-cyan-500/20 via-teal-500/10 to-transparent', border: 'border-cyan-500/40', glow: 'hover:shadow-cyan-500/20' },
 ]
 
+const WEB3_PROJECTS = [
+  {
+    id: 'web3-telemetry-tracker',
+    category: 'Web3 Telemetry & RPC',
+    title: 'Web3 Multi-Chain Telemetry & Whale Alert Engine',
+    descriptionId:
+      'Dashboard pemantauan node JSON-RPC real-time lintas Solana Mainnet (~1,300+ TPS), Base L2 (batch latency & blob gas), dan Ethereum Mainnet, dilengkapi radar transaksi whale (> $100k USD).',
+    descriptionEn:
+      'Real-time JSON-RPC node telemetry dashboard across Solana Mainnet (~1,300+ TPS), Base L2 (batch latency & blob gas), and Ethereum Mainnet with a live Whale Transaction Alert Radar (> $100k USD).',
+    impactId: 'Zero-backend edge telemetry menghubungkan metodologi KPI telekomunikasi dengan monitoring blockchain real-time.',
+    impactEn: 'Zero-backend edge telemetry bridging telecom KPI auditing methodologies with live multi-chain blockchain monitoring.',
+    tags: ['React', 'Vite', 'Framer Motion', 'JSON-RPC', 'Solana', 'Base L2', 'Ethereum'],
+    liveUrl: 'https://web3-telemetry-tracker.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/web3-telemetry-tracker'
+  },
+  {
+    id: 'onchain-kyt-investigator',
+    category: 'Web3 KYT / AML & Asset Recovery',
+    title: 'On-Chain KYT & Asset Recovery Investigator',
+    descriptionId:
+      'Engine investigasi AML/KYT dan asset recovery untuk melacak aliran dana wallet EVM (Ethereum/Base) & Solana via Blockscout API & JSON-RPC, lengkap dengan Risk Score (0–100) dan export Compliance Dossier.',
+    descriptionEn:
+      'AML/KYT & asset recovery investigation dashboard querying Blockscout API & Solana JSON-RPC for automated Risk Scoring (0–100), peel-chain/velocity red-flag detection, and Compliance Case Dossier export.',
+    impactId: 'Otomatisasi triage kepatuhan on-chain & export laporan audit PDF/JSON dalam hitungan detik.',
+    impactEn: 'Automates on-chain compliance triage and one-click PDF/JSON audit dossier generation.',
+    tags: ['React', 'Framer Motion', 'Blockscout API', 'KYT/AML', 'Solana RPC', 'PDF/JSON'],
+    liveUrl: 'https://onchain-kyt-investigator.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/onchain-kyt-investigator'
+  },
+  {
+    id: 'web3-ops-incident-console',
+    category: 'Web3 Support & Incident Ops',
+    title: 'Web3 Protocol Support & Incident Triage Console',
+    descriptionId:
+      'Konsol support engineering untuk cek latensi/kesehatan RPC real-time, debug transaksi gagal/revert on-chain, serta generator balasan user (Discord/Intercom) dan escalation ticket.',
+    descriptionEn:
+      'Support engineering console with live RPC latency monitoring, on-chain failed/revert TX debugging, and one-click Discord/Intercom user reply & escalation ticket generation.',
+    impactId: 'Mempercepat troubleshooting insiden TX user dan eskalasi tim engineering lintas chain.',
+    impactEn: 'Accelerates user TX incident troubleshooting and cross-chain engineering escalation.',
+    tags: ['React', 'Framer Motion', 'RPC Health', 'TX Debugger', 'Support Ops'],
+    liveUrl: 'https://web3-ops-incident-console.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/web3-ops-incident-console'
+  }
+]
+
 export default function ProjectsSection() {
   const { t, lang } = useLanguage()
   const projectsT = t.projects
   const [selectedProject, setSelectedProject] = useState(null)
   const [activeImageTab, setActiveImageTab] = useState('primary') // 'primary' | 'secondary'
+  const [projectCategory, setProjectCategory] = useState('all') // 'all' | 'non-web3' | 'web3'
 
   const openProject = (project) => {
     setSelectedProject(project)
@@ -41,112 +87,227 @@ export default function ProjectsSection() {
         <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
           <EditableText path="projects.subtitle" value={projectsT.subtitle} multiline />
         </p>
-      </div>
 
-      {/* Grid of Projects */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projectsT.items.map((project, idx) => {
-          const styleObj = styles[idx % styles.length]
-          return (
-            <motion.div
-              key={project.id || idx}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: (idx % 6) * 0.1 }}
-              className={`glass-card glass-card-hover rounded-2xl p-5 border ${styleObj.border} bg-gradient-to-b ${styleObj.accent} flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300`}
+        {/* Category Filter Tabs (Non-Web3 vs Web3) */}
+        <div className="pt-4 flex flex-wrap items-center justify-center gap-2">
+          {[
+            { id: 'all', label: lang === 'id' ? 'Semua Proyek' : 'All Projects' },
+            { id: 'non-web3', label: lang === 'id' ? 'Profesional (Non-Web3)' : 'Professional (Non-Web3)' },
+            { id: 'web3', label: 'Web3 & On-Chain' }
+          ].map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setProjectCategory(tab.id)}
+              className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all border ${
+                projectCategory === tab.id
+                  ? 'bg-teal-500/20 border-teal-400 text-teal-300 font-bold shadow-sm'
+                  : 'bg-slate-900/70 border-white/10 text-slate-400 hover:text-white hover:border-white/25'
+              }`}
             >
-              <div>
-                {/* Category & Project Index */}
-                <div className="flex items-center justify-between mb-3.5">
-                  <span className="text-[11px] font-mono text-teal-300 bg-teal-500/10 px-2.5 py-1 rounded-md border border-teal-500/30">
-                    {project.category}
-                  </span>
-                  <span className="text-[11px] text-slate-400 font-mono">
-                    PROJ-0{idx + 1}
-                  </span>
-                </div>
-
-                {/* Screenshot / Proof Banner (if available) */}
-                {project.image ? (
-                  <div
-                    onClick={() => openProject(project)}
-                    className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 cursor-pointer bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20"
-                  >
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-90 group-hover:opacity-60 transition-opacity"></div>
-                    <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-                      <span>{lang === 'id' ? 'BUKTI DASHBOARD' : 'LIVE DASHBOARD'}</span>
-                    </div>
-                    {project.secondaryImage && (
-                      <div className="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-black/70 backdrop-blur-sm border border-white/10 text-[10px] font-mono text-slate-300">
-                        {lang === 'id' ? '2 Tampilan Bukti' : '2 Views Available'}
-                      </div>
-                    )}
-                  </div>
-                ) : null}
-
-                {/* Title */}
-                <h3 className="text-lg font-bold text-slate-100 mb-2.5 group-hover:text-teal-300 transition-colors line-clamp-2">
-                  {project.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
-                  {project.description}
-                </p>
-
-                {/* Impact Callout */}
-                <div className="p-3 rounded-xl bg-slate-950/60 border border-white/5 mb-4">
-                  <span className="text-[11px] font-semibold text-amber-400 block mb-0.5">
-                    {projectsT.impactLabel}
-                  </span>
-                  <span className="text-xs text-slate-300 line-clamp-2">
-                    {project.impact}
-                  </span>
-                </div>
-              </div>
-
-              <div>
-                {/* Tech Tags */}
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  {project.tags.slice(0, 4).map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-white/10 text-slate-300"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                  {project.tags.length > 4 && (
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900/60 text-slate-400">
-                      +{project.tags.length - 4}
-                    </span>
-                  )}
-                </div>
-
-                {/* Action Button */}
-                <button
-                  onClick={() => openProject(project)}
-                  className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-teal-500/40 text-xs font-medium text-slate-200 transition-all flex items-center justify-center gap-2 group-hover:text-teal-300 shadow-sm"
-                >
-                  <span>{project.image ? (lang === 'id' ? 'Lihat Bukti & Detail Dashboard' : 'View Dashboard Proof & Details') : projectsT.viewDetails}</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="5" y1="12" x2="19" y2="12" />
-                    <polyline points="12 5 19 12 12 19" />
-                  </svg>
-                </button>
-              </div>
-            </motion.div>
-          )
-        })}
+              {tab.label}
+            </button>
+          ))}
+        </div>
       </div>
+
+      {/* Section 1: Professional Non-Web3 Projects */}
+      {(projectCategory === 'all' || projectCategory === 'non-web3') && (
+        <div className={projectCategory === 'all' ? 'mb-16' : ''}>
+          <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-7">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-100 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-teal-400"></span>
+              {lang === 'id' ? 'Proyek Profesional — Telecom, Data & Automation (Non-Web3)' : 'Professional Projects — Telecom, Data & Automation (Non-Web3)'}
+            </h3>
+            <span className="text-xs font-mono text-slate-400">{projectsT.items.length} Projects</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projectsT.items.map((project, idx) => {
+              const styleObj = styles[idx % styles.length]
+              return (
+                <motion.div
+                  key={project.id || idx}
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: (idx % 6) * 0.1 }}
+                  className={`glass-card glass-card-hover rounded-2xl p-5 border ${styleObj.border} bg-gradient-to-b ${styleObj.accent} flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-3.5">
+                      <span className="text-[11px] font-mono text-teal-300 bg-teal-500/10 px-2.5 py-1 rounded-md border border-teal-500/30">
+                        {project.category}
+                      </span>
+                      <span className="text-[11px] text-slate-400 font-mono">
+                        PROJ-0{idx + 1}
+                      </span>
+                    </div>
+
+                    {project.image ? (
+                      <div
+                        onClick={() => openProject(project)}
+                        className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 cursor-pointer bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20"
+                      >
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-90 group-hover:opacity-60 transition-opacity"></div>
+                        <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                          <span>{lang === 'id' ? 'BUKTI DASHBOARD' : 'LIVE DASHBOARD'}</span>
+                        </div>
+                        {project.secondaryImage && (
+                          <div className="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded bg-black/70 backdrop-blur-sm border border-white/10 text-[10px] font-mono text-slate-300">
+                            {lang === 'id' ? '2 Tampilan Bukti' : '2 Views Available'}
+                          </div>
+                        )}
+                      </div>
+                    ) : null}
+
+                    <h3 className="text-lg font-bold text-slate-100 mb-2.5 group-hover:text-teal-300 transition-colors line-clamp-2">
+                      {project.title}
+                    </h3>
+
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4 line-clamp-3">
+                      {project.description}
+                    </p>
+
+                    <div className="p-3 rounded-xl bg-slate-950/60 border border-white/5 mb-4">
+                      <span className="text-[11px] font-semibold text-amber-400 block mb-0.5">
+                        {projectsT.impactLabel}
+                      </span>
+                      <span className="text-xs text-slate-300 line-clamp-2">
+                        {project.impact}
+                      </span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex flex-wrap gap-1.5 mb-5">
+                      {project.tags.slice(0, 4).map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-white/10 text-slate-300"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                      {project.tags.length > 4 && (
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900/60 text-slate-400">
+                          +{project.tags.length - 4}
+                        </span>
+                      )}
+                    </div>
+
+                    <button
+                      onClick={() => openProject(project)}
+                      className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-teal-500/40 text-xs font-medium text-slate-200 transition-all flex items-center justify-center gap-2 group-hover:text-teal-300 shadow-sm"
+                    >
+                      <span>{project.image ? (lang === 'id' ? 'Lihat Bukti & Detail Dashboard' : 'View Dashboard Proof & Details') : projectsT.viewDetails}</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </button>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Section 2: Web3 & On-Chain Projects */}
+      {(projectCategory === 'all' || projectCategory === 'web3') && (
+        <div>
+          <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-7">
+            <h3 className="text-lg sm:text-xl font-bold text-slate-100 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-purple-400"></span>
+              {lang === 'id' ? 'Proyek Web3 — On-Chain Telemetry, KYT & Incident Ops' : 'Web3 Projects — On-Chain Telemetry, KYT & Incident Ops'}
+            </h3>
+            <span className="text-xs font-mono text-purple-300">{WEB3_PROJECTS.length} Live Apps</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {WEB3_PROJECTS.map((project, idx) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="glass-card glass-card-hover rounded-2xl p-5 border border-purple-500/40 bg-gradient-to-b from-purple-500/15 via-cyan-500/5 to-transparent flex flex-col justify-between relative group hover:shadow-xl transition-all duration-300"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3.5">
+                    <span className="text-[11px] font-mono text-purple-300 bg-purple-500/10 px-2.5 py-1 rounded-md border border-purple-500/30">
+                      {project.category}
+                    </span>
+                    <span className="text-[11px] text-emerald-400 font-mono flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      LIVE
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold text-slate-100 mb-2.5 group-hover:text-purple-300 transition-colors">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed mb-4">
+                    {lang === 'id' ? project.descriptionId : project.descriptionEn}
+                  </p>
+
+                  <div className="p-3 rounded-xl bg-slate-950/60 border border-white/5 mb-4">
+                    <span className="text-[11px] font-semibold text-teal-400 block mb-0.5">
+                      {projectsT.impactLabel}
+                    </span>
+                    <span className="text-xs text-slate-300">
+                      {lang === 'id' ? project.impactId : project.impactEn}
+                    </span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex flex-wrap gap-1.5 mb-5">
+                    {project.tags.slice(0, 5).map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-900 border border-white/10 text-slate-300"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-2">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 py-2.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/40 text-xs font-semibold text-purple-200 transition-all flex items-center justify-center gap-1.5"
+                    >
+                      <span>{lang === 'id' ? 'Buka Live App' : 'Open Live App'}</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-xs font-mono text-slate-300 transition-all flex items-center justify-center"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Project Detail Modal with Dashboard Screenshot Proof */}
       <AnimatePresence>

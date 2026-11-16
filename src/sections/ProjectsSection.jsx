@@ -15,44 +15,86 @@ const styles = [
 
 const WEB3_PROJECTS = [
   {
-    id: 'web3-telemetry-tracker',
-    category: 'Web3 Telemetry & RPC',
-    title: 'Web3 Multi-Chain Telemetry & Whale Alert Engine',
+    id: 'web3-support-copilot',
+    category: 'Web3 Technical Support & CX',
+    title: 'Web3 Support Copilot (Coinbase Design System)',
     descriptionId:
-      'Dashboard pemantauan node JSON-RPC real-time lintas Solana Mainnet (~1,300+ TPS), Base L2 (batch latency & blob gas), dan Ethereum Mainnet, dilengkapi radar transaksi whale (> $100k USD).',
+      'Copilot diagnosa transaksi on-chain otomatis untuk agen Technical Support L1/L2. Mampu menganalisa kegagalan transaksi (Out of Gas, Slippage Exceeded, Nonce Gap, TPU Drop), visualisasi latensi RPC real-time, dan generator tiket Zendesk/Discord dalam hitungan detik.',
     descriptionEn:
-      'Real-time JSON-RPC node telemetry dashboard across Solana Mainnet (~1,300+ TPS), Base L2 (batch latency & blob gas), and Ethereum Mainnet with a live Whale Transaction Alert Radar (> $100k USD).',
+      'Automated on-chain transaction failure diagnostic copilot for L1/L2 Technical Support & CX engineers. Decodes Out-of-Gas, Slippage, Nonce Gaps, and Solana TPU drops, featuring real-time RPC telemetry and an omnichannel Zendesk/Discord response generator.',
+    impactId: 'Memangkas waktu triage insiden user dari 15 menit menjadi < 30 detik dengan penjelasan non-teknis yang ramah pengguna.',
+    impactEn: 'Reduces user transaction incident triage time from 15 mins to < 30 secs with user-friendly omnichannel response generation.',
+    tags: ['React', 'Coinbase Theme', 'On-Chain Diagnostics', 'Zendesk Copilot', 'EVM & Solana', 'Bispro Architecture'],
+    liveUrl: 'https://web3-support-copilot.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/web3-support-copilot'
+  },
+  {
+    id: 'crosschain-reconciliation-portal',
+    category: 'Exchange Settlement & Recovery',
+    title: 'Cross-Chain Reconciliation Portal (Binance Ops Standard)',
+    descriptionId:
+      'Portal audit dan rekonsiliasi deposit exchange untuk menangani Missing Memo/Tag (TRON USDT, TON, XRP), salah chain, dan wrong-token recovery. Dilengkapi verifikasi tanda tangan kriptografi EIP-712 dan export CSV audit harian.',
+    descriptionEn:
+      'Institutional deposit reconciliation portal resolving Missing Memo/Tag incidents (TRON USDT, TON, XRP) and wrong-chain sweeps. Features EIP-712 cryptographic ownership signature verification and automated daily CSV settlement export.',
+    impactId: 'Otomatisasi pemulihan dana deposit nyasar dengan verifikasi kriptografis tanpa mengekspos private key exchange.',
+    impactEn: 'Automates misrouted deposit recovery with tamper-proof cryptographic ownership verification without hot wallet exposure.',
+    tags: ['React', 'Binance Ops Standard', 'Missing Memo Recovery', 'EIP-712 Signatures', 'TRON/TON/XRP', 'Audit Trail'],
+    liveUrl: 'https://crosschain-reconciliation-portal.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/crosschain-reconciliation-portal'
+  },
+  {
+    id: 'rpc-node-sentinel',
+    category: 'SRE & Node Telemetry',
+    title: 'RPC Node Sentinel & Drift Monitor (Linear/Datadog Theme)',
+    descriptionId:
+      'Sistem pemantauan keandalan node RPC multi-chain (Alchemy, Infura, QuickNode, Ankr, Helius) dengan deteksi block drift/head desync, visualisasi live packet waveform, dan webhook incident dispatcher (Discord/Telegram/PagerDuty).',
+    descriptionEn:
+      'Multi-chain RPC latency benchmarking and block drift monitoring system across 6 major providers (Alchemy, Infura, QuickNode, Ankr, Helius) with live waveform packet visualizer and webhook incident dispatcher.',
+    impactId: 'Mendeteksi desinkronisasi node validator dan memicu auto-failover sebelum terjadi kegagalan transaksi massal pada dApp.',
+    impactEn: 'Detects validator head desync in under 400ms and triggers automatic webhook alerts to prevent user-facing dApp transaction drops.',
+    tags: ['React', 'Linear/Datadog SRE', 'RPC Benchmarking', 'Block Drift Detector', 'Packet Stream', 'Webhook Dispatcher'],
+    liveUrl: 'https://rpc-node-sentinel.vercel.app',
+    repoUrl: 'https://github.com/Toti-417/rpc-node-sentinel'
+  },
+  {
+    id: 'web3-telemetry-tracker',
+    category: 'Web3 Telemetry & Data',
+    title: 'Web3 Multi-Chain Telemetry & Whale Radar (Chainlink Terminal)',
+    descriptionId:
+      'Dashboard pemantauan node JSON-RPC real-time lintas Solana Mainnet (~2,800+ TPS), Base L2, dan Ethereum Mainnet, dilengkapi radar transaksi whale (> $100k USD), filter multi-kriteria, dan export data audit CSV/JSON.',
+    descriptionEn:
+      'Real-time JSON-RPC node telemetry dashboard across Solana Mainnet (~2,800+ TPS), Base L2, and Ethereum Mainnet with a live Whale Transaction Alert Radar (> $100k USD), multi-criteria filters, and CSV/JSON export.',
     impactId: 'Zero-backend edge telemetry menghubungkan metodologi KPI telekomunikasi dengan monitoring blockchain real-time.',
     impactEn: 'Zero-backend edge telemetry bridging telecom KPI auditing methodologies with live multi-chain blockchain monitoring.',
-    tags: ['React', 'Vite', 'Framer Motion', 'JSON-RPC', 'Solana', 'Base L2', 'Ethereum'],
+    tags: ['React', 'Chainlink Terminal', 'JSON-RPC', 'Whale Radar', 'Solana', 'Base L2', 'CSV/JSON Export'],
     liveUrl: 'https://web3-telemetry-tracker.vercel.app',
     repoUrl: 'https://github.com/Toti-417/web3-telemetry-tracker'
   },
   {
     id: 'onchain-kyt-investigator',
-    category: 'Web3 KYT / AML & Asset Recovery',
-    title: 'On-Chain KYT & Asset Recovery Investigator',
+    category: 'AML, KYT & Forensics',
+    title: 'On-Chain KYT & Asset Recovery (Chainalysis Forensics Theme)',
     descriptionId:
-      'Engine investigasi AML/KYT dan asset recovery untuk melacak aliran dana wallet EVM (Ethereum/Base) & Solana via Blockscout API & JSON-RPC, lengkap dengan Risk Score (0–100) dan export Compliance Dossier.',
+      'Engine investigasi AML/KYT dan asset recovery untuk melacak aliran dana wallet EVM (Ethereum/Base) & Solana via Blockscout API & JSON-RPC, lengkap dengan Risk Score (0–100), flag mixer/darknet, dan export Compliance Dossier.',
     descriptionEn:
-      'AML/KYT & asset recovery investigation dashboard querying Blockscout API & Solana JSON-RPC for automated Risk Scoring (0–100), peel-chain/velocity red-flag detection, and Compliance Case Dossier export.',
+      'AML/KYT & asset recovery investigation dashboard querying Blockscout API & Solana JSON-RPC for automated Risk Scoring (0–100), mixer/OFAC red-flag detection, and official Compliance Case Dossier export.',
     impactId: 'Otomatisasi triage kepatuhan on-chain & export laporan audit PDF/JSON dalam hitungan detik.',
     impactEn: 'Automates on-chain compliance triage and one-click PDF/JSON audit dossier generation.',
-    tags: ['React', 'Framer Motion', 'Blockscout API', 'KYT/AML', 'Solana RPC', 'PDF/JSON'],
+    tags: ['React', 'Chainalysis Forensics', 'Blockscout API', 'KYT/AML', 'OFAC Screening', 'Compliance Dossier'],
     liveUrl: 'https://onchain-kyt-investigator.vercel.app',
     repoUrl: 'https://github.com/Toti-417/onchain-kyt-investigator'
   },
   {
     id: 'web3-ops-incident-console',
-    category: 'Web3 Support & Incident Ops',
-    title: 'Web3 Protocol Support & Incident Triage Console',
+    category: 'Protocol Incident Operations',
+    title: 'Web3 Protocol Support & Incident Triage (Uniswap Ops Console)',
     descriptionId:
-      'Konsol support engineering untuk cek latensi/kesehatan RPC real-time, debug transaksi gagal/revert on-chain, serta generator balasan user (Discord/Intercom) dan escalation ticket.',
+      'Konsol support engineering untuk cek latensi/kesehatan RPC real-time, debug transaksi gagal/revert on-chain, serta generator balasan user (Zendesk / Discord / Jira) dan escalation ticket lintas chain.',
     descriptionEn:
-      'Support engineering console with live RPC latency monitoring, on-chain failed/revert TX debugging, and one-click Discord/Intercom user reply & escalation ticket generation.',
+      'Support engineering console with live RPC latency monitoring, on-chain failed/revert TX debugging, and one-click omnichannel user replies (Zendesk/Discord) & Jira engineering escalation generation.',
     impactId: 'Mempercepat troubleshooting insiden TX user dan eskalasi tim engineering lintas chain.',
     impactEn: 'Accelerates user TX incident troubleshooting and cross-chain engineering escalation.',
-    tags: ['React', 'Framer Motion', 'RPC Health', 'TX Debugger', 'Support Ops'],
+    tags: ['React', 'Uniswap Ops Theme', 'RPC Health', 'TX Debugger', 'Omnichannel Copilot', 'SLA Tracking'],
     liveUrl: 'https://web3-ops-incident-console.vercel.app',
     repoUrl: 'https://github.com/Toti-417/web3-ops-incident-console'
   }

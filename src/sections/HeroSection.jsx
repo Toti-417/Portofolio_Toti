@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 import EditableText from '../components/EditableText'
@@ -8,6 +8,27 @@ export default function HeroSection() {
   const heroT = t.hero
 
   const [countValues, setCountValues] = useState([0, 0, 0, 0])
+  const [cvMenuOpen, setCvMenuOpen] = useState(false)
+  const heroCvRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (heroCvRef.current && !heroCvRef.current.contains(event.target)) {
+        setCvMenuOpen(false)
+      }
+    }
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setCvMenuOpen(false)
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [])
 
   const statsData = [
     { value: 40, prefix: 'IDR ', suffix: 'B+', label: heroT.stats[0].label, sub: heroT.stats[0].sub },
@@ -87,38 +108,56 @@ export default function HeroSection() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
 
-            <div className="relative group/cv">
+            <div className="relative group/cv" ref={heroCvRef}>
               <button
                 type="button"
-                className="px-6 py-3.5 rounded-xl font-medium text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-teal-500/40 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2"
+                onClick={() => setCvMenuOpen(prev => !prev)}
+                aria-expanded={cvMenuOpen}
+                className={`px-6 py-3.5 rounded-xl font-medium text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-200 border hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2 cursor-pointer select-none ${
+                  cvMenuOpen ? 'border-teal-400 text-teal-300 shadow-lg shadow-teal-500/20' : 'border-white/10 hover:border-teal-500/40'
+                }`}
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 <span>{heroT.downloadCv}</span>
                 <span className="text-[11px] font-mono text-teal-400 bg-teal-500/10 px-1.5 py-0.5 rounded border border-teal-500/20">ID / EN</span>
+                <svg className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${cvMenuOpen ? 'rotate-180 text-teal-300' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
-              <div className="absolute left-0 top-full mt-2 w-56 bg-[#0b0f1f] border border-teal-500/30 rounded-xl p-1.5 shadow-2xl opacity-0 pointer-events-none group-hover/cv:opacity-100 group-hover/cv:pointer-events-auto transition-all duration-200 z-50">
-                <a
-                  href="./assets/CV_Toti_Putra_Pratama_ID.pdf"
-                  download="CV_Toti_Putra_Pratama_ID.pdf"
-                  className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
-                >
-                  <span className="text-sm">🇮🇩</span>
-                  <div>
-                    <span className="font-semibold block">Unduh Versi Indonesia</span>
-                    <span className="text-[10px] text-slate-400 font-mono">Format ATS Resmi (PDF)</span>
-                  </div>
-                </a>
-                <a
-                  href="./assets/CV_Toti_Putra_Pratama_EN.pdf"
-                  download="CV_Toti_Putra_Pratama_EN.pdf"
-                  className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
-                >
-                  <span className="text-sm">🇬🇧</span>
-                  <div>
-                    <span className="font-semibold block">Download English Version</span>
-                    <span className="text-[10px] text-slate-400 font-mono">ATS-Friendly Format (PDF)</span>
-                  </div>
-                </a>
+              
+              <div className={`absolute left-0 top-full pt-2 w-64 transition-all duration-200 z-50 ${
+                cvMenuOpen
+                  ? 'opacity-100 pointer-events-auto translate-y-0 scale-100'
+                  : 'opacity-0 pointer-events-none -translate-y-1 scale-95 group-hover/cv:opacity-100 group-hover/cv:pointer-events-auto group-hover/cv:translate-y-0 group-hover/cv:scale-100'
+              }`}>
+                <div className="bg-[#0b0f1f]/95 backdrop-blur-xl border border-teal-500/40 rounded-xl p-2 shadow-2xl shadow-black/80">
+                  <a
+                    href="/assets/CV_Toti_Putra_Pratama_ID.pdf"
+                    download="CV_Toti_Putra_Pratama_ID.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setCvMenuOpen(false)}
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-all group/item cursor-pointer"
+                  >
+                    <span className="text-xl">🇮🇩</span>
+                    <div>
+                      <span className="font-semibold text-slate-100 group-hover/item:text-teal-300 block">Unduh Versi Indonesia</span>
+                      <span className="text-[10px] text-slate-400 font-mono">Format ATS Resmi (PDF)</span>
+                    </div>
+                  </a>
+                  <a
+                    href="/assets/CV_Toti_Putra_Pratama_EN.pdf"
+                    download="CV_Toti_Putra_Pratama_EN.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setCvMenuOpen(false)}
+                    className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-all group/item border-t border-white/5 mt-1 pt-2.5 cursor-pointer"
+                  >
+                    <span className="text-xl">🇬🇧</span>
+                    <div>
+                      <span className="font-semibold text-slate-100 group-hover/item:text-teal-300 block">Download English Version</span>
+                      <span className="text-[10px] text-slate-400 font-mono">ATS-Friendly Format (PDF)</span>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
 

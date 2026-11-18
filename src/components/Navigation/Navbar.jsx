@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 
 export default function Navbar({ sections, activeSection }) {
@@ -6,13 +6,30 @@ export default function Navbar({ sections, activeSection }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [cvMenuOpen, setCvMenuOpen] = useState(false)
+  const cvDropdownRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40)
     }
+    const handleClickOutside = (event) => {
+      if (cvDropdownRef.current && !cvDropdownRef.current.contains(event.target)) {
+        setCvMenuOpen(false)
+      }
+    }
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setCvMenuOpen(false)
+    }
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleKeyDown)
+    }
   }, [])
 
   return (
@@ -78,31 +95,55 @@ export default function Navbar({ sections, activeSection }) {
             <span className={lang === 'id' ? 'font-bold text-teal-300' : 'text-slate-400'}>ID</span>
           </button>
 
-          <div className="relative group/cv">
+          <div className="relative group/cv" ref={cvDropdownRef}>
             <button
-              className="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 hover:bg-slate-800 text-slate-200 border border-white/10 hover:border-teal-500/40 transition-all flex items-center gap-1.5"
+              type="button"
+              onClick={() => setCvMenuOpen(prev => !prev)}
+              aria-expanded={cvMenuOpen}
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-800/80 hover:bg-slate-800 text-slate-200 border transition-all flex items-center gap-1.5 cursor-pointer select-none ${
+                cvMenuOpen ? 'border-teal-400 bg-slate-800 text-teal-300 shadow-md shadow-teal-500/20' : 'border-white/10 hover:border-teal-500/40'
+              }`}
             >
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               <span>{t.nav.downloadCv}</span>
               <span className="text-[10px] font-mono text-teal-300 bg-teal-500/10 px-1 py-0.2 rounded border border-teal-500/20">ID/EN</span>
+              <svg className={`w-3 h-3 text-slate-400 transition-transform duration-200 ${cvMenuOpen ? 'rotate-180 text-teal-300' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
-            <div className="absolute right-0 top-full mt-1.5 w-48 bg-[#0b0f1f] border border-teal-500/30 rounded-xl p-1.5 shadow-2xl opacity-0 pointer-events-none group-hover/cv:opacity-100 group-hover/cv:pointer-events-auto transition-all duration-200 z-50">
-              <a
-                href="./assets/CV_Toti_Putra_Pratama_ID.pdf"
-                download="CV_Toti_Putra_Pratama_ID.pdf"
-                className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
-              >
-                <span>🇮🇩</span>
-                <span className="font-medium">Versi Indonesia (ID)</span>
-              </a>
-              <a
-                href="./assets/CV_Toti_Putra_Pratama_EN.pdf"
-                download="CV_Toti_Putra_Pratama_EN.pdf"
-                className="flex items-center gap-2 px-3 py-2 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800 transition-colors"
-              >
-                <span>🇬🇧</span>
-                <span className="font-medium">English Version (EN)</span>
-              </a>
+            <div className={`absolute right-0 top-full pt-1.5 w-52 transition-all duration-200 z-50 ${
+              cvMenuOpen 
+                ? 'opacity-100 pointer-events-auto translate-y-0 scale-100' 
+                : 'opacity-0 pointer-events-none -translate-y-1 scale-95 group-hover/cv:opacity-100 group-hover/cv:pointer-events-auto group-hover/cv:translate-y-0 group-hover/cv:scale-100'
+            }`}>
+              <div className="bg-[#0b0f1f]/95 backdrop-blur-xl border border-teal-500/40 rounded-xl p-1.5 shadow-2xl shadow-black/80">
+                <a
+                  href="/assets/CV_Toti_Putra_Pratama_ID.pdf"
+                  download="CV_Toti_Putra_Pratama_ID.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setCvMenuOpen(false)}
+                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800/80 transition-all group/item cursor-pointer"
+                >
+                  <span className="text-base">🇮🇩</span>
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-slate-100 group-hover/item:text-teal-300">Versi Indonesia (ID)</span>
+                    <span className="text-[10px] text-slate-400 font-mono">Format ATS Resmi (PDF)</span>
+                  </div>
+                </a>
+                <a
+                  href="/assets/CV_Toti_Putra_Pratama_EN.pdf"
+                  download="CV_Toti_Putra_Pratama_EN.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setCvMenuOpen(false)}
+                  className="flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-xs text-slate-200 hover:text-teal-300 hover:bg-slate-800/80 transition-all group/item border-t border-white/5 mt-1 pt-2 cursor-pointer"
+                >
+                  <span className="text-base">🇬🇧</span>
+                  <div className="flex flex-col">
+                    <span className="font-semibold text-slate-100 group-hover/item:text-teal-300">English Version (EN)</span>
+                    <span className="text-[10px] text-slate-400 font-mono">Official ATS Format (PDF)</span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
           <a
@@ -156,7 +197,7 @@ export default function Navbar({ sections, activeSection }) {
           <div className="pt-3 border-t border-white/10 flex gap-2">
             <div className="flex-1 flex gap-1.5">
               <a
-                href="./assets/CV_Toti_Putra_Pratama_ID.pdf"
+                href="/assets/CV_Toti_Putra_Pratama_ID.pdf" target="_blank" rel="noopener noreferrer"
                 download="CV_Toti_Putra_Pratama_ID.pdf"
                 className="flex-1 py-2 text-center rounded-lg text-xs font-medium bg-slate-800 text-teal-300 border border-teal-500/30 flex items-center justify-center gap-1"
               >
@@ -164,7 +205,7 @@ export default function Navbar({ sections, activeSection }) {
                 <span>CV (ID)</span>
               </a>
               <a
-                href="./assets/CV_Toti_Putra_Pratama_EN.pdf"
+                href="/assets/CV_Toti_Putra_Pratama_EN.pdf" target="_blank" rel="noopener noreferrer"
                 download="CV_Toti_Putra_Pratama_EN.pdf"
                 className="flex-1 py-2 text-center rounded-lg text-xs font-medium bg-slate-800 text-slate-200 border border-white/10 flex items-center justify-center gap-1"
               >

@@ -174,6 +174,76 @@ export const translations = {
       "closePreview": "Close Preview",
       "items": [
         {
+                  "id": "automate-workspace-suite",
+                  "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
+                  "category": "Otomasi Perkantoran & Workflow Engine",
+                  "image": "./projects/automate_workspace_preview.png",
+                  "imageLabel": "AutoMate Workspace 10-Modul Otomasi Perkantoran",
+                  "dashboardPurpose": "Platform otomasi administrasi, rekrutmen HR, keuangan, dan telemetri telko yang ramah pengguna awam. Ditenagai oleh mesin workflow n8n self-hosted di home server 24/7, menyediakan 10 modul otomasi siap pakai seperti konversi dokumen resmi, auto-screener CV kandidat, scan nota pajak PPN 11%, dan parser log alarm BTS Huawei/Ericsson.",
+                  "description": "Solusi produktivitas enterprise yang menggabungkan 10 modul penting perkantoran: pembuatan naskah resmi PDF dengan watermark digital, screening CV pelamar kerja otomatis ke Excel, generator puluhan sertifikat resmi sekaligus, kalkulator kasbon kasir, pembersih nomor HP Indonesia (+62 E.164), dan parser telemetri telekomunikasi.",
+                  "impact": "Memangkas 95% waktu proses sortir administrasi manual dan mempercepat screening CV serta triage log gangguan sinyal menjadi < 30 detik.",
+                  "tags": [
+                            "n8n Workflow Engine",
+                            "React 19 & Vite",
+                            "Tailwind CSS v4",
+                            "jsPDF & PDF-Lib",
+                            "XLSX / SheetJS",
+                            "Regex Telemetry",
+                            "Docker 24/7"
+                  ],
+                  "liveUrl": "https://toti-417.github.io/automate-workspace/",
+                  "repoUrl": "https://github.com/Toti-417/automate-workspace",
+                  "metrics": [
+                            {
+                                      "label": "Modul Siap Pakai",
+                                      "val": "10 Tools"
+                            },
+                            {
+                                      "label": "Kecepatan Olah",
+                                      "val": "< 30 Detik"
+                            },
+                            {
+                                      "label": "Uptime Mesin",
+                                      "val": "24/7 Docker"
+                            }
+                  ]
+        },
+        {
+                  "id": "automate-workspace-suite",
+                  "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
+                  "category": "Enterprise Automation & Workflow Engine",
+                  "image": "./projects/automate_workspace_preview.png",
+                  "imageLabel": "AutoMate Workspace 10-Module SaaS Console",
+                  "dashboardPurpose": "An end-to-end everyday office automation suite engineered for non-tech users, HR recruiters, finance teams, and telco operations. Powered by a self-hosted n8n engine running 24/7 on a home server, providing one-click document converters, candidate AI CV screening, receipt OCR with PPN 11% tax calculation, multi-vendor BTS telemetry parsing, and multi-channel webhook dispatchers.",
+                  "description": "Production-grade productivity and automation platform integrating 10 essential modules: smart document formatting to PDF with digital watermarking, candidate CV screening extracting WhatsApp & skills, automated landscape certificate generation, expense reimbursement approval workflows, Indonesian phone number sanitizer (+62 E.164), and real-time Huawei/Ericsson BTS telemetry log parsers.",
+                  "impact": "Eliminated 95% of manual administrative document processing time and enabled instant candidate ranking and telemetry log triage in under 30 seconds.",
+                  "tags": [
+                            "n8n Workflow Engine",
+                            "React 19 & Vite",
+                            "Tailwind CSS v4",
+                            "jsPDF & PDF-Lib",
+                            "XLSX / SheetJS",
+                            "Regex Telemetry",
+                            "Docker 24/7"
+                  ],
+                  "liveUrl": "https://toti-417.github.io/automate-workspace/",
+                  "repoUrl": "https://github.com/Toti-417/automate-workspace",
+                  "metrics": [
+                            {
+                                      "label": "Integrated Modules",
+                                      "val": "10 Tools"
+                            },
+                            {
+                                      "label": "Processing Speed",
+                                      "val": "< 30s / Batch"
+                            },
+                            {
+                                      "label": "Engine Uptime",
+                                      "val": "24/7 Docker"
+                            }
+                  ]
+        },
+        {
           "id": "interference-radar-dashboard",
           "title": "Telecom LTE Interference Radar & 24-Hr Geo-Spatial Matrix",
           "category": "Telecom Systems & Geospatial Intelligence",

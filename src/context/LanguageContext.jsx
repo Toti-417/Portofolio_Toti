@@ -12,7 +12,7 @@ export const translations = {
       "projects": "Projects",
       "experience": "Experience",
       "gallery": "Field Work",
-      "certificates": "Credentials",
+      "certificates": "Certifications",
       "whyMe": "Differentiators",
       "contact": "Contact",
       "downloadCv": "Download CV",
@@ -76,90 +76,90 @@ export const translations = {
       "titleEnd": "Competencies",
       "subtitle": "Combining analytical toolsets with real-world telecommunications project engineering discipline.",
       "categories": [
-                {
-                          "title": "Data & Analytics",
-                          "skills": [
-                                    {
-                                              "name": "Power BI & DAX",
-                                              "tag": "Advanced"
-                                    },
-                                    {
-                                              "name": "MySQL & Data Modeling",
-                                              "tag": "Proficient"
-                                    },
-                                    {
-                                              "name": "Python & Analytics",
-                                              "tag": "Intermediate"
-                                    },
-                                    {
-                                              "name": "GIS & Spatial Mapping",
-                                              "tag": "Proficient"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Backend & Automation",
-                          "skills": [
-                                    {
-                                              "name": "Node.js & REST APIs",
-                                              "tag": "Advanced"
-                                    },
-                                    {
-                                              "name": "N8N & Power Automate",
-                                              "tag": "Advanced"
-                                    },
-                                    {
-                                              "name": "AI & Agentic Pipelines",
-                                              "tag": "Proficient"
-                                    },
-                                    {
-                                              "name": "Linux Server & PM2",
-                                              "tag": "Proficient"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Telecom & RAN Systems",
-                          "skills": [
-                                    {
-                                              "name": "Huawei iMaster / iMAE",
-                                              "tag": "Expert"
-                                    },
-                                    {
-                                              "name": "BTS & eATP Acceptance",
-                                              "tag": "Expert"
-                                    },
-                                    {
-                                              "name": "RAN KPI Optimization",
-                                              "tag": "Expert"
-                                    },
-                                    {
-                                              "name": "RF Spectrum & RET Tilt",
-                                              "tag": "Expert"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Engineering & PM",
-                          "skills": [
-                                    {
-                                              "name": "SPMS & CRQ Governance",
-                                              "tag": "Expert"
-                                    },
-                                    {
-                                              "name": "Budget Mgmt (IDR 40B+)",
-                                              "tag": "Optimized"
-                                    },
-                                    {
-                                              "name": "Vendor & SLA Control",
-                                              "tag": "Expert"
-                                    },
-                                    {
-                                              "name": "AutoCAD & Dossier",
-                                              "tag": "Advanced"
-                                    }
-                          ]
-                }
+        {
+          "title": "Data & Analytics",
+          "skills": [
+            {
+              "name": "Power BI & DAX",
+              "tag": "Advanced"
+            },
+            {
+              "name": "MySQL & Data Modeling",
+              "tag": "Proficient"
+            },
+            {
+              "name": "Python & Analytics",
+              "tag": "Intermediate"
+            },
+            {
+              "name": "GIS & Spatial Mapping",
+              "tag": "Proficient"
+            }
+          ]
+        },
+        {
+          "title": "Backend & Automation",
+          "skills": [
+            {
+              "name": "Node.js & REST APIs",
+              "tag": "Advanced"
+            },
+            {
+              "name": "N8N & Power Automate",
+              "tag": "Advanced"
+            },
+            {
+              "name": "AI & Agentic Pipelines",
+              "tag": "Proficient"
+            },
+            {
+              "name": "Linux Server & PM2",
+              "tag": "Proficient"
+            }
+          ]
+        },
+        {
+          "title": "Telecom & RAN Systems",
+          "skills": [
+            {
+              "name": "Huawei iMaster / iMAE",
+              "tag": "Expert"
+            },
+            {
+              "name": "BTS & eATP Acceptance",
+              "tag": "Expert"
+            },
+            {
+              "name": "RAN KPI Optimization",
+              "tag": "Expert"
+            },
+            {
+              "name": "RF Spectrum & RET Tilt",
+              "tag": "Expert"
+            }
+          ]
+        },
+        {
+          "title": "Engineering & PM",
+          "skills": [
+            {
+              "name": "SPMS & CRQ Governance",
+              "tag": "Expert"
+            },
+            {
+              "name": "Budget Mgmt (IDR 40B+)",
+              "tag": "Optimized"
+            },
+            {
+              "name": "Vendor & SLA Control",
+              "tag": "Expert"
+            },
+            {
+              "name": "AutoCAD & Dossier",
+              "tag": "Advanced"
+            }
+          ]
+        }
       ]
     },
     "projects": {
@@ -174,74 +174,39 @@ export const translations = {
       "closePreview": "Close Preview",
       "items": [
         {
-                  "id": "automate-workspace-suite",
-                  "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
-                  "category": "Otomasi Perkantoran & Workflow Engine",
-                  "image": "./projects/automate_workspace_preview.png",
-                  "imageLabel": "AutoMate Workspace 10-Modul Otomasi Perkantoran",
-                  "dashboardPurpose": "Platform otomasi administrasi, rekrutmen HR, keuangan, dan telemetri telko yang ramah pengguna awam. Ditenagai oleh mesin workflow n8n self-hosted di home server 24/7, menyediakan 10 modul otomasi siap pakai seperti konversi dokumen resmi, auto-screener CV kandidat, scan nota pajak PPN 11%, dan parser log alarm BTS Huawei/Ericsson.",
-                  "description": "Solusi produktivitas enterprise yang menggabungkan 10 modul penting perkantoran: pembuatan naskah resmi PDF dengan watermark digital, screening CV pelamar kerja otomatis ke Excel, generator puluhan sertifikat resmi sekaligus, kalkulator kasbon kasir, pembersih nomor HP Indonesia (+62 E.164), dan parser telemetri telekomunikasi.",
-                  "impact": "Memangkas 95% waktu proses sortir administrasi manual dan mempercepat screening CV serta triage log gangguan sinyal menjadi < 30 detik.",
-                  "tags": [
-                            "n8n Workflow Engine",
-                            "React 19 & Vite",
-                            "Tailwind CSS v4",
-                            "jsPDF & PDF-Lib",
-                            "XLSX / SheetJS",
-                            "Regex Telemetry",
-                            "Docker 24/7"
-                  ],
-                  "liveUrl": "https://toti-417.github.io/automate-workspace/",
-                  "repoUrl": "https://github.com/Toti-417/automate-workspace",
-                  "metrics": [
-                            {
-                                      "label": "Modul Siap Pakai",
-                                      "val": "10 Tools"
-                            },
-                            {
-                                      "label": "Kecepatan Olah",
-                                      "val": "< 30 Detik"
-                            },
-                            {
-                                      "label": "Uptime Mesin",
-                                      "val": "24/7 Docker"
-                            }
-                  ]
-        },
-        {
-                  "id": "automate-workspace-suite",
-                  "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
-                  "category": "Enterprise Automation & Workflow Engine",
-                  "image": "./projects/automate_workspace_preview.png",
-                  "imageLabel": "AutoMate Workspace 10-Module SaaS Console",
-                  "dashboardPurpose": "An end-to-end everyday office automation suite engineered for non-tech users, HR recruiters, finance teams, and telco operations. Powered by a self-hosted n8n engine running 24/7 on a home server, providing one-click document converters, candidate AI CV screening, receipt OCR with PPN 11% tax calculation, multi-vendor BTS telemetry parsing, and multi-channel webhook dispatchers.",
-                  "description": "Production-grade productivity and automation platform integrating 10 essential modules: smart document formatting to PDF with digital watermarking, candidate CV screening extracting WhatsApp & skills, automated landscape certificate generation, expense reimbursement approval workflows, Indonesian phone number sanitizer (+62 E.164), and real-time Huawei/Ericsson BTS telemetry log parsers.",
-                  "impact": "Eliminated 95% of manual administrative document processing time and enabled instant candidate ranking and telemetry log triage in under 30 seconds.",
-                  "tags": [
-                            "n8n Workflow Engine",
-                            "React 19 & Vite",
-                            "Tailwind CSS v4",
-                            "jsPDF & PDF-Lib",
-                            "XLSX / SheetJS",
-                            "Regex Telemetry",
-                            "Docker 24/7"
-                  ],
-                  "liveUrl": "https://toti-417.github.io/automate-workspace/",
-                  "repoUrl": "https://github.com/Toti-417/automate-workspace",
-                  "metrics": [
-                            {
-                                      "label": "Integrated Modules",
-                                      "val": "10 Tools"
-                            },
-                            {
-                                      "label": "Processing Speed",
-                                      "val": "< 30s / Batch"
-                            },
-                            {
-                                      "label": "Engine Uptime",
-                                      "val": "24/7 Docker"
-                            }
-                  ]
+          "id": "automate-workspace-suite",
+          "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
+          "category": "Enterprise Automation & Workflow Engine",
+          "image": "./projects/automate_workspace_preview.png",
+          "imageLabel": "AutoMate Workspace 10-Module SaaS Console",
+          "dashboardPurpose": "An end-to-end everyday office automation suite engineered for non-tech users, HR recruiters, finance teams, and telco operations. Powered by a self-hosted n8n engine running 24/7 on a home server, providing one-click document converters, candidate AI CV screening, receipt OCR with PPN 11% tax calculation, multi-vendor BTS telemetry parsing, and multi-channel webhook dispatchers.",
+          "description": "Production-grade productivity and automation platform integrating 10 essential modules: smart document formatting to PDF with digital watermarking, candidate CV screening extracting WhatsApp & skills, automated landscape certificate generation, expense reimbursement approval workflows, Indonesian phone number sanitizer (+62 E.164), and real-time Huawei/Ericsson BTS telemetry log parsers.",
+          "impact": "Eliminated 95% of manual administrative document processing time and enabled instant candidate ranking and telemetry log triage in under 30 seconds.",
+          "tags": [
+            "n8n Workflow Engine",
+            "React 19 & Vite",
+            "Tailwind CSS v4",
+            "jsPDF & PDF-Lib",
+            "XLSX / SheetJS",
+            "Regex Telemetry",
+            "Docker 24/7"
+          ],
+          "liveUrl": "https://toti-417.github.io/automate-workspace/",
+          "repoUrl": "https://github.com/Toti-417/automate-workspace",
+          "metrics": [
+            {
+              "label": "Integrated Modules",
+              "val": "10 Tools"
+            },
+            {
+              "label": "Processing Speed",
+              "val": "< 30s / Batch"
+            },
+            {
+              "label": "Engine Uptime",
+              "val": "24/7 Docker"
+            }
+          ]
         },
         {
           "id": "interference-radar-dashboard",
@@ -462,12 +427,12 @@ export const translations = {
           "imageLabel": "Huawei MML Parser & Balmon Complaint Dossier"
         },
         {
-      "id": "blacksite-rollout",
-      "title": "Blacksite Batch Rollout & Document Tracker",
-      "category": "Project Engineering",
-      "image": "./projects/dashboard_blacksite_tracker.png",
-      "secondaryImage": null,
-      "imageLabel": "Blacksite Rollout & eATP Deployment Verification Dashboard",
+          "id": "blacksite-rollout",
+          "title": "Blacksite Batch Rollout & Document Tracker",
+          "category": "Project Engineering",
+          "image": "./projects/dashboard_blacksite_tracker.png",
+          "secondaryImage": null,
+          "imageLabel": "Blacksite Rollout & eATP Deployment Verification Dashboard",
           "dashboardPurpose": "Executive rollout tracker monitoring end-to-end milestone progress from initial physical site deployment through eATP sign-off and final documentation closure.",
           "description": "Managed end-to-end execution tracking for Telkomsel Blacksite Batch #1–#3 & Re-engineering rollout projects from initial site deployment through eATP approval and final documentation closure.",
           "impact": "Achieved 99% documentation accuracy and ranked #1 Leading Partner for Project Closure.",
@@ -497,12 +462,12 @@ export const translations = {
           ]
         },
         {
-      "id": "power-bi-monitor",
-      "title": "Power BI Real-Time Project Monitor",
-      "category": "Data Analytics & Visualization",
-      "image": "./projects/dashboard_powerbi_monitor.png",
-      "secondaryImage": null,
-      "imageLabel": "Executive Telecom Project Monitoring Dashboard (Power BI)",
+          "id": "power-bi-monitor",
+          "title": "Power BI Real-Time Project Monitor",
+          "category": "Data Analytics & Visualization",
+          "image": "./projects/dashboard_powerbi_monitor.png",
+          "secondaryImage": null,
+          "imageLabel": "Executive Telecom Project Monitoring Dashboard (Power BI)",
           "dashboardPurpose": "Executive intelligence dashboard consolidating Telkomsel SPMS database records into interactive management KPIs.",
           "description": "Developed a real-time executive dashboard for Telkomsel project monitoring, enabling leadership to track site rollout progress, vendor performance, and milestone bottlenecks live across multiple regions.",
           "impact": "Replaced manual weekly Excel reports with live automated tracking.",
@@ -606,104 +571,104 @@ export const translations = {
       "closePreview": "Close Preview",
       "verificationPlaceholder": "Official Credential Verification Placeholder",
       "items": [
-              {
-                      "name": "Spesialisasi Power BI Data Analyst",
-                      "issuer": "Microsoft / Kredensial Profesional",
-                      "year": "2024",
-                      "icon": "/icon/Power BI.png",
-                      "category": "Visualisasi Data"
-              },
-              {
-                      "name": "Python untuk Data Science & Analitik",
-                      "issuer": "Coursera / Kredensial Industri",
-                      "year": "2024",
-                      "icon": "/icon/pyhton.png",
-                      "category": "Sains Data"
-              },
-              {
-                      "name": "SQL Querying & Dasar Basis Data",
-                      "issuer": "HackerRank Certified",
-                      "year": "2024",
-                      "icon": "/icon/my sql.png",
-                      "category": "Sistem Basis Data"
-              },
-              {
-                      "name": "Manajemen Proyek & Kontrol Anggaran",
-                      "issuer": "Kredensial Profesional",
-                      "year": "2023",
-                      "icon": "/icon/icon data.png",
-                      "category": "Teknik Proyek"
-              },
-              {
-                      "name": "N8N Workflow & Otomasi API",
-                      "issuer": "Kredensial Otomasi",
-                      "year": "2024",
-                      "icon": "/icon/N8N.png",
-                      "category": "Sistem Otomasi"
-              },
-              {
-                      "name": "Jaringan Telekomunikasi & Access Assurance",
-                      "issuer": "Praktisi Industri",
-                      "year": "2023",
-                      "icon": "/icon/BTS/telekomunikasi.png",
-                      "category": "Asuransi Jaringan"
-              },
-              {
-                      "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
-                      "issuer": "ID-Networkers & Kurikulum Cisco",
-                      "year": "2026",
-                      "icon": "🌐",
-                      "category": "Rekayasa Jaringan"
-              },
-              {
-                      "name": "MikroTik Certified Network Associate (MTCNA)",
-                      "issuer": "ID-Networkers Certified",
-                      "year": "2026",
-                      "icon": "🛰️",
-                      "category": "Infrastruktur Jaringan"
-              },
-              {
-                      "name": "Pertahanan Cyber Security & Threat Modeling",
-                      "issuer": "ID-Networkers Cyber Academy",
-                      "year": "2026",
-                      "icon": "🛡️",
-                      "category": "Keamanan Informasi"
-              },
-              {
-                      "name": "Administrasi Server Linux & Otomasi Shell",
-                      "issuer": "ID-Networkers Linux Academy",
-                      "year": "2026",
-                      "icon": "🐧",
-                      "category": "Sistem & Cloud"
-              },
-              {
-                      "name": "Rekayasa Protokol Jaringan Komputer",
-                      "issuer": "ID-Networkers Networking Lab",
-                      "year": "2026",
-                      "icon": "🔌",
-                      "category": "Telekomunikasi"
-              },
-              {
-                      "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
-                      "issuer": "ID-Networkers (PNETlab)",
-                      "year": "2026",
-                      "icon": "🔬",
-                      "category": "Arsitektur Jaringan"
-              },
-              {
-                      "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
-                      "issuer": "ID-Networkers Software Division",
-                      "year": "2026",
-                      "icon": "⚡",
-                      "category": "Rekayasa Perangkat Lunak"
-              },
-              {
-                      "name": "Publikasi Jurnal Ilmiah: AI & Cloud Computing",
-                      "issuer": "Jurnal Ilmu Komputer (JIK) / Univ. Esa Unggul",
-                      "year": "2025",
-                      "icon": "📚",
-                      "category": "Riset Akademik"
-              }
+        {
+          "name": "Power BI Data Analyst Specialization",
+          "issuer": "Microsoft / Professional Credential",
+          "year": "2024",
+          "icon": "/icon/Power BI.png",
+          "category": "Data Visualization"
+        },
+        {
+          "name": "Python for Data Science & Analytics",
+          "issuer": "Coursera / Industry Credential",
+          "year": "2024",
+          "icon": "/icon/pyhton.png",
+          "category": "Data Science"
+        },
+        {
+          "name": "SQL Querying & Database Fundamentals",
+          "issuer": "HackerRank Certified",
+          "year": "2024",
+          "icon": "/icon/my sql.png",
+          "category": "Database Systems"
+        },
+        {
+          "name": "Project Management & Budget Control",
+          "issuer": "Professional Credential",
+          "year": "2023",
+          "icon": "/icon/icon data.png",
+          "category": "Project Engineering"
+        },
+        {
+          "name": "n8n Workflow Automation & API Integration",
+          "issuer": "Automation Credential",
+          "year": "2024",
+          "icon": "/icon/N8N.png",
+          "category": "Automation Systems"
+        },
+        {
+          "name": "Telecommunication Networks & Access Assurance",
+          "issuer": "Industry Practitioner",
+          "year": "2023",
+          "icon": "/icon/BTS/telekomunikasi.png",
+          "category": "Network Assurance"
+        },
+        {
+          "name": "Cisco Certification — Network Fundamentals & CCNA",
+          "issuer": "ID-Networkers & Cisco Networking Academy",
+          "year": "2026",
+          "icon": "🌐",
+          "category": "Network Engineering"
+        },
+        {
+          "name": "MikroTik Certified Network Associate (MTCNA)",
+          "issuer": "ID-Networkers Certified MikroTik Associate",
+          "year": "2026",
+          "icon": "🛰️",
+          "category": "Network Infrastructure"
+        },
+        {
+          "name": "Cyber Security Defense & Threat Modeling",
+          "issuer": "ID-Networkers Cyber Security Academy",
+          "year": "2026",
+          "icon": "🛡️",
+          "category": "Information Security"
+        },
+        {
+          "name": "Linux Server Administration & Shell Automation",
+          "issuer": "ID-Networkers Linux Systems Academy",
+          "year": "2026",
+          "icon": "🐧",
+          "category": "Systems & Cloud"
+        },
+        {
+          "name": "Computer Network Protocol Engineering",
+          "issuer": "ID-Networkers Networking Lab",
+          "year": "2026",
+          "icon": "🔌",
+          "category": "Telecommunications"
+        },
+        {
+          "name": "Enterprise Network Topology Simulation (PNETlab)",
+          "issuer": "ID-Networkers (PNETlab)",
+          "year": "2026",
+          "icon": "🔬",
+          "category": "Network Architecture"
+        },
+        {
+          "name": "Dart Programming & Software Architecture",
+          "issuer": "ID-Networkers Software Engineering Division",
+          "year": "2026",
+          "icon": "⚡",
+          "category": "Software Engineering"
+        },
+        {
+          "name": "Scientific Journal Publication: AI & Cloud Computing",
+          "issuer": "Journal of Computer Science (JIK) / Esa Unggul Univ.",
+          "year": "2025",
+          "icon": "📚",
+          "category": "Academic Research"
+        }
       ]
     },
     "whyMe": {
@@ -840,90 +805,90 @@ export const translations = {
       "titleEnd": "Manajemen Utama",
       "subtitle": "Menggabungkan perangkat analitik data modern dengan disiplin teknik proyek telekomunikasi.",
       "categories": [
-                {
-                          "title": "Data & Analitik",
-                          "skills": [
-                                    {
-                                              "name": "Power BI & DAX",
-                                              "tag": "Lanjutan"
-                                    },
-                                    {
-                                              "name": "MySQL & Arsitektur Data",
-                                              "tag": "Mahir"
-                                    },
-                                    {
-                                              "name": "Python & Analitik Data",
-                                              "tag": "Menengah"
-                                    },
-                                    {
-                                              "name": "Pemetaan Spasial GIS",
-                                              "tag": "Mahir"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Backend & Otomasi",
-                          "skills": [
-                                    {
-                                              "name": "Node.js & REST APIs",
-                                              "tag": "Lanjutan"
-                                    },
-                                    {
-                                              "name": "N8N & Power Automate",
-                                              "tag": "Lanjutan"
-                                    },
-                                    {
-                                              "name": "Integrasi AI & Pipeline LLM",
-                                              "tag": "Mahir"
-                                    },
-                                    {
-                                              "name": "Server Linux & PM2",
-                                              "tag": "Mahir"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Sistem Telekomunikasi & RAN",
-                          "skills": [
-                                    {
-                                              "name": "Huawei iMaster / iMAE",
-                                              "tag": "Ahli"
-                                    },
-                                    {
-                                              "name": "Administrasi BTS & eATP",
-                                              "tag": "Ahli"
-                                    },
-                                    {
-                                              "name": "Optimasi KPI RAN",
-                                              "tag": "Ahli"
-                                    },
-                                    {
-                                              "name": "Spektrum RF & Audit RET",
-                                              "tag": "Ahli"
-                                    }
-                          ]
-                },
-                {
-                          "title": "Teknik & Manajemen",
-                          "skills": [
-                                    {
-                                              "name": "Tata Kelola SPMS & CRQ",
-                                              "tag": "Ahli"
-                                    },
-                                    {
-                                              "name": "Manajemen Anggaran (40M+)",
-                                              "tag": "Optimal"
-                                    },
-                                    {
-                                              "name": "Kontrol Vendor & SLA",
-                                              "tag": "Ahli"
-                                    },
-                                    {
-                                              "name": "AutoCAD & Dokumen Dossier",
-                                              "tag": "Lanjutan"
-                                    }
-                          ]
-                }
+        {
+          "title": "Data & Analitik",
+          "skills": [
+            {
+              "name": "Power BI & DAX",
+              "tag": "Lanjutan"
+            },
+            {
+              "name": "MySQL & Arsitektur Data",
+              "tag": "Mahir"
+            },
+            {
+              "name": "Python & Analitik Data",
+              "tag": "Menengah"
+            },
+            {
+              "name": "Pemetaan Spasial GIS",
+              "tag": "Mahir"
+            }
+          ]
+        },
+        {
+          "title": "Backend & Otomasi",
+          "skills": [
+            {
+              "name": "Node.js & REST APIs",
+              "tag": "Lanjutan"
+            },
+            {
+              "name": "N8N & Power Automate",
+              "tag": "Lanjutan"
+            },
+            {
+              "name": "Integrasi AI & Pipeline LLM",
+              "tag": "Mahir"
+            },
+            {
+              "name": "Server Linux & PM2",
+              "tag": "Mahir"
+            }
+          ]
+        },
+        {
+          "title": "Sistem Telekomunikasi & RAN",
+          "skills": [
+            {
+              "name": "Huawei iMaster / iMAE",
+              "tag": "Ahli"
+            },
+            {
+              "name": "Administrasi BTS & eATP",
+              "tag": "Ahli"
+            },
+            {
+              "name": "Optimasi KPI RAN",
+              "tag": "Ahli"
+            },
+            {
+              "name": "Spektrum RF & Audit RET",
+              "tag": "Ahli"
+            }
+          ]
+        },
+        {
+          "title": "Teknik & Manajemen",
+          "skills": [
+            {
+              "name": "Tata Kelola SPMS & CRQ",
+              "tag": "Ahli"
+            },
+            {
+              "name": "Manajemen Anggaran (40M+)",
+              "tag": "Optimal"
+            },
+            {
+              "name": "Kontrol Vendor & SLA",
+              "tag": "Ahli"
+            },
+            {
+              "name": "AutoCAD & Dokumen Dossier",
+              "tag": "Lanjutan"
+            }
+          ]
+        }
       ]
     },
     "projects": {
@@ -937,6 +902,41 @@ export const translations = {
       "closeModal": "Tutup Modal",
       "closePreview": "Tutup Pratinjau",
       "items": [
+        {
+          "id": "automate-workspace-suite",
+          "title": "AutoMate Workspace — All-in-One Office Automation & Telemetry Suite",
+          "category": "Otomasi Perkantoran & Workflow Engine",
+          "image": "./projects/automate_workspace_preview.png",
+          "imageLabel": "AutoMate Workspace 10-Modul Otomasi Perkantoran",
+          "dashboardPurpose": "Platform otomasi administrasi, rekrutmen HR, keuangan, dan telemetri telko yang ramah pengguna awam. Ditenagai oleh mesin workflow n8n self-hosted di home server 24/7, menyediakan 10 modul otomasi siap pakai seperti konversi dokumen resmi, auto-screener CV kandidat, scan nota pajak PPN 11%, dan parser log alarm BTS Huawei/Ericsson.",
+          "description": "Solusi produktivitas enterprise yang menggabungkan 10 modul penting perkantoran: pembuatan naskah resmi PDF dengan watermark digital, screening CV pelamar kerja otomatis ke Excel, generator puluhan sertifikat resmi sekaligus, kalkulator kasbon kasir, pembersih nomor HP Indonesia (+62 E.164), dan parser telemetri telekomunikasi.",
+          "impact": "Memangkas 95% waktu proses sortir administrasi manual dan mempercepat screening CV serta triage log gangguan sinyal menjadi < 30 detik.",
+          "tags": [
+            "n8n Workflow Engine",
+            "React 19 & Vite",
+            "Tailwind CSS v4",
+            "jsPDF & PDF-Lib",
+            "XLSX / SheetJS",
+            "Regex Telemetry",
+            "Docker 24/7"
+          ],
+          "liveUrl": "https://toti-417.github.io/automate-workspace/",
+          "repoUrl": "https://github.com/Toti-417/automate-workspace",
+          "metrics": [
+            {
+              "label": "Modul Siap Pakai",
+              "val": "10 Tools"
+            },
+            {
+              "label": "Kecepatan Olah",
+              "val": "< 30 Detik"
+            },
+            {
+              "label": "Uptime Mesin",
+              "val": "24/7 Docker"
+            }
+          ]
+        },
         {
           "id": "interference-radar-dashboard",
           "title": "Telecom LTE Interference Radar & 24-Hr Geo-Spatial Matrix",
@@ -1156,12 +1156,12 @@ export const translations = {
           "imageLabel": "Dokumen Laporan Balmon & Audit Log MML Huawei"
         },
         {
-      "id": "blacksite-rollout",
-      "title": "Blacksite Batch Rollout & Document Tracker",
-      "category": "Teknik Proyek",
-      "image": "./projects/dashboard_blacksite_tracker.png",
-      "secondaryImage": null,
-      "imageLabel": "Dashboard Pelacakan Rollout Blacksite & Verifikasi eATP",
+          "id": "blacksite-rollout",
+          "title": "Blacksite Batch Rollout & Document Tracker",
+          "category": "Teknik Proyek",
+          "image": "./projects/dashboard_blacksite_tracker.png",
+          "secondaryImage": null,
+          "imageLabel": "Dashboard Pelacakan Rollout Blacksite & Verifikasi eATP",
           "dashboardPurpose": "Sistem pelacak milestone proyek rollout dari awal instalasi lapangan, pengetesan eATP, hingga penutupan dokumen administratif mitra.",
           "description": "Mengelola pelacakan eksekusi proyek rollout Telkomsel Blacksite Batch #1–#3 & Re-engineering dari awal pengiriman site hingga persetujuan eATP dan penutupan dokumentasi akhir.",
           "impact": "Mencapai akurasi dokumentasi 99% dan meraih peringkat #1 Mitra Terbaik untuk Closing Proyek.",
@@ -1191,12 +1191,12 @@ export const translations = {
           ]
         },
         {
-      "id": "power-bi-monitor",
-      "title": "Power BI Real-Time Project Monitor",
-      "category": "Analitik Data & Visualisasi",
-      "image": "./projects/dashboard_powerbi_monitor.png",
-      "secondaryImage": null,
-      "imageLabel": "Dashboard Eksekutif Monitoring Proyek Telkomsel (Power BI)",
+          "id": "power-bi-monitor",
+          "title": "Power BI Real-Time Project Monitor",
+          "category": "Analitik Data & Visualisasi",
+          "image": "./projects/dashboard_powerbi_monitor.png",
+          "secondaryImage": null,
+          "imageLabel": "Dashboard Eksekutif Monitoring Proyek Telkomsel (Power BI)",
           "dashboardPurpose": "Dashboard eksekutif manajemen memantau progres harian, SLA vendor, dan status kendala lapangan berbasis sinkronisasi SPMS Telkomsel.",
           "description": "Mengembangkan dashboard eksekutif real-time untuk pemantauan proyek Telkomsel, memungkinkan manajemen melacak progres rollout site, kinerja vendor, dan kendala lapangan secara langsung di berbagai wilayah.",
           "impact": "Menggantikan laporan Excel mingguan manual dengan pelacakan otomatis real-time.",
@@ -1301,14 +1301,14 @@ export const translations = {
       "verificationPlaceholder": "Verifikasi Sertifikat Resmi",
       "items": [
         {
-          "name": "Spesialisasi Power BI Data Analyst",
+          "name": "Spesialisasi Analis Data Power BI",
           "issuer": "Microsoft / Kredensial Profesional",
           "year": "2024",
           "icon": "/icon/Power BI.png",
           "category": "Visualisasi Data"
         },
         {
-          "name": "Python untuk Data Science & Analitik",
+          "name": "Python untuk Sains Data & Analitik",
           "issuer": "Coursera / Kredensial Industri",
           "year": "2024",
           "icon": "/icon/pyhton.png",
@@ -1329,7 +1329,7 @@ export const translations = {
           "category": "Teknik Proyek"
         },
         {
-          "name": "N8N Workflow & Otomasi API",
+          "name": "Workflow n8n & Otomasi API",
           "issuer": "Kredensial Otomasi",
           "year": "2024",
           "icon": "/icon/N8N.png",
@@ -1341,6 +1341,62 @@ export const translations = {
           "year": "2023",
           "icon": "/icon/BTS/telekomunikasi.png",
           "category": "Asuransi Jaringan"
+        },
+        {
+          "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
+          "issuer": "ID-Networkers & Kurikulum Cisco",
+          "year": "2026",
+          "icon": "🌐",
+          "category": "Rekayasa Jaringan"
+        },
+        {
+          "name": "MikroTik Certified Network Associate (MTCNA)",
+          "issuer": "ID-Networkers Certified MikroTik Associate",
+          "year": "2026",
+          "icon": "🛰️",
+          "category": "Infrastruktur Jaringan"
+        },
+        {
+          "name": "Pertahanan Cyber Security & Pemodelan Ancaman",
+          "issuer": "ID-Networkers Cyber Academy",
+          "year": "2026",
+          "icon": "🛡️",
+          "category": "Keamanan Informasi"
+        },
+        {
+          "name": "Administrasi Server Linux & Otomasi Shell",
+          "issuer": "ID-Networkers Linux Systems Academy",
+          "year": "2026",
+          "icon": "🐧",
+          "category": "Sistem & Cloud"
+        },
+        {
+          "name": "Rekayasa Protokol Jaringan Komputer",
+          "issuer": "ID-Networkers Networking Lab",
+          "year": "2026",
+          "icon": "🔌",
+          "category": "Telekomunikasi"
+        },
+        {
+          "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
+          "issuer": "ID-Networkers (PNETlab)",
+          "year": "2026",
+          "icon": "🔬",
+          "category": "Arsitektur Jaringan"
+        },
+        {
+          "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
+          "issuer": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
+          "year": "2026",
+          "icon": "⚡",
+          "category": "Rekayasa Perangkat Lunak"
+        },
+        {
+          "name": "Publikasi Jurnal Ilmiah: AI & Cloud Computing",
+          "issuer": "Jurnal Ilmu Komputer (JIK) / Univ. Esa Unggul",
+          "year": "2025",
+          "icon": "📚",
+          "category": "Riset Akademik"
         }
       ]
     },
@@ -1407,7 +1463,7 @@ export const translations = {
       "tagline": "Sinyal ke Insight"
     }
   }
-}
+};
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState('en')
@@ -1416,8 +1472,8 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations')
-    const saved = localStorage.getItem('toti_live_translations_v2')
+    localStorage.removeItem('toti_live_translations_v4')
+    const saved = localStorage.getItem('toti_live_translations_v4')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

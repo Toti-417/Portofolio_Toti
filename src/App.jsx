@@ -21,7 +21,7 @@ const sections = [
   { id: 'projects', label: 'Projects' },
   { id: 'experience', label: 'Experience' },
   { id: 'gallery', label: 'Field Work' },
-  { id: 'certificates', label: 'Credentials' },
+  { id: 'certificates', label: 'Certifications' },
   { id: 'why-me', label: 'Differentiators' },
   { id: 'contact', label: 'Contact' },
 ]
@@ -107,7 +107,6 @@ export default function App() {
         {/* Navigation Bar (Appears only after entering) */}
         <Navbar sections={sections} activeSection={activeSection} />
 
-        
         {/* Main Content Sections */}
         <main className="relative z-10">
           <HeroSection />

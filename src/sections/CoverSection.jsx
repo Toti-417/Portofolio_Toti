@@ -5,12 +5,12 @@ import { useLanguage } from '../context/LanguageContext'
  * Pure Fullscreen Magazine Intro Cover
  * - ZERO page bleed-through / no silhouettes
  * - Giant Toti Cutout with "Head Over Title" editorial hierarchy
- * - Giant "PORTOFOLIO" typography layered behind the subject
+ * - Giant "PORTOFOLIO / PORTFOLIO" typography layered behind the subject
  * - Click anywhere to enter main portfolio
  */
 export default function CoverSection({ onEnter }) {
-  const { language } = useLanguage()
-  const isId = language === 'id'
+  const { lang, language } = useLanguage()
+  const isId = (lang || language) === 'id'
 
   return (
     <motion.div
@@ -34,14 +34,14 @@ export default function CoverSection({ onEnter }) {
       >
         <span className="w-2 h-2 rounded-full bg-teal-400 animate-ping" />
         <span className="text-xs sm:text-sm font-semibold tracking-wider text-slate-200 uppercase font-sans">
-          {isId ? 'Project Engineer · Telecom Data Analyst' : 'Project Engineer · Telecom Data Analyst'}
+          {isId ? 'Project Engineer · Analis Data Telekomunikasi' : 'Project Engineer · Telecom Data Analyst'}
         </span>
       </motion.div>
 
       {/* Center Magazine Canvas: Mega Title BEHIND + Elevated Subject Cutout IN FRONT */}
       <div className="relative w-full max-w-7xl mx-auto flex-1 flex items-center justify-center my-auto overflow-visible">
         
-        {/* Giant "PORTOFOLIO" Typography - Deep Layer (Z-0) */}
+        {/* Giant "PORTOFOLIO / PORTFOLIO" Typography - Deep Layer (Z-0) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -49,7 +49,7 @@ export default function CoverSection({ onEnter }) {
           className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0"
         >
           <h1 className="text-[20vw] sm:text-[18vw] lg:text-[16vw] font-black tracking-tight leading-none uppercase text-white/80 drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)] font-sans select-none scale-y-105">
-            PORTOFOLIO
+            {isId ? 'PORTOFOLIO' : 'PORTFOLIO'}
           </h1>
         </motion.div>
 
@@ -79,7 +79,8 @@ export default function CoverSection({ onEnter }) {
           >
             <span className="text-teal-400 text-xs">✨</span>
             <span className="text-xs sm:text-sm font-medium text-slate-300">
-              Presented by <strong className="text-white font-bold tracking-wide">Toti Putra Pratama</strong>
+              {isId ? 'Disusun oleh ' : 'Presented by '}
+              <strong className="text-white font-bold tracking-wide">Toti Putra Pratama</strong>
             </span>
           </motion.div>
         </motion.div>

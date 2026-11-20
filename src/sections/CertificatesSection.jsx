@@ -3,91 +3,147 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 import EditableText from '../components/EditableText'
 
-// Comprehensive technical competency breakdown for each certificate
+// Comprehensive technical competency breakdown for each certificate (Bilingual: EN & ID)
 const CERT_DETAILS = {
   0: { // Power BI
     code: 'MS-PBI-8842',
-    image: './certificates/cert_powerbi.png',
+    image: '/certificates/cert_powerbi.png',
     issuerFull: 'Microsoft Certified Professional / Industry Standard',
+    issuerFullId: 'Microsoft Certified Professional / Standar Industri',
     issuedDate: 'October 2024',
+    issuedDateId: 'Oktober 2024',
     competencies: [
       'DAX Measures & Advanced Time Intelligence',
       'Star Schema Relational Data Modeling',
       'Executive Rollout KPI Dashboards',
       'Power Query M-Code Data Transformation'
     ],
-    summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.'
+    competenciesId: [
+      'DAX Measures & Time Intelligence Tingkat Lanjut',
+      'Pemodelan Data Relasional Skema Star',
+      'Dashboard KPI Eksekutif Rollout Proyek',
+      'Transformasi Data Power Query (M-Code)'
+    ],
+    summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.',
+    summaryId: 'Penguasaan komprehensif dalam business intelligence end-to-end, pemodelan data pergudangan telekomunikasi multi-tabel, dan pelaporan eksekutif interaktif.'
   },
   1: { // Python Data Science
     code: 'PY-DS-5521',
-    image: './certificates/cert_python.png',
+    image: '/certificates/cert_python.png',
     issuerFull: 'Python Software Foundation & Industry Curriculum',
+    issuerFullId: 'Python Software Foundation & Kurikulum Industri',
     issuedDate: 'August 2024',
+    issuedDateId: 'Agustus 2024',
     competencies: [
       'Pandas & NumPy High-Performance Analytics',
       'Automated Data Cleaning & ETL Pipelines',
       'Statistical Hypothesis & Regression Analysis',
       'REST API Integration & JSON Parsing'
     ],
-    summary: 'Proficiency in data manipulation, exploratory data analysis, automation scripts, and quantitative dataset processing.'
+    competenciesId: [
+      'Analitik Performa Tinggi dengan Pandas & NumPy',
+      'Pembersihan Data Otomatis & Pipeline ETL',
+      'Uji Hipotesis Statistik & Analisis Regresi',
+      'Integrasi REST API & Parsing Data JSON'
+    ],
+    summary: 'Proficiency in data manipulation, exploratory data analysis, automation scripts, and quantitative dataset processing.',
+    summaryId: 'Kemahiran dalam manipulasi data, analisis eksploratif data (EDA), otomasi skrip, dan pengolahan dataset telekomunikasi berskala besar.'
   },
   2: { // SQL HackerRank
     code: 'HR-SQL-9104',
-    image: './certificates/cert_sql.png',
+    image: '/certificates/cert_sql.png',
     issuerFull: 'HackerRank Verified Skill Assessment',
+    issuerFullId: 'HackerRank Verified Skill Assessment',
     issuedDate: 'July 2024',
+    issuedDateId: 'Juli 2024',
     competencies: [
       'Complex Multi-Table INNER / LEFT JOINs',
       'Window Functions (ROW_NUMBER, RANK, DENSE_RANK)',
       'Subqueries, CTEs & Temporary Tables',
       'Index Optimization & High-Volume Query Tuning'
     ],
-    summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.'
+    competenciesId: [
+      'Query Kompleks Multi-Tabel INNER / LEFT JOIN',
+      'Fungsi Window (ROW_NUMBER, RANK, DENSE_RANK)',
+      'Subqueries, CTEs & Tabel Sementara',
+      'Optimasi Indeks & Tuning Query Skala Besar'
+    ],
+    summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.',
+    summaryId: 'Keahlian terverifikasi dalam query basis data relasional, agregasi metrik performa site telekomunikasi, dan optimasi arsitektur query.'
   },
   3: { // Project Management
     code: 'PM-ENG-40B',
-    image: './certificates/cert_pm.png',
+    image: '/certificates/cert_pm.png',
     issuerFull: 'Professional Engineering Standards / Telkomsel Scope',
+    issuerFullId: 'Standar Manajemen Proyek Profesional / Lingkup Telkomsel',
     issuedDate: 'December 2023',
+    issuedDateId: 'Desember 2023',
     competencies: [
       'CAPEX & OPEX Budget Allocation (IDR 40B)',
       'WBS Scheduling & Critical Path Management',
       'Vendor SLA & Subcontractor Compliance',
       'Telkomsel eATP & Site Acceptance Standards'
     ],
-    summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.'
+    competenciesId: [
+      'Alokasi Anggaran CAPEX & OPEX (Hingga Rp 40 Miliar)',
+      'Penjadwalan WBS & Manajemen Jalur Kritis (CPM)',
+      'Kepatuhan SLA Vendor & Koordinasi Subkontraktor',
+      'Standar Akseptansi Site & eATP Telkomsel'
+    ],
+    summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.',
+    summaryId: 'Penguasaan eksekusi proyek infrastruktur seluler berskala besar, peramalan sumber daya, dan tata kelola milestone manajemen eksekutif.'
   },
   4: { // N8N Automation
     code: 'N8N-AUTO-771',
-    image: './certificates/cert_n8n.png',
+    image: '/certificates/cert_n8n.png',
     issuerFull: 'Workflow Automation & Systems Integration',
+    issuerFullId: 'Otomasi Alur Kerja & Integrasi Sistem',
     issuedDate: 'November 2024',
+    issuedDateId: 'November 2024',
     competencies: [
       'Custom Webhook Listeners & Trigger Logic',
       'Multi-System API Orchestration (WhatsApp/MySQL)',
       'Fault-Tolerant Error Handling & Retry Policies',
       'Automated Telegram / Slack Event Notifiers'
     ],
-    summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.'
+    competenciesId: [
+      'Custom Webhook Listeners & Logika Trigger Otomatis',
+      'Orkestrasi API Multi-Sistem (WhatsApp/MySQL/Cloud)',
+      'Penanganan Error Toleran & Kebijakan Retry Otomatis',
+      'Notifikasi Event Otomatis Telegram & Slack'
+    ],
+    summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.',
+    summaryId: 'Perancangan dan penerapan alur kerja otomasi enterprise yang menghubungkan node monitoring jaringan seluler dengan interface pesan instan.'
   },
   5: { // Telecom Network Assurance
     code: 'RAN-OPT-2023',
-    image: './certificates/cert_ran_assurance.png',
+    image: '/certificates/cert_ran_assurance.png',
     issuerFull: 'Radio Access Network & Transmission Standards',
+    issuerFullId: 'Standar Transmisi & Jaringan Akses Radio (RAN)',
     issuedDate: 'May 2023',
+    issuedDateId: 'Mei 2023',
     competencies: [
       'RAN KPI Diagnostics (PRB, Payload, Drop Rate)',
       'RET Antenna Tilt & Azimuth Alignment Audit',
       'Balmon Spectrum Interference Spectrum Radar',
       'Fiber Optic / Microwave Backhaul Validation'
     ],
-    summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.'
+    competenciesId: [
+      'Diagnostik KPI RAN (PRB, Payload, Drop Call Rate)',
+      'Audit Kemiringan RET Antena & Penyelarasan Azimuth',
+      'Radar Interferensi Frekuensi Balmon & Analisis Spektrum',
+      'Validasi Backhaul Fiber Optik / Microwave'
+    ],
+    summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.',
+    summaryId: 'Kompetensi mendalam dalam optimalisasi spektrum RF seluler, integritas transmisi base station (BTS), dan jaminan kualitas layanan (QoS) jaringan seluler.'
   },
   6: { // Cisco Dasar
     code: 'LIDN-1661625797',
-    image: './certificates/cert_cisco.png',
+    image: '/certificates/cert_cisco.png',
     issuerFull: 'ID-Networkers (IDN) & Cisco Networking Academy',
+    issuerFullId: 'ID-Networkers (IDN) & Kurikulum Cisco Networking Academy',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'Cisco IOS Command-Line Interface (CLI)',
       'VLAN Segmentation & Trunking (802.1Q)',
@@ -95,13 +151,23 @@ const CERT_DETAILS = {
       'Static & Dynamic Routing (OSPF / RIP)',
       'Switch Port Security & Access Control Lists'
     ],
-    summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.'
+    competenciesId: [
+      'Interface Baris Perintah Cisco IOS (CLI)',
+      'Segmentasi VLAN & Trunking (802.1Q)',
+      'Subnetting IPv4 / IPv6 & Pengalamatan CIDR',
+      'Routing Statis & Dinamis (OSPF / RIP)',
+      'Keamanan Port Switch & Access Control List (ACL)'
+    ],
+    summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.',
+    summaryId: 'Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise.'
   },
   7: { // MikroTik Dasar (MTCNA)
     code: 'LIDN-4701470015',
-    image: './certificates/cert_mikrotik.png',
+    image: '/certificates/cert_mikrotik.png',
     issuerFull: 'ID-Networkers Certified MikroTik Associate',
+    issuerFullId: 'ID-Networkers Certified MikroTik Associate',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'RouterOS Administration & Winbox Gateway',
       'Bandwidth Management & Simple Queues QoS',
@@ -109,13 +175,23 @@ const CERT_DETAILS = {
       'DHCP Server, DNS Cache & Bridging Topologies',
       'Point-to-Point Wireless & Hotspot Authentication'
     ],
-    summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.'
+    competenciesId: [
+      'Administrasi RouterOS & Gateway Winbox',
+      'Manajemen Bandwidth & QoS Simple Queues',
+      'Firewall Filter Rules, NAT & Aturan Mangle',
+      'DHCP Server, DNS Cache & Topologi Bridging',
+      'Wireless Point-to-Point & Otentikasi Hotspot'
+    ],
+    summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.',
+    summaryId: 'Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS.'
   },
   8: { // Cyber Security
     code: 'LIDN-0033078842',
-    image: './certificates/cert_cybersecurity.png',
+    image: '/certificates/cert_cybersecurity.png',
     issuerFull: 'ID-Networkers Cyber Security Academy',
+    issuerFullId: 'ID-Networkers Cyber Security Academy',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'Network Vulnerability Assessment & Scanning',
       'CIA Triad & Information Security Governance',
@@ -123,13 +199,23 @@ const CERT_DETAILS = {
       'Port Hardening & Firewall Defense Strategy',
       'Security Incident Triage & Event Auditing'
     ],
-    summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.'
+    competenciesId: [
+      'Pemindaian & Penilaian Kerentanan Jaringan',
+      'Prinsip CIA Triad & Tata Kelola Keamanan Informasi',
+      'Mitigasi Vektor Serangan (DDoS, MITM, Injection)',
+      'Penguatan Port & Strategi Pertahanan Firewall',
+      'Triage Insiden Keamanan & Audit Log Aktivitas'
+    ],
+    summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.',
+    summaryId: 'Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem.'
   },
   9: { // Linux Systems
     code: 'LIDN-6638673257',
-    image: './certificates/cert_linux.png',
+    image: '/certificates/cert_linux.png',
     issuerFull: 'ID-Networkers Linux Systems Academy',
+    issuerFullId: 'ID-Networkers Linux Systems Academy',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'Linux Filesystem Hierarchy & CLI Shell',
       'User & Permission Management (chmod, chown, sudo)',
@@ -137,13 +223,23 @@ const CERT_DETAILS = {
       'Networking Configuration & SSH Key Authentication',
       'Automated Bash Shell Scripting & PM2 Services'
     ],
-    summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.'
+    competenciesId: [
+      'Hirarki Filesystem Linux & Shell Bash CLI',
+      'Manajemen Pengguna & Izin Akses (chmod, chown, sudo)',
+      'Daemon Systemd, Pemantauan Proses & Crontab',
+      'Konfigurasi Jaringan & Otentikasi Kunci SSH',
+      'Otomasi Scripting Shell Bash & Layanan PM2'
+    ],
+    summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.',
+    summaryId: 'Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background.'
   },
   10: { // Jaringan Dasar
     code: 'LIDN-2243638913',
-    image: './certificates/cert_networking.png',
+    image: '/certificates/cert_networking.png',
     issuerFull: 'ID-Networkers Networking Research Lab',
+    issuerFullId: 'ID-Networkers Networking Research Lab',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'OSI 7-Layer & TCP/IP Architecture',
       'Ethernet Frame & Packet Header Analysis',
@@ -151,13 +247,23 @@ const CERT_DETAILS = {
       'Network Troubleshooting (Ping, Traceroute, ARP)',
       'Bandwidth Calculation & Quality of Service (QoS)'
     ],
-    summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.'
+    competenciesId: [
+      'Arsitektur Lapisan OSI 7-Layer & TCP/IP',
+      'Analisis Header Paket & Frame Ethernet',
+      'Topologi Jaringan LAN, MAN & WAN',
+      'Troubleshooting Jaringan (Ping, Traceroute, ARP)',
+      'Perhitungan Bandwidth & Quality of Service (QoS)'
+    ],
+    summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.',
+    summaryId: 'Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end.'
   },
   11: { // PNETlab
     code: 'LIDN-4113909330',
-    image: './certificates/cert_pnetlab.png',
+    image: '/certificates/cert_pnetlab.png',
     issuerFull: 'ID-Networkers Virtualized Infrastructure Lab',
+    issuerFullId: 'ID-Networkers Virtualized Infrastructure Lab',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'PNETlab / EVE-NG Server Deployment',
       'Multi-Vendor Virtual Node Integration (Cisco, MikroTik)',
@@ -165,13 +271,23 @@ const CERT_DETAILS = {
       'Live Packet Sniffing with Wireshark',
       'Pre-Deployment Proof-of-Concept Validation'
     ],
-    summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.'
+    competenciesId: [
+      'Deployment Server PNETlab / EVE-NG',
+      'Integrasi Node Virtual Multi-Vendor (Cisco, MikroTik)',
+      'Emulasi Topologi Jaringan Kampus & WAN Skala Besar',
+      'Packet Sniffing Real-Time dengan Wireshark',
+      'Validasi Proof-of-Concept Sebelum Implementasi Lapangan'
+    ],
+    summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.',
+    summaryId: 'Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi.'
   },
   12: { // Dart Programming
     code: 'LIDN-8613215252',
-    image: './certificates/cert_dart.png',
+    image: '/certificates/cert_dart.png',
     issuerFull: 'ID-Networkers Software Engineering Division',
+    issuerFullId: 'Divisi Rekayasa Perangkat Lunak ID-Networkers',
     issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
       'Object-Oriented Programming (OOP) in Dart',
       'Asynchronous Futures, Streams & Event Loops',
@@ -179,13 +295,23 @@ const CERT_DETAILS = {
       'Functional Data Transformations (map, where, fold)',
       'Clean Code Principles & Modular Architecture'
     ],
-    summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.'
+    competenciesId: [
+      'Pemrograman Berorientasi Objek (OOP) dengan Dart',
+      'Futures Asinkron, Streams & Event Loop',
+      'Type Safety, Generics & Manajemen Koleksi Data',
+      'Transformasi Data Fungsional (map, where, fold)',
+      'Prinsip Clean Code & Arsitektur Perangkat Lunak Modular'
+    ],
+    summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.',
+    summaryId: 'Kemahiran terbukti dalam membangun aplikasi perangkat lunak berperforma tinggi dan type-safe menggunakan pemrograman asynchronous Dart modern.'
   },
   13: { // Publikasi Jurnal Ilmiah
     code: 'JIK-ESAU-2025',
-    image: './certificates/cert_scientific_publication.png',
+    image: '/certificates/cert_scientific_publication.png',
     issuerFull: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
+    issuerFullId: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
     issuedDate: 'July 2025',
+    issuedDateId: 'Juli 2025',
     competencies: [
       'Expert Systems & Rule-Based Reasoning',
       'Machine Learning & Game Playing Algorithms',
@@ -193,16 +319,24 @@ const CERT_DETAILS = {
       'Empirical Data Gathering & Research Methodology',
       'Peer-Reviewed Scientific Paper Publication'
     ],
-    summary: 'Author of peer-reviewed scientific papers focusing on Artificial Intelligence expert systems and Cloud Computing infrastructure published in academic journals.'
+    competenciesId: [
+      'Sistem Pakar & Penalaran Berbasis Aturan (Rule-Based)',
+      'Machine Learning & Algoritma Game Playing',
+      'Transformasi Digital Cloud Computing untuk UMKM',
+      'Pengumpulan Data Empiris & Metodologi Penelitian Ilmiah',
+      'Publikasi Karya Ilmiah Peer-Reviewed'
+    ],
+    summary: 'Author of peer-reviewed scientific papers focusing on Artificial Intelligence expert systems and Cloud Computing infrastructure published in academic journals.',
+    summaryId: 'Penulis karya ilmiah terpublikasi pada jurnal akademik bereputasi di bidang Artificial Intelligence (sistem pakar) dan infrastruktur Cloud Computing.'
   }
-}
+};
 
 export default function CertificatesSection() {
-  const { t, language } = useLanguage()
+  const { t, lang, language } = useLanguage()
   const certT = t.certificates
   const [selectedCert, setSelectedCert] = useState(null)
   const [selectedIndex, setSelectedIndex] = useState(null)
-  const isId = language === 'id'
+  const isId = (lang || language) === 'id'
 
   // Close on Escape key
   useEffect(() => {
@@ -228,6 +362,20 @@ export default function CertificatesSection() {
 
   const currentDetails = selectedIndex !== null ? (CERT_DETAILS[selectedIndex] || CERT_DETAILS[0]) : null
 
+  // Bilingual active modal content
+  const activeCompetencies = currentDetails
+    ? (isId && currentDetails.competenciesId ? currentDetails.competenciesId : currentDetails.competencies)
+    : []
+  const activeSummary = currentDetails
+    ? (isId && currentDetails.summaryId ? currentDetails.summaryId : currentDetails.summary)
+    : ''
+  const activeIssuer = currentDetails
+    ? (isId && currentDetails.issuerFullId ? currentDetails.issuerFullId : currentDetails.issuerFull)
+    : ''
+  const activeDate = currentDetails
+    ? (isId && currentDetails.issuedDateId ? currentDetails.issuedDateId : currentDetails.issuedDate)
+    : ''
+
   return (
     <section id="certificates" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/5">
       <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
@@ -246,58 +394,61 @@ export default function CertificatesSection() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {certT.items.map((cert, idx) => (
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
-            onClick={() => handleOpen(cert, idx)}
-            className="glass-card glass-card-hover rounded-2xl p-6 border border-white/10 flex flex-col justify-between cursor-pointer group hover:border-teal-500/40 transition-all duration-300"
-          >
-            <div>
-              {/* Category */}
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-[11px] font-mono text-teal-400 bg-teal-500/10 px-2.5 py-0.5 rounded border border-teal-500/20">
-                  {cert.category}
-                </span>
-                <span className="text-xs text-slate-400 font-mono">{cert.year}</span>
-              </div>
-
-              {/* Visual Certificate Document Preview */}
-              <div className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20">
-                <img
-                  src={CERT_DETAILS[idx]?.image}
-                  alt={cert.name}
-                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>{isId ? 'DOKUMEN RESMI' : 'OFFICIAL CREDENTIAL'}</span>
+        {certT.items.map((cert, idx) => {
+          const detail = CERT_DETAILS[idx] || CERT_DETAILS[0]
+          return (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: idx * 0.05 }}
+              onClick={() => handleOpen(cert, idx)}
+              className="glass-card glass-card-hover rounded-2xl p-6 border border-white/10 flex flex-col justify-between cursor-pointer group hover:border-teal-500/40 transition-all duration-300"
+            >
+              <div>
+                {/* Category & Year */}
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-[11px] font-mono text-teal-400 bg-teal-500/10 px-2.5 py-0.5 rounded border border-teal-500/20">
+                    {cert.category}
+                  </span>
+                  <span className="text-xs text-slate-400 font-mono">{cert.year}</span>
                 </div>
+
+                {/* Visual Certificate Document Preview */}
+                <div className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20">
+                  <img
+                    src={detail.image}
+                    alt={cert.name}
+                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-80 group-hover:opacity-40 transition-opacity"></div>
+                  <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>{isId ? 'DOKUMEN RESMI' : 'OFFICIAL CREDENTIAL'}</span>
+                  </div>
+                </div>
+
+                {/* Title & Issuer */}
+                <h3 className="text-base font-bold text-slate-100 mb-1 group-hover:text-teal-300 transition-colors line-clamp-2">
+                  {cert.name}
+                </h3>
+                <p className="text-xs text-slate-400 font-medium">{cert.issuer}</p>
               </div>
 
-              {/* Title & Issuer */}
-              <h3 className="text-base font-bold text-slate-100 mb-1 group-hover:text-teal-300 transition-colors">
-                {cert.name}
-              </h3>
-              <p className="text-xs text-slate-400 font-medium">{cert.issuer}</p>
-            </div>
-
-            <div className="pt-5 flex items-center justify-between text-xs text-teal-400 font-medium group-hover:text-teal-300">
-              <span className="flex items-center gap-1.5">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                {certT.previewText}
-              </span>
-              <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
-                {isId ? 'Terverifikasi' : 'Verified'}
-              </span>
-            </div>
-          </motion.div>
-        ))}
+              <div className="pt-5 flex items-center justify-between text-xs text-teal-400 font-medium group-hover:text-teal-300 border-t border-white/5 mt-4">
+                <span className="flex items-center gap-1.5">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  {isId ? 'Lihat Sertifikat →' : (certT.previewText || 'Preview Credential →')}
+                </span>
+                <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                  {isId ? 'Terverifikasi' : 'Verified'}
+                </span>
+              </div>
+            </motion.div>
+          )
+        })}
       </div>
 
       {/* Deluxe Digital Credential Lightbox Modal */}
@@ -353,7 +504,7 @@ export default function CertificatesSection() {
                       {selectedCert.name}
                     </h3>
                     <p className="text-xs text-slate-400 font-mono">
-                      {currentDetails.issuerFull} · {currentDetails.issuedDate}
+                      {activeIssuer} · {activeDate}
                     </p>
                   </div>
                 </div>
@@ -392,13 +543,13 @@ export default function CertificatesSection() {
                       Toti Putra Pratama
                     </div>
                     <div className="text-[11px] font-mono text-slate-400">
-                      ID: <span className="text-teal-400 font-semibold">{currentDetails.code}</span> // STATUS: <span className="text-emerald-400">PERMANENT STANDING</span>
+                      ID: <span className="text-teal-400 font-semibold">{currentDetails.code}</span> // {isId ? 'STATUS:' : 'STATUS:'} <span className="text-emerald-400">{isId ? 'BERLAKU AKTIF' : 'PERMANENT STANDING'}</span>
                     </div>
                   </div>
 
                   {/* Summary */}
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed my-4 text-center sm:text-left">
-                    {currentDetails.summary}
+                    {activeSummary}
                   </p>
 
                   {/* Competencies Validated Grid */}
@@ -408,7 +559,7 @@ export default function CertificatesSection() {
                       {isId ? 'Kompetensi Inti yang Divalidasi:' : 'Core Competencies Validated:'}
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {currentDetails.competencies.map((comp, cIdx) => (
+                      {activeCompetencies.map((comp, cIdx) => (
                         <div
                           key={cIdx}
                           className="flex items-start gap-2 text-xs text-slate-200 bg-slate-900/80 rounded-lg p-2.5 border border-white/5"
@@ -425,11 +576,11 @@ export default function CertificatesSection() {
                     <div className="flex items-center gap-2">
                       <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
                       <span className="text-[11px] text-emerald-300 font-semibold">
-                        {isId ? 'Sesuai Standar Industri & Proyek Telko' : 'Telco & Analytics Engineering Compliant'}
+                        {isId ? 'Sesuai Standar Industri Telekomunikasi & Analitik' : 'Telco & Analytics Engineering Compliant'}
                       </span>
                     </div>
                     <div className="px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/30 text-[10px] text-teal-300 font-semibold tracking-wider">
-                      VERIFIED REPOSITORY RECORD
+                      {isId ? 'REKOR REPOSITORI TERVALIDASI' : 'VERIFIED REPOSITORY RECORD'}
                     </div>
                   </div>
                 </div>
@@ -447,7 +598,7 @@ export default function CertificatesSection() {
                     onClick={handleClose}
                     className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-teal-500/25"
                   >
-                    {certT.closePreview}
+                    {isId ? 'Tutup Pratinjau' : (certT.closePreview || 'Close Preview')}
                   </button>
                 </div>
               </div>

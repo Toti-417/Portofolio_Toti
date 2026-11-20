@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useLanguage } from '../context/LanguageContext'
 import EditableText from '../components/EditableText'
+import ProjectArchitectureDiagram from '../components/ProjectDiagrams'
 
 const styles = [
   { accent: 'from-teal-500/20 via-cyan-500/10 to-transparent', border: 'border-teal-500/40', glow: 'hover:shadow-teal-500/20' },
@@ -22,11 +23,21 @@ const WEB3_PROJECTS = [
       'Copilot diagnosa transaksi on-chain otomatis untuk agen Technical Support L1/L2. Mampu menganalisa kegagalan transaksi (Out of Gas, Slippage Exceeded, Nonce Gap, TPU Drop), visualisasi latensi RPC real-time, dan generator tiket Zendesk/Discord dalam hitungan detik.',
     descriptionEn:
       'Automated on-chain transaction failure diagnostic copilot for L1/L2 Technical Support & CX engineers. Decodes Out-of-Gas, Slippage, Nonce Gaps, and Solana TPU drops, featuring real-time RPC telemetry and an omnichannel Zendesk/Discord response generator.',
+    dashboardPurposeId:
+      'Memfasilitasi tim support Web3 untuk mendiagnosa kegagalan transaksi pengguna secara instan tanpa perlu membaca raw hex bytecode secara manual, lalu menyusun balasan yang jelas dan menenangkan bagi user.',
+    dashboardPurposeEn:
+      'Enables Web3 support engineers to triage user transaction failures in real time without manually deciphering raw hex bytecode, auto-generating empathetic and technically accurate omnichannel replies.',
     impactId: 'Memangkas waktu triage insiden user dari 15 menit menjadi < 30 detik dengan penjelasan non-teknis yang ramah pengguna.',
     impactEn: 'Reduces user transaction incident triage time from 15 mins to < 30 secs with user-friendly omnichannel response generation.',
     tags: ['React', 'Coinbase Theme', 'On-Chain Diagnostics', 'Zendesk Copilot', 'EVM & Solana', 'Bispro Architecture'],
     liveUrl: 'https://web3-support-copilot.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/web3-support-copilot'
+    repoUrl: 'https://github.com/Toti-417/web3-support-copilot',
+    metrics: [
+      { label: 'Triage Time', val: '< 30 Detik' },
+      { label: 'Incident Types', val: '4 Categories' },
+      { label: 'Supported Chains', val: 'EVM & Solana' },
+      { label: 'SLA Improvement', val: '95% Faster' }
+    ]
   },
   {
     id: 'crosschain-reconciliation-portal',
@@ -36,11 +47,21 @@ const WEB3_PROJECTS = [
       'Portal audit dan rekonsiliasi deposit exchange untuk menangani Missing Memo/Tag (TRON USDT, TON, XRP), salah chain, dan wrong-token recovery. Dilengkapi verifikasi tanda tangan kriptografi EIP-712 dan export CSV audit harian.',
     descriptionEn:
       'Institutional deposit reconciliation portal resolving Missing Memo/Tag incidents (TRON USDT, TON, XRP) and wrong-chain sweeps. Features EIP-712 cryptographic ownership signature verification and automated daily CSV settlement export.',
+    dashboardPurposeId:
+      'Memverifikasi kepemilikan dana deposit nyasar secara non-custodial via tanda tangan digital EIP-712 tanpa mengekspos private key exchange, lalu mengeksekusi sweep dana ke balance pengguna.',
+    dashboardPurposeEn:
+      'Verifies ownership of misdirected exchange deposits non-custodially via EIP-712 structured cryptographic signatures without hot wallet private key exposure, streamlining recovery sweeps.',
     impactId: 'Otomatisasi pemulihan dana deposit nyasar dengan verifikasi kriptografis tanpa mengekspos private key exchange.',
     impactEn: 'Automates misrouted deposit recovery with tamper-proof cryptographic ownership verification without hot wallet exposure.',
     tags: ['React', 'Binance Ops Standard', 'Missing Memo Recovery', 'EIP-712 Signatures', 'TRON/TON/XRP', 'Audit Trail'],
     liveUrl: 'https://crosschain-reconciliation-portal.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/crosschain-reconciliation-portal'
+    repoUrl: 'https://github.com/Toti-417/crosschain-reconciliation-portal',
+    metrics: [
+      { label: 'Signatures', val: 'EIP-712 Verified' },
+      { label: 'Supported Networks', val: 'TRON / TON / XRP' },
+      { label: 'Recovery Speed', val: '< 60 Detik' },
+      { label: 'Audit Trail', val: '100% Immutable' }
+    ]
   },
   {
     id: 'rpc-node-sentinel',
@@ -50,11 +71,21 @@ const WEB3_PROJECTS = [
       'Sistem pemantauan keandalan node RPC multi-chain (Alchemy, Infura, QuickNode, Ankr, Helius) dengan deteksi block drift/head desync, visualisasi live packet waveform, dan webhook incident dispatcher (Discord/Telegram/PagerDuty).',
     descriptionEn:
       'Multi-chain RPC latency benchmarking and block drift monitoring system across 6 major providers (Alchemy, Infura, QuickNode, Ankr, Helius) with live waveform packet visualizer and webhook incident dispatcher.',
+    dashboardPurposeId:
+      'Menjaga ketersediaan dApp dengan menguji desinkronisasi block head validator secara berkelanjutan dan memicu auto-failover sebelum transaksi user mengalami drop.',
+    dashboardPurposeEn:
+      'Guarantees dApp SLA by continuously polling validator head desync across 6 RPC providers, triggering automated webhook failovers before transaction dropped spikes occur.',
     impactId: 'Mendeteksi desinkronisasi node validator dan memicu auto-failover sebelum terjadi kegagalan transaksi massal pada dApp.',
     impactEn: 'Detects validator head desync in under 400ms and triggers automatic webhook alerts to prevent user-facing dApp transaction drops.',
     tags: ['React', 'Linear/Datadog SRE', 'RPC Benchmarking', 'Block Drift Detector', 'Packet Stream', 'Webhook Dispatcher'],
     liveUrl: 'https://rpc-node-sentinel.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/rpc-node-sentinel'
+    repoUrl: 'https://github.com/Toti-417/rpc-node-sentinel',
+    metrics: [
+      { label: 'Desync Threshold', val: '< 400 ms' },
+      { label: 'Target Providers', val: '6 Endpoints' },
+      { label: 'Failover Mode', val: 'Automated' },
+      { label: 'Telemetry Stream', val: 'Live Waveform' }
+    ]
   },
   {
     id: 'web3-telemetry-tracker',
@@ -64,11 +95,21 @@ const WEB3_PROJECTS = [
       'Dashboard pemantauan node JSON-RPC real-time lintas Solana Mainnet (~2,800+ TPS), Base L2, dan Ethereum Mainnet, dilengkapi radar transaksi whale (> $100k USD), filter multi-kriteria, dan export data audit CSV/JSON.',
     descriptionEn:
       'Real-time JSON-RPC node telemetry dashboard across Solana Mainnet (~2,800+ TPS), Base L2, and Ethereum Mainnet with a live Whale Transaction Alert Radar (> $100k USD), multi-criteria filters, and CSV/JSON export.',
+    dashboardPurposeId:
+      'Mendeteksi pergerakan likuiditas besar (whale) dan anomali throughput jaringan secara zero-backend langsung dari node RPC edge browser.',
+    dashboardPurposeEn:
+      'Monitors high-value whale movements and on-chain throughput anomalies across Solana, Base, and ETH via client-side zero-backend edge telemetry.',
     impactId: 'Zero-backend edge telemetry menghubungkan metodologi KPI telekomunikasi dengan monitoring blockchain real-time.',
     impactEn: 'Zero-backend edge telemetry bridging telecom KPI auditing methodologies with live multi-chain blockchain monitoring.',
     tags: ['React', 'Chainlink Terminal', 'JSON-RPC', 'Whale Radar', 'Solana', 'Base L2', 'CSV/JSON Export'],
     liveUrl: 'https://web3-telemetry-tracker.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/web3-telemetry-tracker'
+    repoUrl: 'https://github.com/Toti-417/web3-telemetry-tracker',
+    metrics: [
+      { label: 'Ingestion TPS', val: '~2,800+ TPS' },
+      { label: 'Whale Threshold', val: '> $100k USD' },
+      { label: 'Chains Monitored', val: 'Solana, Base, ETH' },
+      { label: 'Architecture', val: 'Zero-Backend Edge' }
+    ]
   },
   {
     id: 'onchain-kyt-investigator',
@@ -78,11 +119,21 @@ const WEB3_PROJECTS = [
       'Engine investigasi AML/KYT dan asset recovery untuk melacak aliran dana wallet EVM (Ethereum/Base) & Solana via Blockscout API & JSON-RPC, lengkap dengan Risk Score (0–100), flag mixer/darknet, dan export Compliance Dossier.',
     descriptionEn:
       'AML/KYT & asset recovery investigation dashboard querying Blockscout API & Solana JSON-RPC for automated Risk Scoring (0–100), mixer/OFAC red-flag detection, and official Compliance Case Dossier export.',
+    dashboardPurposeId:
+      'Menyediakan investigasi forensik on-chain dan penelusuran aliran dana lintas kontrak pintar untuk kepatuhan AML/KYT serta penyusunan berkas bukti bagi penegak hukum.',
+    dashboardPurposeEn:
+      'Performs on-chain forensic investigations and multi-hop fund tracing across smart contracts for AML/KYT regulatory compliance and law enforcement dossier filing.',
     impactId: 'Otomatisasi triage kepatuhan on-chain & export laporan audit PDF/JSON dalam hitungan detik.',
     impactEn: 'Automates on-chain compliance triage and one-click PDF/JSON audit dossier generation.',
     tags: ['React', 'Chainalysis Forensics', 'Blockscout API', 'KYT/AML', 'OFAC Screening', 'Compliance Dossier'],
     liveUrl: 'https://onchain-kyt-investigator.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/onchain-kyt-investigator'
+    repoUrl: 'https://github.com/Toti-417/onchain-kyt-investigator',
+    metrics: [
+      { label: 'Risk Scoring', val: '0–100 Matrix' },
+      { label: 'Sanctions DB', val: 'OFAC & Mixers' },
+      { label: 'Graph Traversal', val: 'Multi-Hop' },
+      { label: 'Compliance Dossier', val: 'PDF & JSON' }
+    ]
   },
   {
     id: 'web3-ops-incident-console',
@@ -92,11 +143,21 @@ const WEB3_PROJECTS = [
       'Konsol support engineering untuk cek latensi/kesehatan RPC real-time, debug transaksi gagal/revert on-chain, serta generator balasan user (Zendesk / Discord / Jira) dan escalation ticket lintas chain.',
     descriptionEn:
       'Support engineering console with live RPC latency monitoring, on-chain failed/revert TX debugging, and one-click omnichannel user replies (Zendesk/Discord) & Jira engineering escalation generation.',
+    dashboardPurposeId:
+      'Memantau kesehatan swap pool protokol DEX, menganalisa string error revert transaksi, dan melacak SLA penyelesaian insiden secara real-time.',
+    dashboardPurposeEn:
+      'Monitors DEX liquidity pool health, decodes custom revert strings, and tracks incident resolution SLA timers with automated ticketing.',
     impactId: 'Mempercepat troubleshooting insiden TX user dan eskalasi tim engineering lintas chain.',
     impactEn: 'Accelerates user TX incident troubleshooting and cross-chain engineering escalation.',
     tags: ['React', 'Uniswap Ops Theme', 'RPC Health', 'TX Debugger', 'Omnichannel Copilot', 'SLA Tracking'],
     liveUrl: 'https://web3-ops-incident-console.vercel.app',
-    repoUrl: 'https://github.com/Toti-417/web3-ops-incident-console'
+    repoUrl: 'https://github.com/Toti-417/web3-ops-incident-console',
+    metrics: [
+      { label: 'SLA Response', val: '< 5 Menit' },
+      { label: 'Protocol Coverage', val: 'Uniswap v3 Pools' },
+      { label: 'Revert Decoder', val: 'Bytecode STF' },
+      { label: 'Escalations', val: 'Jira & Zendesk' }
+    ]
   }
 ]
 
@@ -104,12 +165,17 @@ export default function ProjectsSection() {
   const { t, lang } = useLanguage()
   const projectsT = t.projects
   const [selectedProject, setSelectedProject] = useState(null)
-  const [activeImageTab, setActiveImageTab] = useState('primary') // 'primary' | 'secondary'
+  const [activeImageTab, setActiveImageTab] = useState('diagram') // 'primary' | 'secondary' | 'diagram'
   const [projectCategory, setProjectCategory] = useState('all') // 'all' | 'non-web3' | 'web3'
 
-  const openProject = (project) => {
+  const openProject = (project, defaultTab = 'primary') => {
     setSelectedProject(project)
-    setActiveImageTab('primary')
+    // If project has no screenshot, default to diagram
+    if (!project.image && defaultTab === 'primary') {
+      setActiveImageTab('diagram')
+    } else {
+      setActiveImageTab(defaultTab)
+    }
   }
 
   return (
@@ -188,7 +254,7 @@ export default function ProjectsSection() {
 
                     {project.image ? (
                       <div
-                        onClick={() => openProject(project)}
+                        onClick={() => openProject(project, 'primary')}
                         className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 cursor-pointer bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20"
                       >
                         <img
@@ -245,16 +311,26 @@ export default function ProjectsSection() {
                       )}
                     </div>
 
-                    <button
-                      onClick={() => openProject(project)}
-                      className="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-teal-500/40 text-xs font-medium text-slate-200 transition-all flex items-center justify-center gap-2 group-hover:text-teal-300 shadow-sm"
-                    >
-                      <span>{project.image ? (lang === 'id' ? 'Lihat Bukti & Detail Dashboard' : 'View Dashboard Proof & Details') : projectsT.viewDetails}</span>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                      </svg>
-                    </button>
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => openProject(project, 'primary')}
+                        className="flex-1 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-teal-500/40 text-xs font-medium text-slate-200 transition-all flex items-center justify-center gap-1.5 group-hover:text-teal-300 shadow-sm"
+                      >
+                        <span>{project.image ? (lang === 'id' ? 'Bukti & Detail' : 'Proof & Details') : projectsT.viewDetails}</span>
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <line x1="5" y1="12" x2="19" y2="12" />
+                          <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => openProject(project, 'diagram')}
+                        className="px-3.5 py-2.5 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 border border-teal-500/30 text-xs font-mono text-teal-300 transition-all flex items-center justify-center gap-1.5 shadow-sm"
+                        title={lang === 'id' ? 'Lihat Diagram Arsitektur & Alur Data' : 'View Architecture & Data Flow Diagram'}
+                      >
+                        <span>📐</span>
+                        <span className="font-semibold">Diagram</span>
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               )
@@ -325,24 +401,39 @@ export default function ProjectsSection() {
                     ))}
                   </div>
 
-                  <div className="flex gap-2">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 py-2.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/40 text-xs font-semibold text-purple-200 transition-all flex items-center justify-center gap-1.5"
+                  <div className="space-y-2">
+                    {/* View Diagram Button */}
+                    <button
+                      onClick={() => openProject(project, 'diagram')}
+                      className="w-full py-2.5 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/50 text-xs font-semibold text-purple-200 transition-all flex items-center justify-center gap-2 group-hover:text-purple-100 shadow-sm"
                     >
-                      <span>{lang === 'id' ? 'Buka Live App' : 'Open Live App'}</span>
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    </a>
-                    <a
-                      href={project.repoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-xs font-mono text-slate-300 transition-all flex items-center justify-center"
-                    >
-                      GitHub
-                    </a>
+                      <span>📐</span>
+                      <span>{lang === 'id' ? 'Lihat Arsitektur & Alur Data' : 'View Architecture & Data Flow'}</span>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                      </svg>
+                    </button>
+
+                    <div className="flex gap-2">
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 hover:border-teal-500/40 text-xs font-semibold text-slate-200 transition-all flex items-center justify-center gap-1.5"
+                      >
+                        <span>{lang === 'id' ? 'Buka Live App' : 'Open Live App'}</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      </a>
+                      <a
+                        href={project.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-xs font-mono text-slate-300 transition-all flex items-center justify-center"
+                      >
+                        GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -351,7 +442,7 @@ export default function ProjectsSection() {
         </div>
       )}
 
-      {/* Project Detail Modal with Dashboard Screenshot Proof */}
+      {/* Project Detail Modal with Dashboard Screenshot Proof & Architecture Diagrams */}
       <AnimatePresence>
         {selectedProject && (
           <motion.div
@@ -366,7 +457,7 @@ export default function ProjectsSection() {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.95, y: 20 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#0b0f1f] border border-teal-500/40 rounded-2xl p-5 sm:p-7 max-w-3xl w-full shadow-2xl space-y-5 my-auto max-h-[92vh] overflow-y-auto"
+              className="bg-[#0b0f1f] border border-teal-500/40 rounded-2xl p-5 sm:p-7 max-w-4xl w-full shadow-2xl space-y-5 my-auto max-h-[94vh] overflow-y-auto"
             >
               {/* Modal Header */}
               <div className="flex items-start justify-between border-b border-white/10 pb-4">
@@ -375,12 +466,10 @@ export default function ProjectsSection() {
                     <span className="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-0.5 rounded border border-teal-500/30">
                       {selectedProject.category}
                     </span>
-                    {selectedProject.image && (
-                      <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/30 flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                        {lang === 'id' ? 'Terverifikasi Sistem' : 'System Verified'}
-                      </span>
-                    )}
+                    <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/30 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                      {lang === 'id' ? 'Arsitektur Terverifikasi' : 'Verified Architecture'}
+                    </span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold text-slate-100 mt-2">
                     {selectedProject.title}
@@ -394,38 +483,55 @@ export default function ProjectsSection() {
                 </button>
               </div>
 
-              {/* Visual Proof / Dashboard Screenshot Display */}
-              {selectedProject.image && (
-                <div className="space-y-3">
-                  {/* Secondary Image Switcher Tabs */}
-                  {selectedProject.secondaryImage && (
-                    <div className="flex items-center gap-2 bg-slate-900/90 p-1.5 rounded-xl border border-white/10">
-                      <button
-                        onClick={() => setActiveImageTab('primary')}
-                        className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-mono transition-all flex items-center justify-center gap-1.5 ${
-                          activeImageTab === 'primary'
-                            ? 'bg-teal-500 text-slate-950 font-bold shadow-md'
-                            : 'text-slate-300 hover:text-white hover:bg-white/5'
-                        }`}
-                      >
-                        <span>🗺️</span>
-                        <span>{selectedProject.imageLabel || (lang === 'id' ? 'Tampilan 1: Peta Radar' : 'View 1: Radar Map')}</span>
-                      </button>
-                      <button
-                        onClick={() => setActiveImageTab('secondary')}
-                        className={`flex-1 py-1.5 px-3 rounded-lg text-xs font-mono transition-all flex items-center justify-center gap-1.5 ${
-                          activeImageTab === 'secondary'
-                            ? 'bg-teal-500 text-slate-950 font-bold shadow-md'
-                            : 'text-slate-300 hover:text-white hover:bg-white/5'
-                        }`}
-                      >
-                        <span>📊</span>
-                        <span>{selectedProject.secondaryImageLabel || (lang === 'id' ? 'Tampilan 2: Matrix 24 Jam' : 'View 2: 24-Hr Matrix')}</span>
-                      </button>
-                    </div>
+              {/* View Switcher Tabs: Screenshot(s) vs Architecture Diagram */}
+              <div className="space-y-3">
+                <div className="flex flex-wrap items-center gap-2 bg-slate-900/90 p-1.5 rounded-xl border border-white/10">
+                  {selectedProject.image && (
+                    <button
+                      onClick={() => setActiveImageTab('primary')}
+                      className={`flex-1 min-w-[130px] py-1.5 px-3 rounded-lg text-xs font-mono transition-all flex items-center justify-center gap-1.5 ${
+                        activeImageTab === 'primary'
+                          ? 'bg-teal-500 text-slate-950 font-bold shadow-md'
+                          : 'text-slate-300 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      <span>📷</span>
+                      <span>{selectedProject.imageLabel || (lang === 'id' ? 'Tampilan 1: Screenshot' : 'View 1: Screenshot')}</span>
+                    </button>
                   )}
 
-                  {/* Screenshot Container */}
+                  {selectedProject.secondaryImage && (
+                    <button
+                      onClick={() => setActiveImageTab('secondary')}
+                      className={`flex-1 min-w-[130px] py-1.5 px-3 rounded-lg text-xs font-mono transition-all flex items-center justify-center gap-1.5 ${
+                        activeImageTab === 'secondary'
+                          ? 'bg-teal-500 text-slate-950 font-bold shadow-md'
+                          : 'text-slate-300 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      <span>📊</span>
+                      <span>{selectedProject.secondaryImageLabel || (lang === 'id' ? 'Tampilan 2: Matrix' : 'View 2: Matrix')}</span>
+                    </button>
+                  )}
+
+                  {/* Architecture Diagram Tab (Universal for ALL projects) */}
+                  <button
+                    onClick={() => setActiveImageTab('diagram')}
+                    className={`flex-1 min-w-[170px] py-1.5 px-3 rounded-lg text-xs font-mono transition-all flex items-center justify-center gap-1.5 ${
+                      activeImageTab === 'diagram'
+                        ? 'bg-gradient-to-r from-teal-400 via-cyan-400 to-purple-400 text-slate-950 font-bold shadow-md'
+                        : 'text-teal-300 hover:text-white hover:bg-white/5 border border-teal-500/20'
+                    }`}
+                  >
+                    <span>📐</span>
+                    <span>{lang === 'id' ? 'Arsitektur & Alur Data' : 'Architecture & Data Flow'}</span>
+                  </button>
+                </div>
+
+                {/* Main Media Content Display */}
+                {activeImageTab === 'diagram' ? (
+                  <ProjectArchitectureDiagram projectId={selectedProject.id} lang={lang} />
+                ) : selectedProject.image ? (
                   <div className="relative rounded-xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl max-h-[380px] flex items-center justify-center group">
                     <img
                       src={activeImageTab === 'secondary' && selectedProject.secondaryImage ? selectedProject.secondaryImage : selectedProject.image}
@@ -442,31 +548,35 @@ export default function ProjectsSection() {
                       <span>{lang === 'id' ? 'Buka Gambar Resolusi Penuh' : 'Open Full Resolution'}</span>
                     </a>
                   </div>
-                </div>
-              )}
+                ) : (
+                  <ProjectArchitectureDiagram projectId={selectedProject.id} lang={lang} />
+                )}
+              </div>
 
-              {/* Purpose & Explanation of Dashboard (Fungsi Dashboard) */}
-              {selectedProject.dashboardPurpose && (
+              {/* Purpose & Operational Explanation */}
+              {(selectedProject.dashboardPurpose || selectedProject.dashboardPurposeId || selectedProject.dashboardPurposeEn) && (
                 <div className="p-4 rounded-xl bg-gradient-to-r from-teal-950/40 via-slate-900 to-slate-900 border border-teal-500/30">
                   <div className="flex items-center gap-2 mb-1.5">
                     <span className="text-teal-400">💡</span>
                     <h4 className="text-xs font-mono uppercase tracking-wider text-teal-300 font-bold">
-                      {lang === 'id' ? 'Fungsi & Peruntukan Dashboard / Sistem:' : 'Dashboard Functionality & Operational Purpose:'}
+                      {lang === 'id' ? 'Fungsi & Peruntukan Arsitektur Sistem:' : 'Architecture Functionality & Operational Purpose:'}
                     </h4>
                   </div>
                   <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                    {selectedProject.dashboardPurpose}
+                    {selectedProject.dashboardPurpose ||
+                      (lang === 'id' ? selectedProject.dashboardPurposeId : selectedProject.dashboardPurposeEn)}
                   </p>
                 </div>
               )}
 
-              {/* Description */}
+              {/* Technical Description */}
               <div>
                 <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 font-semibold mb-1.5">
                   {lang === 'id' ? 'Deskripsi Teknis Proyek:' : 'Technical Project Description:'}
                 </h4>
                 <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  {selectedProject.description}
+                  {selectedProject.description ||
+                    (lang === 'id' ? selectedProject.descriptionId : selectedProject.descriptionEn)}
                 </p>
               </div>
 
@@ -476,23 +586,26 @@ export default function ProjectsSection() {
                   {projectsT.modalTitle}
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  {selectedProject.impact}
+                  {selectedProject.impact ||
+                    (lang === 'id' ? selectedProject.impactId : selectedProject.impactEn)}
                 </p>
               </div>
 
               {/* Metrics Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {selectedProject.metrics.map((m, i) => (
-                  <div key={i} className="p-3 rounded-lg bg-slate-900/90 border border-white/5 text-center">
-                    <span className="text-[11px] text-slate-400 font-mono block">
-                      {m.label}
-                    </span>
-                    <span className="text-sm sm:text-base font-bold text-amber-400 mt-0.5 block">
-                      {m.val}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              {selectedProject.metrics && selectedProject.metrics.length > 0 && (
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {selectedProject.metrics.map((m, i) => (
+                    <div key={i} className="p-3 rounded-lg bg-slate-900/90 border border-white/5 text-center">
+                      <span className="text-[11px] text-slate-400 font-mono block">
+                        {m.label}
+                      </span>
+                      <span className="text-sm sm:text-base font-bold text-amber-400 mt-0.5 block">
+                        {m.val}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               {/* Technical Stack Tags */}
               <div className="border-t border-white/10 pt-4">
@@ -511,11 +624,36 @@ export default function ProjectsSection() {
                 </div>
               </div>
 
-              {/* Modal Footer */}
-              <div className="flex justify-end pt-2 border-t border-white/10">
+              {/* Modal Footer with External Links & Close */}
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10">
+                <div className="flex items-center gap-2">
+                  {selectedProject.liveUrl && (
+                    <a
+                      href={selectedProject.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 border border-purple-400/40 text-xs font-semibold text-purple-200 transition-all flex items-center gap-1.5"
+                    >
+                      <span>{lang === 'id' ? 'Buka Live Web App' : 'Open Live App'}</span>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                  )}
+                  {selectedProject.repoUrl && (
+                    <a
+                      href={selectedProject.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-xs font-mono text-slate-300 transition-all flex items-center gap-1.5"
+                    >
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                      <span>GitHub</span>
+                    </a>
+                  )}
+                </div>
+
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="px-6 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs transition-colors shadow-lg shadow-teal-500/20"
+                  className="px-6 py-2.5 rounded-xl bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold text-xs transition-colors shadow-lg shadow-teal-500/20 ml-auto"
                 >
                   {projectsT.closeModal}
                 </button>

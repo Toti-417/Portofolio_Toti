@@ -76,6 +76,110 @@ const CERT_DETAILS = {
       'Fiber Optic / Microwave Backhaul Validation'
     ],
     summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.'
+  },
+  6: { // Cisco Dasar
+    code: 'LIDN-1661625797',
+    issuerFull: 'ID-Networkers (IDN) & Cisco Networking Academy',
+    issuedDate: 'November 2026',
+    competencies: [
+      'Cisco IOS Command-Line Interface (CLI)',
+      'VLAN Segmentation & Trunking (802.1Q)',
+      'IPv4 / IPv6 Subnetting & CIDR Addressing',
+      'Static & Dynamic Routing (OSPF / RIP)',
+      'Switch Port Security & Access Control Lists'
+    ],
+    summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.'
+  },
+  7: { // MikroTik Dasar (MTCNA)
+    code: 'LIDN-4701470015',
+    issuerFull: 'ID-Networkers Certified MikroTik Associate',
+    issuedDate: 'November 2026',
+    competencies: [
+      'RouterOS Administration & Winbox Gateway',
+      'Bandwidth Management & Simple Queues QoS',
+      'Firewall Filter Rules, NAT & Mangle Rules',
+      'DHCP Server, DNS Cache & Bridging Topologies',
+      'Point-to-Point Wireless & Hotspot Authentication'
+    ],
+    summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.'
+  },
+  8: { // Cyber Security
+    code: 'LIDN-0033078842',
+    issuerFull: 'ID-Networkers Cyber Security Academy',
+    issuedDate: 'November 2026',
+    competencies: [
+      'Network Vulnerability Assessment & Scanning',
+      'CIA Triad & Information Security Governance',
+      'Attack Vector Mitigation (DDoS, MITM, Injection)',
+      'Port Hardening & Firewall Defense Strategy',
+      'Security Incident Triage & Event Auditing'
+    ],
+    summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.'
+  },
+  9: { // Linux Systems
+    code: 'LIDN-6638673257',
+    issuerFull: 'ID-Networkers Linux Systems Academy',
+    issuedDate: 'November 2026',
+    competencies: [
+      'Linux Filesystem Hierarchy & CLI Shell',
+      'User & Permission Management (chmod, chown, sudo)',
+      'Systemd Daemons, Process Monitoring & Crontab',
+      'Networking Configuration & SSH Key Authentication',
+      'Automated Bash Shell Scripting & PM2 Services'
+    ],
+    summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.'
+  },
+  10: { // Jaringan Dasar
+    code: 'LIDN-2243638913',
+    issuerFull: 'ID-Networkers Networking Research Lab',
+    issuedDate: 'November 2026',
+    competencies: [
+      'OSI 7-Layer & TCP/IP Architecture',
+      'Ethernet Frame & Packet Header Analysis',
+      'LAN, MAN & WAN Network Topologies',
+      'Network Troubleshooting (Ping, Traceroute, ARP)',
+      'Bandwidth Calculation & Quality of Service (QoS)'
+    ],
+    summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.'
+  },
+  11: { // PNETlab
+    code: 'LIDN-4113909330',
+    issuerFull: 'ID-Networkers Virtualized Infrastructure Lab',
+    issuedDate: 'November 2026',
+    competencies: [
+      'PNETlab / EVE-NG Server Deployment',
+      'Multi-Vendor Virtual Node Integration (Cisco, MikroTik)',
+      'Complex Campus & WAN Topology Emulation',
+      'Live Packet Sniffing with Wireshark',
+      'Pre-Deployment Proof-of-Concept Validation'
+    ],
+    summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.'
+  },
+  12: { // Dart Programming
+    code: 'LIDN-8613215252',
+    issuerFull: 'ID-Networkers Software Engineering Division',
+    issuedDate: 'November 2026',
+    competencies: [
+      'Object-Oriented Programming (OOP) in Dart',
+      'Asynchronous Futures, Streams & Event Loops',
+      'Type Safety, Generics & Collections',
+      'Functional Data Transformations (map, where, fold)',
+      'Clean Code Principles & Modular Architecture'
+    ],
+    summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.'
+  },
+  13: { // Publikasi Jurnal Ilmiah
+    code: 'JIK-ESAU-2025',
+    issuerFull: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
+    issuedDate: 'July 2025',
+    competencies: [
+      'Expert Systems & Rule-Based Reasoning',
+      'Machine Learning & Game Playing Algorithms',
+      'Cloud Computing Digital Transformation for MSMEs',
+      'Empirical Data Gathering & Research Methodology',
+      'Peer-Reviewed Scientific Paper Publication'
+    ],
+    summary: 'Author of peer-reviewed scientific papers focusing on Artificial Intelligence expert systems and Cloud Computing infrastructure published in academic journals.'
   }
 }
 

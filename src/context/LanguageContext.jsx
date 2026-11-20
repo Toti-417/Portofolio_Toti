@@ -572,46 +572,32 @@ export const translations = {
       "verificationPlaceholder": "Official Credential Verification Placeholder",
       "items": [
         {
-          "name": "Power BI Data Analyst Specialization",
-          "issuer": "Microsoft / Professional Credential",
-          "year": "2024",
-          "icon": "/icon/Power BI.png",
-          "category": "Data Visualization"
+          "name": "Telkomsel RAFI 2026 Award — 1st Winner Best Availability",
+          "issuer": "Telkomsel GM RNOP Jateng & DIY",
+          "year": "2026",
+          "icon": "🏆",
+          "category": "Telkomsel Award"
         },
         {
-          "name": "Python for Data Science & Analytics",
-          "issuer": "Coursera / Industry Credential",
-          "year": "2024",
-          "icon": "/icon/pyhton.png",
+          "name": "Telecommunication Network Engineering Internship",
+          "issuer": "PT Ganesha Mandiri Inti (GMI)",
+          "year": "2023",
+          "icon": "📡",
+          "category": "Industry Internship"
+        },
+        {
+          "name": "IBM Certification: Data Science 101",
+          "issuer": "IBM Developer Skills Network / Cognitive Class",
+          "year": "2026",
+          "icon": "📊",
           "category": "Data Science"
         },
         {
-          "name": "SQL Querying & Database Fundamentals",
-          "issuer": "HackerRank Certified",
-          "year": "2024",
-          "icon": "/icon/my sql.png",
-          "category": "Database Systems"
-        },
-        {
-          "name": "Project Management & Budget Control",
-          "issuer": "Professional Credential",
-          "year": "2023",
-          "icon": "/icon/icon data.png",
-          "category": "Project Engineering"
-        },
-        {
-          "name": "n8n Workflow Automation & API Integration",
-          "issuer": "Automation Credential",
-          "year": "2024",
-          "icon": "/icon/N8N.png",
-          "category": "Automation Systems"
-        },
-        {
-          "name": "Telecommunication Networks & Access Assurance",
-          "issuer": "Industry Practitioner",
-          "year": "2023",
-          "icon": "/icon/BTS/telekomunikasi.png",
-          "category": "Network Assurance"
+          "name": "IBM Certification: Big Data 101",
+          "issuer": "IBM Developer Skills Network / Cognitive Class",
+          "year": "2026",
+          "icon": "💾",
+          "category": "Big Data & Analytics"
         },
         {
           "name": "Cisco Certification — Network Fundamentals & CCNA",
@@ -663,11 +649,46 @@ export const translations = {
           "category": "Software Engineering"
         },
         {
-          "name": "Scientific Journal Publication: AI & Cloud Computing",
+          "name": "Scientific Publication: Cloud Computing for MSMEs",
           "issuer": "Journal of Computer Science (JIK) / Esa Unggul Univ.",
           "year": "2025",
           "icon": "📚",
           "category": "Academic Research"
+        },
+        {
+          "name": "Power BI Data Analyst Specialization",
+          "issuer": "Microsoft / Professional Credential",
+          "year": "2024",
+          "icon": "/icon/Power BI.png",
+          "category": "Data Visualization"
+        },
+        {
+          "name": "SQL Querying & Database Fundamentals",
+          "issuer": "HackerRank Certified",
+          "year": "2024",
+          "icon": "/icon/my sql.png",
+          "category": "Database Systems"
+        },
+        {
+          "name": "Project Management & Budget Control (Telkomsel Scope)",
+          "issuer": "Professional Engineering Standards",
+          "year": "2023",
+          "icon": "/icon/icon data.png",
+          "category": "Project Engineering"
+        },
+        {
+          "name": "n8n Workflow Automation & API Integration",
+          "issuer": "Automation Credential",
+          "year": "2024",
+          "icon": "/icon/N8N.png",
+          "category": "Automation Systems"
+        },
+        {
+          "name": "Telecommunication Networks & Access Assurance",
+          "issuer": "Radio Access Network Industry Standards",
+          "year": "2023",
+          "icon": "/icon/BTS/telekomunikasi.png",
+          "category": "Network Assurance"
         }
       ]
     },
@@ -1301,46 +1322,32 @@ export const translations = {
       "verificationPlaceholder": "Verifikasi Sertifikat Resmi",
       "items": [
         {
-          "name": "Spesialisasi Analis Data Power BI",
-          "issuer": "Microsoft / Kredensial Profesional",
-          "year": "2024",
-          "icon": "/icon/Power BI.png",
-          "category": "Visualisasi Data"
+          "name": "Penghargaan Telkomsel RAFI 2026 — Juara 1 Best Availability",
+          "issuer": "Telkomsel GM RNOP Jateng & DIY",
+          "year": "2026",
+          "icon": "🏆",
+          "category": "Penghargaan Telkomsel"
         },
         {
-          "name": "Python untuk Sains Data & Analitik",
-          "issuer": "Coursera / Kredensial Industri",
-          "year": "2024",
-          "icon": "/icon/pyhton.png",
+          "name": "Sertifikat Magang Rekayasa Jaringan Telekomunikasi",
+          "issuer": "PT Ganesha Mandiri Inti (GMI)",
+          "year": "2023",
+          "icon": "📡",
+          "category": "Praktik Kerja Industri"
+        },
+        {
+          "name": "Sertifikasi IBM: Data Science 101",
+          "issuer": "IBM Developer Skills Network / Cognitive Class",
+          "year": "2026",
+          "icon": "📊",
           "category": "Sains Data"
         },
         {
-          "name": "SQL Querying & Dasar Basis Data",
-          "issuer": "HackerRank Certified",
-          "year": "2024",
-          "icon": "/icon/my sql.png",
-          "category": "Sistem Basis Data"
-        },
-        {
-          "name": "Manajemen Proyek & Kontrol Anggaran",
-          "issuer": "Kredensial Profesional",
-          "year": "2023",
-          "icon": "/icon/icon data.png",
-          "category": "Teknik Proyek"
-        },
-        {
-          "name": "Workflow n8n & Otomasi API",
-          "issuer": "Kredensial Otomasi",
-          "year": "2024",
-          "icon": "/icon/N8N.png",
-          "category": "Sistem Otomasi"
-        },
-        {
-          "name": "Jaringan Telekomunikasi & Access Assurance",
-          "issuer": "Praktisi Industri",
-          "year": "2023",
-          "icon": "/icon/BTS/telekomunikasi.png",
-          "category": "Asuransi Jaringan"
+          "name": "Sertifikasi IBM: Big Data 101",
+          "issuer": "IBM Developer Skills Network / Cognitive Class",
+          "year": "2026",
+          "icon": "💾",
+          "category": "Big Data & Analitik"
         },
         {
           "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
@@ -1392,11 +1399,46 @@ export const translations = {
           "category": "Rekayasa Perangkat Lunak"
         },
         {
-          "name": "Publikasi Jurnal Ilmiah: AI & Cloud Computing",
+          "name": "Publikasi Ilmiah: Transformasi Digital Cloud Computing UMKM",
           "issuer": "Jurnal Ilmu Komputer (JIK) / Univ. Esa Unggul",
           "year": "2025",
           "icon": "📚",
           "category": "Riset Akademik"
+        },
+        {
+          "name": "Spesialisasi Analis Data Power BI",
+          "issuer": "Microsoft / Kredensial Profesional",
+          "year": "2024",
+          "icon": "/icon/Power BI.png",
+          "category": "Visualisasi Data"
+        },
+        {
+          "name": "SQL Querying & Dasar Basis Data",
+          "issuer": "HackerRank Certified",
+          "year": "2024",
+          "icon": "/icon/my sql.png",
+          "category": "Sistem Basis Data"
+        },
+        {
+          "name": "Manajemen Proyek Telekomunikasi & Kontrol Anggaran",
+          "issuer": "Standar Proyek Telkomsel (Rp 40B)",
+          "year": "2023",
+          "icon": "/icon/icon data.png",
+          "category": "Teknik Proyek"
+        },
+        {
+          "name": "Workflow n8n & Otomasi API",
+          "issuer": "Kredensial Otomasi Enterprise",
+          "year": "2024",
+          "icon": "/icon/N8N.png",
+          "category": "Sistem Otomasi"
+        },
+        {
+          "name": "Jaringan Telekomunikasi & Access Assurance",
+          "issuer": "Standar Praktisi Industri Radio/RAN",
+          "year": "2023",
+          "icon": "/icon/BTS/telekomunikasi.png",
+          "category": "Asuransi Jaringan"
         }
       ]
     },
@@ -1472,7 +1514,7 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v4')
+    localStorage.removeItem('toti_live_translations_v5')
     const saved = localStorage.getItem('toti_live_translations_v4')
     if (saved) {
       try {

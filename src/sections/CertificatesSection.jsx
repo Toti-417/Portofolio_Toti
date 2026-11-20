@@ -5,140 +5,106 @@ import EditableText from '../components/EditableText'
 
 // Comprehensive technical competency breakdown for each certificate (Bilingual: EN & ID)
 const CERT_DETAILS = {
-  0: { // Power BI
-    code: 'MS-PBI-8842',
-    image: '/certificates/cert_powerbi.png',
-    issuerFull: 'Microsoft Certified Professional / Industry Standard',
-    issuerFullId: 'Microsoft Certified Professional / Standar Industri',
-    issuedDate: 'October 2024',
-    issuedDateId: 'Oktober 2024',
+  0: { // Telkomsel RAFI 2026 Award
+    code: 'TSEL-RAFI-2026-WINNER',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_telkomsel_rafi.pdf',
+    image: '/certificates/cert_telkomsel_rafi.png',
+    issuerFull: 'Telkomsel GM RNOP Jateng & DIY',
+    issuerFullId: 'Telkomsel GM RNOP Jateng & DIY',
+    issuedDate: 'April 2026',
+    issuedDateId: 'April 2026',
     competencies: [
-      'DAX Measures & Advanced Time Intelligence',
-      'Star Schema Relational Data Modeling',
-      'Executive Rollout KPI Dashboards',
-      'Power Query M-Code Data Transformation'
+      'Cellular Network Availability & Uptime Optimization',
+      'High-Load Festive (RAFI) Traffic Engineering',
+      'Cross-Functional Site Incident Resolution',
+      'Regional RAN KPI Performance Supremacy'
     ],
     competenciesId: [
-      'DAX Measures & Time Intelligence Tingkat Lanjut',
-      'Pemodelan Data Relasional Skema Star',
-      'Dashboard KPI Eksekutif Rollout Proyek',
-      'Transformasi Data Power Query (M-Code)'
+      'Optimalisasi Ketersediaan & Uptime Jaringan Seluler',
+      'Manajemen Rekayasa Trafik Lonjakan Musim Liburan (RAFI)',
+      'Resolusi Cepat Gangguan Site Lintas Wilayah',
+      'Pencapaian KPI RAN Terbaik di Wilayah Regional'
     ],
-    summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.',
-    summaryId: 'Penguasaan komprehensif dalam business intelligence end-to-end, pemodelan data pergudangan telekomunikasi multi-tabel, dan pelaporan eksekutif interaktif.'
+    summary: 'Awarded 1st Winner for Best Cellular Network Availability during Telkomsel RAFI 2026 operations across Central Java & DIY.',
+    summaryId: 'Penganugerahan Juara 1 Ketersediaan Jaringan Terbaik (Best Availability) selama posko operasional Telkomsel Siaga RAFI 2026 wilayah Jateng & DIY.'
   },
-  1: { // Python Data Science
-    code: 'PY-DS-5521',
-    image: '/certificates/cert_python.png',
-    issuerFull: 'Python Software Foundation & Industry Curriculum',
-    issuerFullId: 'Python Software Foundation & Kurikulum Industri',
-    issuedDate: 'August 2024',
-    issuedDateId: 'Agustus 2024',
+  1: { // GMI Internship
+    code: 'GMI-TEL-INT-2023',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_magang_gmi.pdf',
+    image: '/certificates/cert_magang_gmi.png',
+    issuerFull: 'PT Ganesha Mandiri Inti (GMI)',
+    issuerFullId: 'PT Ganesha Mandiri Inti (GMI)',
+    issuedDate: 'June 2023',
+    issuedDateId: 'Juni 2023',
     competencies: [
-      'Pandas & NumPy High-Performance Analytics',
-      'Automated Data Cleaning & ETL Pipelines',
-      'Statistical Hypothesis & Regression Analysis',
-      'REST API Integration & JSON Parsing'
+      'Fiber Optic Backhaul & OLT Transmission Maintenance',
+      'Cellular Base Station RF Equipment Installation',
+      'Subcontractor Task Coordination & Daily Reporting',
+      'Field Safety Compliance & Site Acceptance'
     ],
     competenciesId: [
-      'Analitik Performa Tinggi dengan Pandas & NumPy',
-      'Pembersihan Data Otomatis & Pipeline ETL',
-      'Uji Hipotesis Statistik & Analisis Regresi',
-      'Integrasi REST API & Parsing Data JSON'
+      'Pemeliharaan Transmisi Fiber Optik & Perangkat OLT',
+      'Instalasi Perangkat Radio RF Base Station (BTS)',
+      'Koordinasi Tim Lapangan Mitra & Pelaporan Harian',
+      'Kepatuhan Standar K3 Lapangan & Uji Terima Site'
     ],
-    summary: 'Proficiency in data manipulation, exploratory data analysis, automation scripts, and quantitative dataset processing.',
-    summaryId: 'Kemahiran dalam manipulasi data, analisis eksploratif data (EDA), otomasi skrip, dan pengolahan dataset telekomunikasi berskala besar.'
+    summary: 'Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.',
+    summaryId: 'Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi.'
   },
-  2: { // SQL HackerRank
-    code: 'HR-SQL-9104',
-    image: '/certificates/cert_sql.png',
-    issuerFull: 'HackerRank Verified Skill Assessment',
-    issuerFullId: 'HackerRank Verified Skill Assessment',
-    issuedDate: 'July 2024',
-    issuedDateId: 'Juli 2024',
+  2: { // IBM Data Science 101
+    code: 'IBM-DS0101EN-7F25272A',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_datascience_idn.pdf',
+    image: '/certificates/cert_datascience_idn.png',
+    issuerFull: 'IBM Developer Skills Network / Cognitive Class',
+    issuerFullId: 'IBM Developer Skills Network / Cognitive Class',
+    issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
-      'Complex Multi-Table INNER / LEFT JOINs',
-      'Window Functions (ROW_NUMBER, RANK, DENSE_RANK)',
-      'Subqueries, CTEs & Temporary Tables',
-      'Index Optimization & High-Volume Query Tuning'
+      'Data Science Foundations & Analytical Workflows',
+      'Python Data Ecosystem (Pandas, Matplotlib, SciPy)',
+      'Machine Learning Models & Data Preprocessing',
+      'Model Evaluation & Exploratory Data Analysis'
     ],
     competenciesId: [
-      'Query Kompleks Multi-Tabel INNER / LEFT JOIN',
-      'Fungsi Window (ROW_NUMBER, RANK, DENSE_RANK)',
-      'Subqueries, CTEs & Tabel Sementara',
-      'Optimasi Indeks & Tuning Query Skala Besar'
+      'Fondasi Sains Data & Metodologi Analitik Modern',
+      'Ekosistem Python Data (Pandas, Matplotlib, SciPy)',
+      'Model Pembelajaran Mesin & Preprocessing Data',
+      'Evaluasi Akurasi Model & Analisis Data Eksploratif'
     ],
-    summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.',
-    summaryId: 'Keahlian terverifikasi dalam query basis data relasional, agregasi metrik performa site telekomunikasi, dan optimasi arsitektur query.'
+    summary: 'Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.',
+    summaryId: 'Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern.'
   },
-  3: { // Project Management
-    code: 'PM-ENG-40B',
-    image: '/certificates/cert_pm.png',
-    issuerFull: 'Professional Engineering Standards / Telkomsel Scope',
-    issuerFullId: 'Standar Manajemen Proyek Profesional / Lingkup Telkomsel',
-    issuedDate: 'December 2023',
-    issuedDateId: 'Desember 2023',
+  3: { // IBM Big Data 101
+    code: 'IBM-BD0101EN-794F2527',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_bigdata101.pdf',
+    image: '/certificates/cert_bigdata101.png',
+    issuerFull: 'IBM Developer Skills Network / Cognitive Class',
+    issuerFullId: 'IBM Developer Skills Network / Cognitive Class',
+    issuedDate: 'November 2026',
+    issuedDateId: 'November 2026',
     competencies: [
-      'CAPEX & OPEX Budget Allocation (IDR 40B)',
-      'WBS Scheduling & Critical Path Management',
-      'Vendor SLA & Subcontractor Compliance',
-      'Telkomsel eATP & Site Acceptance Standards'
+      'Hadoop Distributed File System (HDFS) Concepts',
+      'Big Data V-Characteristics (Volume, Velocity, Variety)',
+      'NoSQL Databases & Large-Scale Data Warehouses',
+      'Apache Spark Batch & Streaming Processing'
     ],
     competenciesId: [
-      'Alokasi Anggaran CAPEX & OPEX (Hingga Rp 40 Miliar)',
-      'Penjadwalan WBS & Manajemen Jalur Kritis (CPM)',
-      'Kepatuhan SLA Vendor & Koordinasi Subkontraktor',
-      'Standar Akseptansi Site & eATP Telkomsel'
+      'Konsep Arsitektur Terdistribusi Hadoop (HDFS)',
+      'Karakteristik Big Data (Volume, Velocity, Variety, Veracity)',
+      'Sistem Basis Data NoSQL & Data Warehouse Skala Besar',
+      'Pemrosesan Streaming & Batch dengan Apache Spark'
     ],
-    summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.',
-    summaryId: 'Penguasaan eksekusi proyek infrastruktur seluler berskala besar, peramalan sumber daya, dan tata kelola milestone manajemen eksekutif.'
+    summary: 'Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.',
+    summaryId: 'Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise.'
   },
-  4: { // N8N Automation
-    code: 'N8N-AUTO-771',
-    image: '/certificates/cert_n8n.png',
-    issuerFull: 'Workflow Automation & Systems Integration',
-    issuerFullId: 'Otomasi Alur Kerja & Integrasi Sistem',
-    issuedDate: 'November 2024',
-    issuedDateId: 'November 2024',
-    competencies: [
-      'Custom Webhook Listeners & Trigger Logic',
-      'Multi-System API Orchestration (WhatsApp/MySQL)',
-      'Fault-Tolerant Error Handling & Retry Policies',
-      'Automated Telegram / Slack Event Notifiers'
-    ],
-    competenciesId: [
-      'Custom Webhook Listeners & Logika Trigger Otomatis',
-      'Orkestrasi API Multi-Sistem (WhatsApp/MySQL/Cloud)',
-      'Penanganan Error Toleran & Kebijakan Retry Otomatis',
-      'Notifikasi Event Otomatis Telegram & Slack'
-    ],
-    summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.',
-    summaryId: 'Perancangan dan penerapan alur kerja otomasi enterprise yang menghubungkan node monitoring jaringan seluler dengan interface pesan instan.'
-  },
-  5: { // Telecom Network Assurance
-    code: 'RAN-OPT-2023',
-    image: '/certificates/cert_ran_assurance.png',
-    issuerFull: 'Radio Access Network & Transmission Standards',
-    issuerFullId: 'Standar Transmisi & Jaringan Akses Radio (RAN)',
-    issuedDate: 'May 2023',
-    issuedDateId: 'Mei 2023',
-    competencies: [
-      'RAN KPI Diagnostics (PRB, Payload, Drop Rate)',
-      'RET Antenna Tilt & Azimuth Alignment Audit',
-      'Balmon Spectrum Interference Spectrum Radar',
-      'Fiber Optic / Microwave Backhaul Validation'
-    ],
-    competenciesId: [
-      'Diagnostik KPI RAN (PRB, Payload, Drop Call Rate)',
-      'Audit Kemiringan RET Antena & Penyelarasan Azimuth',
-      'Radar Interferensi Frekuensi Balmon & Analisis Spektrum',
-      'Validasi Backhaul Fiber Optik / Microwave'
-    ],
-    summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.',
-    summaryId: 'Kompetensi mendalam dalam optimalisasi spektrum RF seluler, integritas transmisi base station (BTS), dan jaminan kualitas layanan (QoS) jaringan seluler.'
-  },
-  6: { // Cisco Dasar
+  4: { // Cisco Dasar
     code: 'LIDN-1661625797',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_cisco.pdf',
     image: '/certificates/cert_cisco.png',
     issuerFull: 'ID-Networkers (IDN) & Cisco Networking Academy',
     issuerFullId: 'ID-Networkers (IDN) & Kurikulum Cisco Networking Academy',
@@ -161,8 +127,10 @@ const CERT_DETAILS = {
     summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.',
     summaryId: 'Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise.'
   },
-  7: { // MikroTik Dasar (MTCNA)
+  5: { // MikroTik Dasar (MTCNA)
     code: 'LIDN-4701470015',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_mikrotik.pdf',
     image: '/certificates/cert_mikrotik.png',
     issuerFull: 'ID-Networkers Certified MikroTik Associate',
     issuerFullId: 'ID-Networkers Certified MikroTik Associate',
@@ -185,8 +153,10 @@ const CERT_DETAILS = {
     summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.',
     summaryId: 'Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS.'
   },
-  8: { // Cyber Security
+  6: { // Cyber Security
     code: 'LIDN-0033078842',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_cybersecurity.pdf',
     image: '/certificates/cert_cybersecurity.png',
     issuerFull: 'ID-Networkers Cyber Security Academy',
     issuerFullId: 'ID-Networkers Cyber Security Academy',
@@ -209,8 +179,10 @@ const CERT_DETAILS = {
     summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.',
     summaryId: 'Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem.'
   },
-  9: { // Linux Systems
+  7: { // Linux Systems
     code: 'LIDN-6638673257',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_linux.pdf',
     image: '/certificates/cert_linux.png',
     issuerFull: 'ID-Networkers Linux Systems Academy',
     issuerFullId: 'ID-Networkers Linux Systems Academy',
@@ -233,8 +205,10 @@ const CERT_DETAILS = {
     summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.',
     summaryId: 'Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background.'
   },
-  10: { // Jaringan Dasar
+  8: { // Jaringan Dasar
     code: 'LIDN-2243638913',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_networking.pdf',
     image: '/certificates/cert_networking.png',
     issuerFull: 'ID-Networkers Networking Research Lab',
     issuerFullId: 'ID-Networkers Networking Research Lab',
@@ -257,8 +231,10 @@ const CERT_DETAILS = {
     summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.',
     summaryId: 'Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end.'
   },
-  11: { // PNETlab
+  9: { // PNETlab
     code: 'LIDN-4113909330',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_pnetlab.pdf',
     image: '/certificates/cert_pnetlab.png',
     issuerFull: 'ID-Networkers Virtualized Infrastructure Lab',
     issuerFullId: 'ID-Networkers Virtualized Infrastructure Lab',
@@ -281,8 +257,10 @@ const CERT_DETAILS = {
     summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.',
     summaryId: 'Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi.'
   },
-  12: { // Dart Programming
+  10: { // Dart Programming
     code: 'LIDN-8613215252',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_dart.pdf',
     image: '/certificates/cert_dart.png',
     issuerFull: 'ID-Networkers Software Engineering Division',
     issuerFullId: 'Divisi Rekayasa Perangkat Lunak ID-Networkers',
@@ -305,29 +283,146 @@ const CERT_DETAILS = {
     summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.',
     summaryId: 'Kemahiran terbukti dalam membangun aplikasi perangkat lunak berperforma tinggi dan type-safe menggunakan pemrograman asynchronous Dart modern.'
   },
-  13: { // Publikasi Jurnal Ilmiah
-    code: 'JIK-ESAU-2025',
+  11: { // Publikasi Jurnal Ilmiah
+    code: 'JIK-ESAU-2025-CLOUD',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_scientific_publication_cloud.pdf',
     image: '/certificates/cert_scientific_publication.png',
     issuerFull: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
     issuerFullId: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
     issuedDate: 'July 2025',
     issuedDateId: 'Juli 2025',
     competencies: [
-      'Expert Systems & Rule-Based Reasoning',
-      'Machine Learning & Game Playing Algorithms',
-      'Cloud Computing Digital Transformation for MSMEs',
-      'Empirical Data Gathering & Research Methodology',
-      'Peer-Reviewed Scientific Paper Publication'
+      'Cloud Infrastructure Migration & Architecture Design',
+      'Cost Efficiency & Digital Transformation Metrics',
+      'Empirical MSME Business Case Analysis',
+      'Peer-Reviewed Scientific Paper Publication',
+      'Academic Research & Quantitative Findings'
     ],
     competenciesId: [
-      'Sistem Pakar & Penalaran Berbasis Aturan (Rule-Based)',
-      'Machine Learning & Algoritma Game Playing',
-      'Transformasi Digital Cloud Computing untuk UMKM',
-      'Pengumpulan Data Empiris & Metodologi Penelitian Ilmiah',
-      'Publikasi Karya Ilmiah Peer-Reviewed'
+      'Migrasi Infrastruktur Cloud & Desain Arsitektur Sistem',
+      'Metrik Efisiensi Biaya & Transformasi Digital',
+      'Analisis Studi Kasus Lapangan Pelaku Usaha UMKM',
+      'Publikasi Karya Ilmiah Terindeks Peer-Reviewed',
+      'Riset Metodologi Akademik & Temuan Kuantitatif'
     ],
-    summary: 'Author of peer-reviewed scientific papers focusing on Artificial Intelligence expert systems and Cloud Computing infrastructure published in academic journals.',
-    summaryId: 'Penulis karya ilmiah terpublikasi pada jurnal akademik bereputasi di bidang Artificial Intelligence (sistem pakar) dan infrastruktur Cloud Computing.'
+    summary: 'First author of a published peer-reviewed scientific paper analyzing Cloud Computing digital transformation architectures for MSMEs in Indonesia.',
+    summaryId: 'Penulis pertama karya ilmiah terpublikasi pada jurnal akademik bereputasi yang meneliti implementasi arsitektur Cloud Computing dalam mendukung UMKM nasional.'
+  },
+  12: { // Power BI Data Analyst (Custom Digital Credential)
+    code: 'MS-PBI-8842',
+    hasPdf: false,
+    image: '/certificates/cert_powerbi.png',
+    issuerFull: 'Microsoft Certified Professional / Industry Standard',
+    issuerFullId: 'Microsoft Certified Professional / Standar Industri',
+    issuedDate: 'October 2024',
+    issuedDateId: 'Oktober 2024',
+    competencies: [
+      'DAX Measures & Advanced Time Intelligence',
+      'Star Schema Relational Data Modeling',
+      'Executive Rollout KPI Dashboards',
+      'Power Query M-Code Data Transformation'
+    ],
+    competenciesId: [
+      'DAX Measures & Time Intelligence Tingkat Lanjut',
+      'Pemodelan Data Relasional Skema Star',
+      'Dashboard KPI Eksekutif Rollout Proyek',
+      'Transformasi Data Power Query (M-Code)'
+    ],
+    summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.',
+    summaryId: 'Penguasaan komprehensif dalam business intelligence end-to-end, pemodelan data pergudangan telekomunikasi multi-tabel, dan pelaporan eksekutif interaktif.'
+  },
+  13: { // SQL HackerRank (Custom Digital Credential)
+    code: 'HR-SQL-9104',
+    hasPdf: false,
+    image: '/certificates/cert_sql.png',
+    issuerFull: 'HackerRank Verified Skill Assessment',
+    issuerFullId: 'HackerRank Verified Skill Assessment',
+    issuedDate: 'July 2024',
+    issuedDateId: 'Juli 2024',
+    competencies: [
+      'Complex Multi-Table INNER / LEFT JOINs',
+      'Window Functions (ROW_NUMBER, RANK, DENSE_RANK)',
+      'Subqueries, CTEs & Temporary Tables',
+      'Index Optimization & High-Volume Query Tuning'
+    ],
+    competenciesId: [
+      'Query Kompleks Multi-Tabel INNER / LEFT JOIN',
+      'Fungsi Window (ROW_NUMBER, RANK, DENSE_RANK)',
+      'Subqueries, CTEs & Tabel Sementara',
+      'Optimasi Indeks & Tuning Query Skala Besar'
+    ],
+    summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.',
+    summaryId: 'Keahlian terverifikasi dalam query basis data relasional, agregasi metrik performa site telekomunikasi, dan optimasi arsitektur query.'
+  },
+  14: { // Project Management (Custom Digital Credential)
+    code: 'PM-ENG-40B',
+    hasPdf: false,
+    image: '/certificates/cert_pm.png',
+    issuerFull: 'Professional Engineering Standards / Telkomsel Scope',
+    issuerFullId: 'Standar Manajemen Proyek Profesional / Lingkup Telkomsel',
+    issuedDate: 'December 2023',
+    issuedDateId: 'Desember 2023',
+    competencies: [
+      'CAPEX & OPEX Budget Allocation (IDR 40B)',
+      'WBS Scheduling & Critical Path Management',
+      'Vendor SLA & Subcontractor Compliance',
+      'Telkomsel eATP & Site Acceptance Standards'
+    ],
+    competenciesId: [
+      'Alokasi Anggaran CAPEX & OPEX (Hingga Rp 40 Miliar)',
+      'Penjadwalan WBS & Manajemen Jalur Kritis (CPM)',
+      'Kepatuhan SLA Vendor & Koordinasi Subkontraktor',
+      'Standar Akseptansi Site & eATP Telkomsel'
+    ],
+    summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.',
+    summaryId: 'Penguasaan eksekusi proyek infrastruktur seluler berskala besar, peramalan sumber daya, dan tata kelola milestone manajemen eksekutif.'
+  },
+  15: { // N8N Automation (Custom Digital Credential)
+    code: 'N8N-AUTO-771',
+    hasPdf: false,
+    image: '/certificates/cert_n8n.png',
+    issuerFull: 'Workflow Automation & Systems Integration',
+    issuerFullId: 'Otomasi Alur Kerja & Integrasi Sistem',
+    issuedDate: 'November 2024',
+    issuedDateId: 'November 2024',
+    competencies: [
+      'Custom Webhook Listeners & Trigger Logic',
+      'Multi-System API Orchestration (WhatsApp/MySQL)',
+      'Fault-Tolerant Error Handling & Retry Policies',
+      'Automated Telegram / Slack Event Notifiers'
+    ],
+    competenciesId: [
+      'Custom Webhook Listeners & Logika Trigger Otomatis',
+      'Orkestrasi API Multi-Sistem (WhatsApp/MySQL/Cloud)',
+      'Penanganan Error Toleran & Kebijakan Retry Otomatis',
+      'Notifikasi Event Otomatis Telegram & Slack'
+    ],
+    summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.',
+    summaryId: 'Perancangan dan penerapan alur kerja otomasi enterprise yang menghubungkan node monitoring jaringan seluler dengan interface pesan instan.'
+  },
+  16: { // Telecom Network Assurance (Custom Digital Credential)
+    code: 'RAN-OPT-2023',
+    hasPdf: false,
+    image: '/certificates/cert_ran_assurance.png',
+    issuerFull: 'Radio Access Network & Transmission Standards',
+    issuerFullId: 'Standar Transmisi & Jaringan Akses Radio (RAN)',
+    issuedDate: 'May 2023',
+    issuedDateId: 'Mei 2023',
+    competencies: [
+      'RAN KPI Diagnostics (PRB, Payload, Drop Rate)',
+      'RET Antenna Tilt & Azimuth Alignment Audit',
+      'Balmon Spectrum Interference Spectrum Radar',
+      'Fiber Optic / Microwave Backhaul Validation'
+    ],
+    competenciesId: [
+      'Diagnostik KPI RAN (PRB, Payload, Drop Call Rate)',
+      'Audit Kemiringan RET Antena & Penyelarasan Azimuth',
+      'Radar Interferensi Frekuensi Balmon & Analisis Spektrum',
+      'Validasi Backhaul Fiber Optik / Microwave'
+    ],
+    summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.',
+    summaryId: 'Kompetensi mendalam dalam optimalisasi spektrum RF seluler, integritas transmisi base station (BTS), dan jaminan kualitas layanan (QoS) jaringan seluler.'
   }
 };
 
@@ -402,9 +497,9 @@ export default function CertificatesSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.05 }}
+              transition={{ duration: 0.4, delay: idx * 0.04 }}
               onClick={() => handleOpen(cert, idx)}
-              className="glass-card glass-card-hover rounded-2xl p-6 border border-white/10 flex flex-col justify-between cursor-pointer group hover:border-teal-500/40 transition-all duration-300"
+              className="glass-card glass-card-hover rounded-2xl p-6 border border-white/10 flex flex-col justify-between cursor-pointer group hover:border-teal-500/40 transition-all duration-300 relative overflow-hidden"
             >
               <div>
                 {/* Category & Year */}
@@ -416,17 +511,28 @@ export default function CertificatesSection() {
                 </div>
 
                 {/* Visual Certificate Document Preview */}
-                <div className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20">
+                <div className="relative mb-4 h-48 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20 flex items-center justify-center">
                   <img
                     src={detail.image}
                     alt={cert.name}
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain p-1.5 transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-80 group-hover:opacity-40 transition-opacity"></div>
-                  <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>{isId ? 'DOKUMEN RESMI' : 'OFFICIAL CREDENTIAL'}</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-60 group-hover:opacity-20 transition-opacity pointer-events-none"></div>
+
+                  {/* Verification Status Badge */}
+                  <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono shadow-sm">
+                    {detail.hasPdf ? (
+                      <>
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+                        <span className="text-red-300 font-semibold">{isId ? 'DOKUMEN PDF ASLI' : 'VERIFIED PDF DOC'}</span>
+                      </>
+                    ) : (
+                      <>
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span className="text-teal-300">{isId ? 'KREDENSIAL DIGITAL' : 'DIGITAL CREDENTIAL'}</span>
+                      </>
+                    )}
                   </div>
                 </div>
 
@@ -437,7 +543,7 @@ export default function CertificatesSection() {
                 <p className="text-xs text-slate-400 font-medium">{cert.issuer}</p>
               </div>
 
-              <div className="pt-5 flex items-center justify-between text-xs text-teal-400 font-medium group-hover:text-teal-300 border-t border-white/5 mt-4">
+              <div className="pt-4 flex items-center justify-between text-xs text-teal-400 font-medium group-hover:text-teal-300 border-t border-white/5 mt-4">
                 <span className="flex items-center gap-1.5">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                   {isId ? 'Lihat Sertifikat →' : (certT.previewText || 'Preview Credential →')}
@@ -497,7 +603,7 @@ export default function CertificatesSection() {
                       </span>
                       <span className="inline-flex items-center gap-1 text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded border border-emerald-500/20">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12"/></svg>
-                        {isId ? 'KREDENSIAL TEKNIK TERVALIDASI' : 'OFFICIAL TECHNICAL CREDENTIAL'}
+                        {isId ? 'KREDENSIAL TERVERIFIKASI' : 'VERIFIED CREDENTIAL'}
                       </span>
                     </div>
                     <h3 className="text-xl sm:text-2xl font-extrabold text-slate-100 tracking-tight">
@@ -510,21 +616,35 @@ export default function CertificatesSection() {
                 </div>
 
                 {/* Full High-Resolution Certificate Document Image */}
-                <div className="relative rounded-xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl max-h-[380px] flex items-center justify-center group">
+                <div className="relative rounded-xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl max-h-[420px] flex items-center justify-center group p-2">
                   <img
                     src={currentDetails.image}
                     alt={selectedCert.name}
-                    className="w-full h-auto max-h-[380px] object-contain mx-auto"
+                    className="w-full h-auto max-h-[400px] object-contain mx-auto"
                   />
-                  <a
-                    href={currentDetails.image}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-black/80 hover:bg-teal-500 hover:text-slate-950 backdrop-blur-md border border-white/20 text-xs font-mono text-slate-200 transition-all flex items-center gap-1.5 shadow-lg"
-                  >
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                    <span>{isId ? 'Buka Gambar Resolusi Penuh' : 'Open Full Resolution'}</span>
-                  </a>
+                  <div className="absolute bottom-3 right-3 flex items-center gap-2">
+                    {currentDetails.hasPdf && currentDetails.pdfUrl && (
+                      <a
+                        href={currentDetails.pdfUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-3.5 py-1.5 rounded-lg bg-red-600/90 hover:bg-red-500 text-white backdrop-blur-md border border-red-400/30 text-xs font-mono transition-all flex items-center gap-1.5 shadow-xl font-bold"
+                      >
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        <span>{isId ? 'Unduh PDF Asli' : 'Download PDF'}</span>
+                      </a>
+                    )}
+                    <a
+                      href={currentDetails.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 rounded-lg bg-black/80 hover:bg-teal-500 hover:text-slate-950 backdrop-blur-md border border-white/20 text-xs font-mono text-slate-200 transition-all flex items-center gap-1.5 shadow-lg"
+                    >
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      <span>{isId ? 'Resolusi Penuh' : 'Full Res'}</span>
+                    </a>
+                  </div>
                 </div>
 
                 {/* Deluxe Certificate Presentation Card */}
@@ -586,20 +706,42 @@ export default function CertificatesSection() {
                 </div>
 
                 {/* Footer Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-end gap-3 pt-2">
-                  <a
-                    href="#projects"
-                    onClick={handleClose}
-                    className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white text-xs font-semibold text-center transition-colors"
-                  >
-                    {isId ? 'Lihat Bukti Proyek Terkait →' : 'View Related Project Proofs →'}
-                  </a>
-                  <button
-                    onClick={handleClose}
-                    className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-teal-500/25"
-                  >
-                    {isId ? 'Tutup Pratinjau' : (certT.closePreview || 'Close Preview')}
-                  </button>
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-2">
+                  <div className="w-full sm:w-auto">
+                    {currentDetails.hasPdf && currentDetails.pdfUrl ? (
+                      <a
+                        href={currentDetails.pdfUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-4 py-2.5 rounded-xl bg-red-600/20 hover:bg-red-600/30 border border-red-500/40 text-red-300 hover:text-white text-xs font-semibold transition-all shadow-md"
+                      >
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        <span>{isId ? 'Buka Dokumen PDF Asli' : 'Open Original PDF Document'}</span>
+                      </a>
+                    ) : (
+                      <span className="text-[11px] font-mono text-teal-400/80 flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-teal-400"></span>
+                        {isId ? 'Sertifikat Digital Terenkripsi Resmi' : 'Official Encrypted Digital Credential'}
+                      </span>
+                    )}
+                  </div>
+                  
+                  <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+                    <a
+                      href="#projects"
+                      onClick={handleClose}
+                      className="px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-white/10 text-slate-300 hover:text-white text-xs font-semibold text-center transition-colors"
+                    >
+                      {isId ? 'Proyek Terkait →' : 'Related Projects →'}
+                    </a>
+                    <button
+                      onClick={handleClose}
+                      className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-slate-950 font-bold text-xs transition-all shadow-lg shadow-teal-500/25"
+                    >
+                      {isId ? 'Tutup Pratinjau' : (certT.closePreview || 'Close Preview')}
+                    </button>
+                  </div>
                 </div>
               </div>
             </motion.div>

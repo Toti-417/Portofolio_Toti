@@ -5,7 +5,34 @@ import EditableText from '../components/EditableText'
 
 // Comprehensive technical competency breakdown for each certificate (Bilingual: EN & ID)
 const CERT_DETAILS = {
-  0: { // Telkomsel RAFI 2026 Award
+  0: { // Cisco & JS Institute: JavaScript Essentials 1 (NEW - 20 Nov 2026)
+    code: 'CISCO-JS1-CA9BD0E6',
+    hasPdf: true,
+    pdfUrl: '/certificates/cert_javascript_essentials.pdf',
+    image: '/certificates/cert_javascript_essentials.png',
+    badgeIcon: '/certificates/badge_cisco_js.png',
+    issuerFull: 'Cisco Networking Academy & JS Institute (Open Education Group)',
+    issuerFullId: 'Cisco Networking Academy & JS Institute (Open Education Group)',
+    issuedDate: '20 November 2026',
+    issuedDateId: '20 November 2026',
+    competencies: [
+      'Modern JavaScript Syntax (ES6+) & Core Types',
+      'Conditional Branching, Loops & Control Flow',
+      'Functions, Scope, Closures & First-Class Citizens',
+      'Complex Data Structures (Arrays & Objects)',
+      'Algorithmic Problem Solving & Exception Handling'
+    ],
+    competenciesId: [
+      'Sintaksis JavaScript Modern (ES6+) & Tipe Data Dasar',
+      'Percabangan Logika, Perulangan & Alur Kontrol Program',
+      'Fungsi, Scope, Closures & Pemrograman Berbasis Fungsi',
+      'Struktur Data Kompleks (Array, Object & Manipulasi Data)',
+      'Pemecahan Masalah Algoritmik & Penanganan Error (Exceptions)'
+    ],
+    summary: 'Officially verified by Cisco Networking Academy and JS Institute for mastery of foundational and intermediate JavaScript programming, asynchronous fundamentals, and modular software design.',
+    summaryId: 'Sertifikasi resmi terverifikasi dari Cisco Networking Academy dan JS Institute dalam penguasaan pemrograman JavaScript modern, struktur data algoritma, dan perancangan perangkat lunak modular.'
+  },
+  1: { // Telkomsel RAFI 2026 Award
     code: 'TSEL-RAFI-2026-WINNER',
     hasPdf: true,
     pdfUrl: '/certificates/cert_telkomsel_rafi.pdf',
@@ -29,7 +56,7 @@ const CERT_DETAILS = {
     summary: 'Awarded 1st Winner for Best Cellular Network Availability during Telkomsel RAFI 2026 operations across Central Java & DIY.',
     summaryId: 'Penganugerahan Juara 1 Ketersediaan Jaringan Terbaik (Best Availability) selama posko operasional Telkomsel Siaga RAFI 2026 wilayah Jateng & DIY.'
   },
-  1: { // GMI Internship
+  2: { // GMI Internship
     code: 'GMI-TEL-INT-2023',
     hasPdf: true,
     pdfUrl: '/certificates/cert_magang_gmi.pdf',
@@ -53,7 +80,7 @@ const CERT_DETAILS = {
     summary: 'Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.',
     summaryId: 'Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi.'
   },
-  2: { // IBM Data Science 101
+  3: { // IBM Data Science 101
     code: 'IBM-DS0101EN-7F25272A',
     hasPdf: true,
     pdfUrl: '/certificates/cert_datascience_idn.pdf',
@@ -77,7 +104,7 @@ const CERT_DETAILS = {
     summary: 'Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.',
     summaryId: 'Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern.'
   },
-  3: { // IBM Big Data 101
+  4: { // IBM Big Data 101
     code: 'IBM-BD0101EN-794F2527',
     hasPdf: true,
     pdfUrl: '/certificates/cert_bigdata101.pdf',
@@ -101,7 +128,7 @@ const CERT_DETAILS = {
     summary: 'Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.',
     summaryId: 'Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise.'
   },
-  4: { // Cisco Dasar
+  5: { // Cisco Dasar
     code: 'LIDN-1661625797',
     hasPdf: true,
     pdfUrl: '/certificates/cert_cisco.pdf',
@@ -127,7 +154,7 @@ const CERT_DETAILS = {
     summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.',
     summaryId: 'Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise.'
   },
-  5: { // MikroTik Dasar (MTCNA)
+  6: { // MikroTik Dasar (MTCNA)
     code: 'LIDN-4701470015',
     hasPdf: true,
     pdfUrl: '/certificates/cert_mikrotik.pdf',
@@ -153,7 +180,7 @@ const CERT_DETAILS = {
     summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.',
     summaryId: 'Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS.'
   },
-  6: { // Cyber Security
+  7: { // Cyber Security
     code: 'LIDN-0033078842',
     hasPdf: true,
     pdfUrl: '/certificates/cert_cybersecurity.pdf',
@@ -179,7 +206,7 @@ const CERT_DETAILS = {
     summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.',
     summaryId: 'Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem.'
   },
-  7: { // Linux Systems
+  8: { // Linux Systems
     code: 'LIDN-6638673257',
     hasPdf: true,
     pdfUrl: '/certificates/cert_linux.pdf',
@@ -205,7 +232,7 @@ const CERT_DETAILS = {
     summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.',
     summaryId: 'Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background.'
   },
-  8: { // Jaringan Dasar
+  9: { // Jaringan Dasar
     code: 'LIDN-2243638913',
     hasPdf: true,
     pdfUrl: '/certificates/cert_networking.pdf',
@@ -231,7 +258,7 @@ const CERT_DETAILS = {
     summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.',
     summaryId: 'Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end.'
   },
-  9: { // PNETlab
+  10: { // PNETlab
     code: 'LIDN-4113909330',
     hasPdf: true,
     pdfUrl: '/certificates/cert_pnetlab.pdf',
@@ -257,7 +284,7 @@ const CERT_DETAILS = {
     summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.',
     summaryId: 'Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi.'
   },
-  10: { // Dart Programming
+  11: { // Dart Programming
     code: 'LIDN-8613215252',
     hasPdf: true,
     pdfUrl: '/certificates/cert_dart.pdf',
@@ -283,7 +310,7 @@ const CERT_DETAILS = {
     summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.',
     summaryId: 'Kemahiran terbukti dalam membangun aplikasi perangkat lunak berperforma tinggi dan type-safe menggunakan pemrograman asynchronous Dart modern.'
   },
-  11: { // Publikasi Jurnal Ilmiah
+  12: { // Publikasi Jurnal Ilmiah
     code: 'JIK-ESAU-2025-CLOUD',
     hasPdf: true,
     pdfUrl: '/certificates/cert_scientific_publication_cloud.pdf',
@@ -309,7 +336,7 @@ const CERT_DETAILS = {
     summary: 'First author of a published peer-reviewed scientific paper analyzing Cloud Computing digital transformation architectures for MSMEs in Indonesia.',
     summaryId: 'Penulis pertama karya ilmiah terpublikasi pada jurnal akademik bereputasi yang meneliti implementasi arsitektur Cloud Computing dalam mendukung UMKM nasional.'
   },
-  12: { // Power BI Data Analyst (Custom Digital Credential)
+  13: { // Power BI Data Analyst (Custom Digital Credential)
     code: 'MS-PBI-8842',
     hasPdf: false,
     image: '/certificates/cert_powerbi.png',
@@ -332,7 +359,7 @@ const CERT_DETAILS = {
     summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.',
     summaryId: 'Penguasaan komprehensif dalam business intelligence end-to-end, pemodelan data pergudangan telekomunikasi multi-tabel, dan pelaporan eksekutif interaktif.'
   },
-  13: { // SQL HackerRank (Custom Digital Credential)
+  14: { // SQL HackerRank (Custom Digital Credential)
     code: 'HR-SQL-9104',
     hasPdf: false,
     image: '/certificates/cert_sql.png',
@@ -355,7 +382,7 @@ const CERT_DETAILS = {
     summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.',
     summaryId: 'Keahlian terverifikasi dalam query basis data relasional, agregasi metrik performa site telekomunikasi, dan optimasi arsitektur query.'
   },
-  14: { // Project Management (Custom Digital Credential)
+  15: { // Project Management (Custom Digital Credential)
     code: 'PM-ENG-40B',
     hasPdf: false,
     image: '/certificates/cert_pm.png',
@@ -378,7 +405,7 @@ const CERT_DETAILS = {
     summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.',
     summaryId: 'Penguasaan eksekusi proyek infrastruktur seluler berskala besar, peramalan sumber daya, dan tata kelola milestone manajemen eksekutif.'
   },
-  15: { // N8N Automation (Custom Digital Credential)
+  16: { // N8N Automation (Custom Digital Credential)
     code: 'N8N-AUTO-771',
     hasPdf: false,
     image: '/certificates/cert_n8n.png',
@@ -401,7 +428,7 @@ const CERT_DETAILS = {
     summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.',
     summaryId: 'Perancangan dan penerapan alur kerja otomasi enterprise yang menghubungkan node monitoring jaringan seluler dengan interface pesan instan.'
   },
-  16: { // Telecom Network Assurance (Custom Digital Credential)
+  17: { // Telecom Network Assurance (Custom Digital Credential)
     code: 'RAN-OPT-2023',
     hasPdf: false,
     image: '/certificates/cert_ran_assurance.png',

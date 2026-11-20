@@ -572,6 +572,13 @@ export const translations = {
       "verificationPlaceholder": "Official Credential Verification Placeholder",
       "items": [
         {
+          "name": "Cisco & JS Institute: JavaScript Essentials 1",
+          "issuer": "Cisco Networking Academy & JS Institute",
+          "year": "2026",
+          "icon": "/certificates/badge_cisco_js.png",
+          "category": "Software Engineering"
+        },
+        {
           "name": "Telkomsel RAFI 2026 Award — 1st Winner Best Availability",
           "issuer": "Telkomsel GM RNOP Jateng & DIY",
           "year": "2026",
@@ -1322,6 +1329,13 @@ export const translations = {
       "verificationPlaceholder": "Verifikasi Sertifikat Resmi",
       "items": [
         {
+          "name": "Sertifikasi Cisco & JS Institute: JavaScript Essentials 1",
+          "issuer": "Cisco Networking Academy & JS Institute",
+          "year": "2026",
+          "icon": "/certificates/badge_cisco_js.png",
+          "category": "Rekayasa Perangkat Lunak"
+        },
+        {
           "name": "Penghargaan Telkomsel RAFI 2026 — Juara 1 Best Availability",
           "issuer": "Telkomsel GM RNOP Jateng & DIY",
           "year": "2026",
@@ -1514,7 +1528,7 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v5')
+    localStorage.removeItem('toti_live_translations_v6')
     const saved = localStorage.getItem('toti_live_translations_v4')
     if (saved) {
       try {

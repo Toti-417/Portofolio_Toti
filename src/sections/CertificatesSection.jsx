@@ -7,6 +7,7 @@ import EditableText from '../components/EditableText'
 const CERT_DETAILS = {
   0: { // Power BI
     code: 'MS-PBI-8842',
+    image: './certificates/cert_powerbi.png',
     issuerFull: 'Microsoft Certified Professional / Industry Standard',
     issuedDate: 'October 2024',
     competencies: [
@@ -19,6 +20,7 @@ const CERT_DETAILS = {
   },
   1: { // Python Data Science
     code: 'PY-DS-5521',
+    image: './certificates/cert_python.png',
     issuerFull: 'Python Software Foundation & Industry Curriculum',
     issuedDate: 'August 2024',
     competencies: [
@@ -31,6 +33,7 @@ const CERT_DETAILS = {
   },
   2: { // SQL HackerRank
     code: 'HR-SQL-9104',
+    image: './certificates/cert_sql.png',
     issuerFull: 'HackerRank Verified Skill Assessment',
     issuedDate: 'July 2024',
     competencies: [
@@ -43,6 +46,7 @@ const CERT_DETAILS = {
   },
   3: { // Project Management
     code: 'PM-ENG-40B',
+    image: './certificates/cert_pm.png',
     issuerFull: 'Professional Engineering Standards / Telkomsel Scope',
     issuedDate: 'December 2023',
     competencies: [
@@ -55,6 +59,7 @@ const CERT_DETAILS = {
   },
   4: { // N8N Automation
     code: 'N8N-AUTO-771',
+    image: './certificates/cert_n8n.png',
     issuerFull: 'Workflow Automation & Systems Integration',
     issuedDate: 'November 2024',
     competencies: [
@@ -67,6 +72,7 @@ const CERT_DETAILS = {
   },
   5: { // Telecom Network Assurance
     code: 'RAN-OPT-2023',
+    image: './certificates/cert_ran_assurance.png',
     issuerFull: 'Radio Access Network & Transmission Standards',
     issuedDate: 'May 2023',
     competencies: [
@@ -79,6 +85,7 @@ const CERT_DETAILS = {
   },
   6: { // Cisco Dasar
     code: 'LIDN-1661625797',
+    image: './certificates/cert_cisco.png',
     issuerFull: 'ID-Networkers (IDN) & Cisco Networking Academy',
     issuedDate: 'November 2026',
     competencies: [
@@ -92,6 +99,7 @@ const CERT_DETAILS = {
   },
   7: { // MikroTik Dasar (MTCNA)
     code: 'LIDN-4701470015',
+    image: './certificates/cert_mikrotik.png',
     issuerFull: 'ID-Networkers Certified MikroTik Associate',
     issuedDate: 'November 2026',
     competencies: [
@@ -105,6 +113,7 @@ const CERT_DETAILS = {
   },
   8: { // Cyber Security
     code: 'LIDN-0033078842',
+    image: './certificates/cert_cybersecurity.png',
     issuerFull: 'ID-Networkers Cyber Security Academy',
     issuedDate: 'November 2026',
     competencies: [
@@ -118,6 +127,7 @@ const CERT_DETAILS = {
   },
   9: { // Linux Systems
     code: 'LIDN-6638673257',
+    image: './certificates/cert_linux.png',
     issuerFull: 'ID-Networkers Linux Systems Academy',
     issuedDate: 'November 2026',
     competencies: [
@@ -131,6 +141,7 @@ const CERT_DETAILS = {
   },
   10: { // Jaringan Dasar
     code: 'LIDN-2243638913',
+    image: './certificates/cert_networking.png',
     issuerFull: 'ID-Networkers Networking Research Lab',
     issuedDate: 'November 2026',
     competencies: [
@@ -144,6 +155,7 @@ const CERT_DETAILS = {
   },
   11: { // PNETlab
     code: 'LIDN-4113909330',
+    image: './certificates/cert_pnetlab.png',
     issuerFull: 'ID-Networkers Virtualized Infrastructure Lab',
     issuedDate: 'November 2026',
     competencies: [
@@ -157,6 +169,7 @@ const CERT_DETAILS = {
   },
   12: { // Dart Programming
     code: 'LIDN-8613215252',
+    image: './certificates/cert_dart.png',
     issuerFull: 'ID-Networkers Software Engineering Division',
     issuedDate: 'November 2026',
     competencies: [
@@ -170,6 +183,7 @@ const CERT_DETAILS = {
   },
   13: { // Publikasi Jurnal Ilmiah
     code: 'JIK-ESAU-2025',
+    image: './certificates/cert_scientific_publication.png',
     issuerFull: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
     issuedDate: 'July 2025',
     competencies: [
@@ -251,13 +265,19 @@ export default function CertificatesSection() {
                 <span className="text-xs text-slate-400 font-mono">{cert.year}</span>
               </div>
 
-              {/* Icon Frame */}
-              <div className="w-14 h-14 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:border-teal-500/40 transition-all overflow-hidden p-2">
-                {cert.icon && (cert.icon.startsWith('/') || cert.icon.endsWith('.png')) ? (
-                  <img src={cert.icon} alt={cert.name} className="w-full h-full object-contain" />
-                ) : (
-                  <span className="text-3xl">{cert.icon}</span>
-                )}
+              {/* Visual Certificate Document Preview */}
+              <div className="relative mb-4 h-44 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20">
+                <img
+                  src={CERT_DETAILS[idx]?.image}
+                  alt={cert.name}
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-80 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono text-teal-300 shadow-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>{isId ? 'DOKUMEN RESMI' : 'OFFICIAL CREDENTIAL'}</span>
+                </div>
               </div>
 
               {/* Title & Issuer */}
@@ -336,6 +356,24 @@ export default function CertificatesSection() {
                       {currentDetails.issuerFull} · {currentDetails.issuedDate}
                     </p>
                   </div>
+                </div>
+
+                {/* Full High-Resolution Certificate Document Image */}
+                <div className="relative rounded-xl overflow-hidden border border-white/15 bg-slate-950 shadow-2xl max-h-[380px] flex items-center justify-center group">
+                  <img
+                    src={currentDetails.image}
+                    alt={selectedCert.name}
+                    className="w-full h-auto max-h-[380px] object-contain mx-auto"
+                  />
+                  <a
+                    href={currentDetails.image}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-black/80 hover:bg-teal-500 hover:text-slate-950 backdrop-blur-md border border-white/20 text-xs font-mono text-slate-200 transition-all flex items-center gap-1.5 shadow-lg"
+                  >
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    <span>{isId ? 'Buka Gambar Resolusi Penuh' : 'Open Full Resolution'}</span>
+                  </a>
                 </div>
 
                 {/* Deluxe Certificate Presentation Card */}

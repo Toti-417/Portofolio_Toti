@@ -579,123 +579,74 @@ export const translations = {
           "category": "Software Engineering"
         },
         {
-          "name": "Telkomsel RAFI 2026 Award — 1st Winner Best Availability",
-          "issuer": "Telkomsel GM RNOP Jateng & DIY",
-          "year": "2026",
-          "icon": "🏆",
-          "category": "Telkomsel Award"
-        },
-        {
           "name": "Telecommunication Network Engineering Internship",
           "issuer": "PT Ganesha Mandiri Inti (GMI)",
           "year": "2023",
-          "icon": "📡",
+          "icon": "/certificates/cert_magang_gmi.png",
           "category": "Industry Internship"
         },
         {
           "name": "IBM Certification: Data Science 101",
           "issuer": "IBM Developer Skills Network / Cognitive Class",
           "year": "2026",
-          "icon": "📊",
+          "icon": "/certificates/cert_datascience_idn.png",
           "category": "Data Science"
         },
         {
           "name": "IBM Certification: Big Data 101",
           "issuer": "IBM Developer Skills Network / Cognitive Class",
           "year": "2026",
-          "icon": "💾",
+          "icon": "/certificates/cert_bigdata101.png",
           "category": "Big Data & Analytics"
         },
         {
           "name": "Cisco Certification — Network Fundamentals & CCNA",
           "issuer": "ID-Networkers & Cisco Networking Academy",
           "year": "2026",
-          "icon": "🌐",
+          "icon": "/certificates/cert_cisco.png",
           "category": "Network Engineering"
         },
         {
           "name": "MikroTik Certified Network Associate (MTCNA)",
           "issuer": "ID-Networkers Certified MikroTik Associate",
           "year": "2026",
-          "icon": "🛰️",
+          "icon": "/certificates/cert_mikrotik.png",
           "category": "Network Infrastructure"
         },
         {
           "name": "Cyber Security Defense & Threat Modeling",
           "issuer": "ID-Networkers Cyber Security Academy",
           "year": "2026",
-          "icon": "🛡️",
+          "icon": "/certificates/cert_cybersecurity.png",
           "category": "Information Security"
         },
         {
           "name": "Linux Server Administration & Shell Automation",
           "issuer": "ID-Networkers Linux Systems Academy",
           "year": "2026",
-          "icon": "🐧",
+          "icon": "/certificates/cert_linux.png",
           "category": "Systems & Cloud"
         },
         {
           "name": "Computer Network Protocol Engineering",
           "issuer": "ID-Networkers Networking Lab",
           "year": "2026",
-          "icon": "🔌",
+          "icon": "/certificates/cert_networking.png",
           "category": "Telecommunications"
         },
         {
           "name": "Enterprise Network Topology Simulation (PNETlab)",
           "issuer": "ID-Networkers (PNETlab)",
           "year": "2026",
-          "icon": "🔬",
+          "icon": "/certificates/cert_pnetlab.png",
           "category": "Network Architecture"
         },
         {
           "name": "Dart Programming & Software Architecture",
           "issuer": "ID-Networkers Software Engineering Division",
           "year": "2026",
-          "icon": "⚡",
+          "icon": "/certificates/cert_dart.png",
           "category": "Software Engineering"
-        },
-        {
-          "name": "Scientific Publication: Cloud Computing for MSMEs",
-          "issuer": "Journal of Computer Science (JIK) / Esa Unggul Univ.",
-          "year": "2025",
-          "icon": "📚",
-          "category": "Academic Research"
-        },
-        {
-          "name": "Power BI Data Analyst Specialization",
-          "issuer": "Microsoft / Professional Credential",
-          "year": "2024",
-          "icon": "/icon/Power BI.png",
-          "category": "Data Visualization"
-        },
-        {
-          "name": "SQL Querying & Database Fundamentals",
-          "issuer": "HackerRank Certified",
-          "year": "2024",
-          "icon": "/icon/my sql.png",
-          "category": "Database Systems"
-        },
-        {
-          "name": "Project Management & Budget Control (Telkomsel Scope)",
-          "issuer": "Professional Engineering Standards",
-          "year": "2023",
-          "icon": "/icon/icon data.png",
-          "category": "Project Engineering"
-        },
-        {
-          "name": "n8n Workflow Automation & API Integration",
-          "issuer": "Automation Credential",
-          "year": "2024",
-          "icon": "/icon/N8N.png",
-          "category": "Automation Systems"
-        },
-        {
-          "name": "Telecommunication Networks & Access Assurance",
-          "issuer": "Radio Access Network Industry Standards",
-          "year": "2023",
-          "icon": "/icon/BTS/telekomunikasi.png",
-          "category": "Network Assurance"
         }
       ]
     },
@@ -1336,123 +1287,74 @@ export const translations = {
           "category": "Rekayasa Perangkat Lunak"
         },
         {
-          "name": "Penghargaan Telkomsel RAFI 2026 — Juara 1 Best Availability",
-          "issuer": "Telkomsel GM RNOP Jateng & DIY",
-          "year": "2026",
-          "icon": "🏆",
-          "category": "Penghargaan Telkomsel"
-        },
-        {
           "name": "Sertifikat Magang Rekayasa Jaringan Telekomunikasi",
           "issuer": "PT Ganesha Mandiri Inti (GMI)",
           "year": "2023",
-          "icon": "📡",
+          "icon": "/certificates/cert_magang_gmi.png",
           "category": "Praktik Kerja Industri"
         },
         {
           "name": "Sertifikasi IBM: Data Science 101",
           "issuer": "IBM Developer Skills Network / Cognitive Class",
           "year": "2026",
-          "icon": "📊",
+          "icon": "/certificates/cert_datascience_idn.png",
           "category": "Sains Data"
         },
         {
           "name": "Sertifikasi IBM: Big Data 101",
           "issuer": "IBM Developer Skills Network / Cognitive Class",
           "year": "2026",
-          "icon": "💾",
+          "icon": "/certificates/cert_bigdata101.png",
           "category": "Big Data & Analitik"
         },
         {
           "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
           "issuer": "ID-Networkers & Kurikulum Cisco",
           "year": "2026",
-          "icon": "🌐",
+          "icon": "/certificates/cert_cisco.png",
           "category": "Rekayasa Jaringan"
         },
         {
           "name": "MikroTik Certified Network Associate (MTCNA)",
           "issuer": "ID-Networkers Certified MikroTik Associate",
           "year": "2026",
-          "icon": "🛰️",
+          "icon": "/certificates/cert_mikrotik.png",
           "category": "Infrastruktur Jaringan"
         },
         {
           "name": "Pertahanan Cyber Security & Pemodelan Ancaman",
           "issuer": "ID-Networkers Cyber Academy",
           "year": "2026",
-          "icon": "🛡️",
+          "icon": "/certificates/cert_cybersecurity.png",
           "category": "Keamanan Informasi"
         },
         {
           "name": "Administrasi Server Linux & Otomasi Shell",
           "issuer": "ID-Networkers Linux Systems Academy",
           "year": "2026",
-          "icon": "🐧",
+          "icon": "/certificates/cert_linux.png",
           "category": "Sistem & Cloud"
         },
         {
           "name": "Rekayasa Protokol Jaringan Komputer",
           "issuer": "ID-Networkers Networking Lab",
           "year": "2026",
-          "icon": "🔌",
+          "icon": "/certificates/cert_networking.png",
           "category": "Telekomunikasi"
         },
         {
           "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
           "issuer": "ID-Networkers (PNETlab)",
           "year": "2026",
-          "icon": "🔬",
+          "icon": "/certificates/cert_pnetlab.png",
           "category": "Arsitektur Jaringan"
         },
         {
           "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
           "issuer": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
           "year": "2026",
-          "icon": "⚡",
+          "icon": "/certificates/cert_dart.png",
           "category": "Rekayasa Perangkat Lunak"
-        },
-        {
-          "name": "Publikasi Ilmiah: Transformasi Digital Cloud Computing UMKM",
-          "issuer": "Jurnal Ilmu Komputer (JIK) / Univ. Esa Unggul",
-          "year": "2025",
-          "icon": "📚",
-          "category": "Riset Akademik"
-        },
-        {
-          "name": "Spesialisasi Analis Data Power BI",
-          "issuer": "Microsoft / Kredensial Profesional",
-          "year": "2024",
-          "icon": "/icon/Power BI.png",
-          "category": "Visualisasi Data"
-        },
-        {
-          "name": "SQL Querying & Dasar Basis Data",
-          "issuer": "HackerRank Certified",
-          "year": "2024",
-          "icon": "/icon/my sql.png",
-          "category": "Sistem Basis Data"
-        },
-        {
-          "name": "Manajemen Proyek Telekomunikasi & Kontrol Anggaran",
-          "issuer": "Standar Proyek Telkomsel (Rp 40B)",
-          "year": "2023",
-          "icon": "/icon/icon data.png",
-          "category": "Teknik Proyek"
-        },
-        {
-          "name": "Workflow n8n & Otomasi API",
-          "issuer": "Kredensial Otomasi Enterprise",
-          "year": "2024",
-          "icon": "/icon/N8N.png",
-          "category": "Sistem Otomasi"
-        },
-        {
-          "name": "Jaringan Telekomunikasi & Access Assurance",
-          "issuer": "Standar Praktisi Industri Radio/RAN",
-          "year": "2023",
-          "icon": "/icon/BTS/telekomunikasi.png",
-          "category": "Asuransi Jaringan"
         }
       ]
     },
@@ -1528,7 +1430,7 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v6')
+    localStorage.removeItem('toti_live_translations_v7')
     const saved = localStorage.getItem('toti_live_translations_v4')
     if (saved) {
       try {

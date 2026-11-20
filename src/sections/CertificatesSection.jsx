@@ -5,451 +5,285 @@ import EditableText from '../components/EditableText'
 
 // Comprehensive technical competency breakdown for each certificate (Bilingual: EN & ID)
 const CERT_DETAILS = {
-  0: { // Cisco & JS Institute: JavaScript Essentials 1 (NEW - 20 Nov 2026)
-    code: 'CISCO-JS1-CA9BD0E6',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_javascript_essentials.pdf',
-    image: '/certificates/cert_javascript_essentials.png',
-    badgeIcon: '/certificates/badge_cisco_js.png',
-    issuerFull: 'Cisco Networking Academy & JS Institute (Open Education Group)',
-    issuerFullId: 'Cisco Networking Academy & JS Institute (Open Education Group)',
-    issuedDate: '20 November 2026',
-    issuedDateId: '20 November 2026',
-    competencies: [
-      'Modern JavaScript Syntax (ES6+) & Core Types',
-      'Conditional Branching, Loops & Control Flow',
-      'Functions, Scope, Closures & First-Class Citizens',
-      'Complex Data Structures (Arrays & Objects)',
-      'Algorithmic Problem Solving & Exception Handling'
+  "0": {
+    "code": "CISCO-JS1-CA9BD0E6",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_javascript_essentials.pdf",
+    "image": "/certificates/cert_javascript_essentials.png",
+    "issuerFull": "Cisco Networking Academy & JS Institute (Open Education Group)",
+    "issuerFullId": "Cisco Networking Academy & JS Institute (Open Education Group)",
+    "issuedDate": "20 November 2026",
+    "issuedDateId": "20 November 2026",
+    "competencies": [
+      "Modern JavaScript Syntax (ES6+) & Core Types",
+      "Conditional Branching, Loops & Control Flow",
+      "Functions, Scope, Closures & First-Class Citizens",
+      "Complex Data Structures (Arrays & Objects)",
+      "Algorithmic Problem Solving & Exception Handling"
     ],
-    competenciesId: [
-      'Sintaksis JavaScript Modern (ES6+) & Tipe Data Dasar',
-      'Percabangan Logika, Perulangan & Alur Kontrol Program',
-      'Fungsi, Scope, Closures & Pemrograman Berbasis Fungsi',
-      'Struktur Data Kompleks (Array, Object & Manipulasi Data)',
-      'Pemecahan Masalah Algoritmik & Penanganan Error (Exceptions)'
+    "competenciesId": [
+      "Sintaksis JavaScript Modern (ES6+) & Tipe Data Dasar",
+      "Percabangan Logika, Perulangan & Alur Kontrol Program",
+      "Fungsi, Scope, Closures & Pemrograman Berbasis Fungsi",
+      "Struktur Data Kompleks (Array, Object & Manipulasi Data)",
+      "Pemecahan Masalah Algoritmik & Penanganan Error (Exceptions)"
     ],
-    summary: 'Officially verified by Cisco Networking Academy and JS Institute for mastery of foundational and intermediate JavaScript programming, asynchronous fundamentals, and modular software design.',
-    summaryId: 'Sertifikasi resmi terverifikasi dari Cisco Networking Academy dan JS Institute dalam penguasaan pemrograman JavaScript modern, struktur data algoritma, dan perancangan perangkat lunak modular.'
+    "summary": "Officially verified by Cisco Networking Academy and JS Institute for mastery of modern JavaScript programming, control flows, data structures, and algorithmic logic.",
+    "summaryId": "Sertifikasi resmi terverifikasi dari Cisco Networking Academy dan JS Institute dalam penguasaan pemrograman JavaScript modern, struktur data algoritma, dan perancangan perangkat lunak modular."
   },
-  1: { // Telkomsel RAFI 2026 Award
-    code: 'TSEL-RAFI-2026-WINNER',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_telkomsel_rafi.pdf',
-    image: '/certificates/cert_telkomsel_rafi.png',
-    issuerFull: 'Telkomsel GM RNOP Jateng & DIY',
-    issuerFullId: 'Telkomsel GM RNOP Jateng & DIY',
-    issuedDate: 'April 2026',
-    issuedDateId: 'April 2026',
-    competencies: [
-      'Cellular Network Availability & Uptime Optimization',
-      'High-Load Festive (RAFI) Traffic Engineering',
-      'Cross-Functional Site Incident Resolution',
-      'Regional RAN KPI Performance Supremacy'
+  "1": {
+    "code": "GMI-TEL-INT-2023",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_magang_gmi.pdf",
+    "image": "/certificates/cert_magang_gmi.png",
+    "issuerFull": "PT Ganesha Mandiri Inti (GMI)",
+    "issuerFullId": "PT Ganesha Mandiri Inti (GMI)",
+    "issuedDate": "June 2023",
+    "issuedDateId": "Juni 2023",
+    "competencies": [
+      "Fiber Optic Backhaul & OLT Transmission Maintenance",
+      "Cellular Base Station RF Equipment Installation",
+      "Subcontractor Task Coordination & Daily Reporting",
+      "Field Safety Compliance & Site Acceptance"
     ],
-    competenciesId: [
-      'Optimalisasi Ketersediaan & Uptime Jaringan Seluler',
-      'Manajemen Rekayasa Trafik Lonjakan Musim Liburan (RAFI)',
-      'Resolusi Cepat Gangguan Site Lintas Wilayah',
-      'Pencapaian KPI RAN Terbaik di Wilayah Regional'
+    "competenciesId": [
+      "Pemeliharaan Transmisi Fiber Optik & Perangkat OLT",
+      "Instalasi Perangkat Radio RF Base Station (BTS)",
+      "Koordinasi Tim Lapangan Mitra & Pelaporan Harian",
+      "Kepatuhan Standar K3 Lapangan & Uji Terima Site"
     ],
-    summary: 'Awarded 1st Winner for Best Cellular Network Availability during Telkomsel RAFI 2026 operations across Central Java & DIY.',
-    summaryId: 'Penganugerahan Juara 1 Ketersediaan Jaringan Terbaik (Best Availability) selama posko operasional Telkomsel Siaga RAFI 2026 wilayah Jateng & DIY.'
+    "summary": "Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.",
+    "summaryId": "Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi."
   },
-  2: { // GMI Internship
-    code: 'GMI-TEL-INT-2023',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_magang_gmi.pdf',
-    image: '/certificates/cert_magang_gmi.png',
-    issuerFull: 'PT Ganesha Mandiri Inti (GMI)',
-    issuerFullId: 'PT Ganesha Mandiri Inti (GMI)',
-    issuedDate: 'June 2023',
-    issuedDateId: 'Juni 2023',
-    competencies: [
-      'Fiber Optic Backhaul & OLT Transmission Maintenance',
-      'Cellular Base Station RF Equipment Installation',
-      'Subcontractor Task Coordination & Daily Reporting',
-      'Field Safety Compliance & Site Acceptance'
+  "2": {
+    "code": "IBM-DS0101EN-7F25272A",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_datascience_idn.pdf",
+    "image": "/certificates/cert_datascience_idn.png",
+    "issuerFull": "IBM Developer Skills Network / Cognitive Class",
+    "issuerFullId": "IBM Developer Skills Network / Cognitive Class",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Data Science Foundations & Analytical Workflows",
+      "Python Data Ecosystem (Pandas, Matplotlib, SciPy)",
+      "Machine Learning Models & Data Preprocessing",
+      "Model Evaluation & Exploratory Data Analysis"
     ],
-    competenciesId: [
-      'Pemeliharaan Transmisi Fiber Optik & Perangkat OLT',
-      'Instalasi Perangkat Radio RF Base Station (BTS)',
-      'Koordinasi Tim Lapangan Mitra & Pelaporan Harian',
-      'Kepatuhan Standar K3 Lapangan & Uji Terima Site'
+    "competenciesId": [
+      "Fondasi Sains Data & Metodologi Analitik Modern",
+      "Ekosistem Python Data (Pandas, Matplotlib, SciPy)",
+      "Model Pembelajaran Mesin & Preprocessing Data",
+      "Evaluasi Akurasi Model & Analisis Data Eksploratif"
     ],
-    summary: 'Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.',
-    summaryId: 'Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi.'
+    "summary": "Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.",
+    "summaryId": "Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern."
   },
-  3: { // IBM Data Science 101
-    code: 'IBM-DS0101EN-7F25272A',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_datascience_idn.pdf',
-    image: '/certificates/cert_datascience_idn.png',
-    issuerFull: 'IBM Developer Skills Network / Cognitive Class',
-    issuerFullId: 'IBM Developer Skills Network / Cognitive Class',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Data Science Foundations & Analytical Workflows',
-      'Python Data Ecosystem (Pandas, Matplotlib, SciPy)',
-      'Machine Learning Models & Data Preprocessing',
-      'Model Evaluation & Exploratory Data Analysis'
+  "3": {
+    "code": "IBM-BD0101EN-794F2527",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_bigdata101.pdf",
+    "image": "/certificates/cert_bigdata101.png",
+    "issuerFull": "IBM Developer Skills Network / Cognitive Class",
+    "issuerFullId": "IBM Developer Skills Network / Cognitive Class",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Hadoop Distributed File System (HDFS) Concepts",
+      "Big Data V-Characteristics (Volume, Velocity, Variety)",
+      "NoSQL Databases & Large-Scale Data Warehouses",
+      "Apache Spark Batch & Streaming Processing"
     ],
-    competenciesId: [
-      'Fondasi Sains Data & Metodologi Analitik Modern',
-      'Ekosistem Python Data (Pandas, Matplotlib, SciPy)',
-      'Model Pembelajaran Mesin & Preprocessing Data',
-      'Evaluasi Akurasi Model & Analisis Data Eksploratif'
+    "competenciesId": [
+      "Konsep Arsitektur Terdistribusi Hadoop (HDFS)",
+      "Karakteristik Big Data (Volume, Velocity, Variety, Veracity)",
+      "Sistem Basis Data NoSQL & Data Warehouse Skala Besar",
+      "Pemrosesan Streaming & Batch dengan Apache Spark"
     ],
-    summary: 'Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.',
-    summaryId: 'Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern.'
+    "summary": "Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.",
+    "summaryId": "Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise."
   },
-  4: { // IBM Big Data 101
-    code: 'IBM-BD0101EN-794F2527',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_bigdata101.pdf',
-    image: '/certificates/cert_bigdata101.png',
-    issuerFull: 'IBM Developer Skills Network / Cognitive Class',
-    issuerFullId: 'IBM Developer Skills Network / Cognitive Class',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Hadoop Distributed File System (HDFS) Concepts',
-      'Big Data V-Characteristics (Volume, Velocity, Variety)',
-      'NoSQL Databases & Large-Scale Data Warehouses',
-      'Apache Spark Batch & Streaming Processing'
+  "4": {
+    "code": "LIDN-1661625797",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_cisco.pdf",
+    "image": "/certificates/cert_cisco.png",
+    "issuerFull": "ID-Networkers (IDN) & Cisco Networking Academy",
+    "issuerFullId": "ID-Networkers (IDN) & Kurikulum Cisco Networking Academy",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Cisco IOS Command-Line Interface (CLI)",
+      "VLAN Segmentation & Trunking (802.1Q)",
+      "IPv4 / IPv6 Subnetting & CIDR Addressing",
+      "Static & Dynamic Routing (OSPF / RIP)",
+      "Switch Port Security & Access Control Lists"
     ],
-    competenciesId: [
-      'Konsep Arsitektur Terdistribusi Hadoop (HDFS)',
-      'Karakteristik Big Data (Volume, Velocity, Variety, Veracity)',
-      'Sistem Basis Data NoSQL & Data Warehouse Skala Besar',
-      'Pemrosesan Streaming & Batch dengan Apache Spark'
+    "competenciesId": [
+      "Interface Baris Perintah Cisco IOS (CLI)",
+      "Segmentasi VLAN & Trunking (802.1Q)",
+      "Subnetting IPv4 / IPv6 & Pengalamatan CIDR",
+      "Routing Statis & Dinamis (OSPF / RIP)",
+      "Keamanan Port Switch & Access Control List (ACL)"
     ],
-    summary: 'Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.',
-    summaryId: 'Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise.'
+    "summary": "Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.",
+    "summaryId": "Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise."
   },
-  5: { // Cisco Dasar
-    code: 'LIDN-1661625797',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_cisco.pdf',
-    image: '/certificates/cert_cisco.png',
-    issuerFull: 'ID-Networkers (IDN) & Cisco Networking Academy',
-    issuerFullId: 'ID-Networkers (IDN) & Kurikulum Cisco Networking Academy',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Cisco IOS Command-Line Interface (CLI)',
-      'VLAN Segmentation & Trunking (802.1Q)',
-      'IPv4 / IPv6 Subnetting & CIDR Addressing',
-      'Static & Dynamic Routing (OSPF / RIP)',
-      'Switch Port Security & Access Control Lists'
+  "5": {
+    "code": "LIDN-4701470015",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_mikrotik.pdf",
+    "image": "/certificates/cert_mikrotik.png",
+    "issuerFull": "ID-Networkers Certified MikroTik Associate",
+    "issuerFullId": "ID-Networkers Certified MikroTik Associate",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "RouterOS Administration & Winbox Gateway",
+      "Bandwidth Management & Simple Queues QoS",
+      "Firewall Filter Rules, NAT & Mangle Rules",
+      "DHCP Server, DNS Cache & Bridging Topologies",
+      "Point-to-Point Wireless & Hotspot Authentication"
     ],
-    competenciesId: [
-      'Interface Baris Perintah Cisco IOS (CLI)',
-      'Segmentasi VLAN & Trunking (802.1Q)',
-      'Subnetting IPv4 / IPv6 & Pengalamatan CIDR',
-      'Routing Statis & Dinamis (OSPF / RIP)',
-      'Keamanan Port Switch & Access Control List (ACL)'
+    "competenciesId": [
+      "Administrasi RouterOS & Gateway Winbox",
+      "Manajemen Bandwidth & QoS Simple Queues",
+      "Firewall Filter Rules, NAT & Aturan Mangle",
+      "DHCP Server, DNS Cache & Topologi Bridging",
+      "Wireless Point-to-Point & Otentikasi Hotspot"
     ],
-    summary: 'Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.',
-    summaryId: 'Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise.'
+    "summary": "Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.",
+    "summaryId": "Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS."
   },
-  6: { // MikroTik Dasar (MTCNA)
-    code: 'LIDN-4701470015',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_mikrotik.pdf',
-    image: '/certificates/cert_mikrotik.png',
-    issuerFull: 'ID-Networkers Certified MikroTik Associate',
-    issuerFullId: 'ID-Networkers Certified MikroTik Associate',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'RouterOS Administration & Winbox Gateway',
-      'Bandwidth Management & Simple Queues QoS',
-      'Firewall Filter Rules, NAT & Mangle Rules',
-      'DHCP Server, DNS Cache & Bridging Topologies',
-      'Point-to-Point Wireless & Hotspot Authentication'
+  "6": {
+    "code": "LIDN-0033078842",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_cybersecurity.pdf",
+    "image": "/certificates/cert_cybersecurity.png",
+    "issuerFull": "ID-Networkers Cyber Security Academy",
+    "issuerFullId": "ID-Networkers Cyber Security Academy",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Network Vulnerability Assessment & Scanning",
+      "CIA Triad & Information Security Governance",
+      "Attack Vector Mitigation (DDoS, MITM, Injection)",
+      "Port Hardening & Firewall Defense Strategy",
+      "Security Incident Triage & Event Auditing"
     ],
-    competenciesId: [
-      'Administrasi RouterOS & Gateway Winbox',
-      'Manajemen Bandwidth & QoS Simple Queues',
-      'Firewall Filter Rules, NAT & Aturan Mangle',
-      'DHCP Server, DNS Cache & Topologi Bridging',
-      'Wireless Point-to-Point & Otentikasi Hotspot'
+    "competenciesId": [
+      "Pemindaian & Penilaian Kerentanan Jaringan",
+      "Prinsip CIA Triad & Tata Kelola Keamanan Informasi",
+      "Mitigasi Vektor Serangan (DDoS, MITM, Injection)",
+      "Penguatan Port & Strategi Pertahanan Firewall",
+      "Triage Insiden Keamanan & Audit Log Aktivitas"
     ],
-    summary: 'Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.',
-    summaryId: 'Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS.'
+    "summary": "Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.",
+    "summaryId": "Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem."
   },
-  7: { // Cyber Security
-    code: 'LIDN-0033078842',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_cybersecurity.pdf',
-    image: '/certificates/cert_cybersecurity.png',
-    issuerFull: 'ID-Networkers Cyber Security Academy',
-    issuerFullId: 'ID-Networkers Cyber Security Academy',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Network Vulnerability Assessment & Scanning',
-      'CIA Triad & Information Security Governance',
-      'Attack Vector Mitigation (DDoS, MITM, Injection)',
-      'Port Hardening & Firewall Defense Strategy',
-      'Security Incident Triage & Event Auditing'
+  "7": {
+    "code": "LIDN-6638673257",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_linux.pdf",
+    "image": "/certificates/cert_linux.png",
+    "issuerFull": "ID-Networkers Linux Systems Academy",
+    "issuerFullId": "ID-Networkers Linux Systems Academy",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Linux Filesystem Hierarchy & CLI Shell",
+      "User & Permission Management (chmod, chown, sudo)",
+      "Systemd Daemons, Process Monitoring & Crontab",
+      "Networking Configuration & SSH Key Authentication",
+      "Automated Bash Shell Scripting & PM2 Services"
     ],
-    competenciesId: [
-      'Pemindaian & Penilaian Kerentanan Jaringan',
-      'Prinsip CIA Triad & Tata Kelola Keamanan Informasi',
-      'Mitigasi Vektor Serangan (DDoS, MITM, Injection)',
-      'Penguatan Port & Strategi Pertahanan Firewall',
-      'Triage Insiden Keamanan & Audit Log Aktivitas'
+    "competenciesId": [
+      "Hirarki Filesystem Linux & Shell Bash CLI",
+      "Manajemen Pengguna & Izin Akses (chmod, chown, sudo)",
+      "Daemon Systemd, Pemantauan Proses & Crontab",
+      "Konfigurasi Jaringan & Otentikasi Kunci SSH",
+      "Otomasi Scripting Shell Bash & Layanan PM2"
     ],
-    summary: 'Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.',
-    summaryId: 'Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem.'
+    "summary": "Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.",
+    "summaryId": "Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background."
   },
-  8: { // Linux Systems
-    code: 'LIDN-6638673257',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_linux.pdf',
-    image: '/certificates/cert_linux.png',
-    issuerFull: 'ID-Networkers Linux Systems Academy',
-    issuerFullId: 'ID-Networkers Linux Systems Academy',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Linux Filesystem Hierarchy & CLI Shell',
-      'User & Permission Management (chmod, chown, sudo)',
-      'Systemd Daemons, Process Monitoring & Crontab',
-      'Networking Configuration & SSH Key Authentication',
-      'Automated Bash Shell Scripting & PM2 Services'
+  "8": {
+    "code": "LIDN-2243638913",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_networking.pdf",
+    "image": "/certificates/cert_networking.png",
+    "issuerFull": "ID-Networkers Networking Research Lab",
+    "issuerFullId": "ID-Networkers Networking Research Lab",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "OSI 7-Layer & TCP/IP Architecture",
+      "Ethernet Frame & Packet Header Analysis",
+      "LAN, MAN & WAN Network Topologies",
+      "Network Troubleshooting (Ping, Traceroute, ARP)",
+      "Bandwidth Calculation & Quality of Service (QoS)"
     ],
-    competenciesId: [
-      'Hirarki Filesystem Linux & Shell Bash CLI',
-      'Manajemen Pengguna & Izin Akses (chmod, chown, sudo)',
-      'Daemon Systemd, Pemantauan Proses & Crontab',
-      'Konfigurasi Jaringan & Otentikasi Kunci SSH',
-      'Otomasi Scripting Shell Bash & Layanan PM2'
+    "competenciesId": [
+      "Arsitektur Lapisan OSI 7-Layer & TCP/IP",
+      "Analisis Header Paket & Frame Ethernet",
+      "Topologi Jaringan LAN, MAN & WAN",
+      "Troubleshooting Jaringan (Ping, Traceroute, ARP)",
+      "Perhitungan Bandwidth & Quality of Service (QoS)"
     ],
-    summary: 'Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.',
-    summaryId: 'Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background.'
+    "summary": "Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.",
+    "summaryId": "Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end."
   },
-  9: { // Jaringan Dasar
-    code: 'LIDN-2243638913',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_networking.pdf',
-    image: '/certificates/cert_networking.png',
-    issuerFull: 'ID-Networkers Networking Research Lab',
-    issuerFullId: 'ID-Networkers Networking Research Lab',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'OSI 7-Layer & TCP/IP Architecture',
-      'Ethernet Frame & Packet Header Analysis',
-      'LAN, MAN & WAN Network Topologies',
-      'Network Troubleshooting (Ping, Traceroute, ARP)',
-      'Bandwidth Calculation & Quality of Service (QoS)'
+  "9": {
+    "code": "LIDN-4113909330",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_pnetlab.pdf",
+    "image": "/certificates/cert_pnetlab.png",
+    "issuerFull": "ID-Networkers Virtualized Infrastructure Lab",
+    "issuerFullId": "ID-Networkers Virtualized Infrastructure Lab",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "PNETlab / EVE-NG Server Deployment",
+      "Multi-Vendor Virtual Node Integration (Cisco, MikroTik)",
+      "Complex Campus & WAN Topology Emulation",
+      "Live Packet Sniffing with Wireshark",
+      "Pre-Deployment Proof-of-Concept Validation"
     ],
-    competenciesId: [
-      'Arsitektur Lapisan OSI 7-Layer & TCP/IP',
-      'Analisis Header Paket & Frame Ethernet',
-      'Topologi Jaringan LAN, MAN & WAN',
-      'Troubleshooting Jaringan (Ping, Traceroute, ARP)',
-      'Perhitungan Bandwidth & Quality of Service (QoS)'
+    "competenciesId": [
+      "Deployment Server PNETlab / EVE-NG",
+      "Integrasi Node Virtual Multi-Vendor (Cisco, MikroTik)",
+      "Emulasi Topologi Jaringan Kampus & WAN Skala Besar",
+      "Packet Sniffing Real-Time dengan Wireshark",
+      "Validasi Proof-of-Concept Sebelum Implementasi Lapangan"
     ],
-    summary: 'Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.',
-    summaryId: 'Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end.'
+    "summary": "Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.",
+    "summaryId": "Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi."
   },
-  10: { // PNETlab
-    code: 'LIDN-4113909330',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_pnetlab.pdf',
-    image: '/certificates/cert_pnetlab.png',
-    issuerFull: 'ID-Networkers Virtualized Infrastructure Lab',
-    issuerFullId: 'ID-Networkers Virtualized Infrastructure Lab',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'PNETlab / EVE-NG Server Deployment',
-      'Multi-Vendor Virtual Node Integration (Cisco, MikroTik)',
-      'Complex Campus & WAN Topology Emulation',
-      'Live Packet Sniffing with Wireshark',
-      'Pre-Deployment Proof-of-Concept Validation'
+  "10": {
+    "code": "LIDN-8613215252",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_dart.pdf",
+    "image": "/certificates/cert_dart.png",
+    "issuerFull": "ID-Networkers Software Engineering Division",
+    "issuerFullId": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
+    "issuedDate": "November 2026",
+    "issuedDateId": "November 2026",
+    "competencies": [
+      "Object-Oriented Programming (OOP) in Dart",
+      "Asynchronous Futures, Streams & Event Loops",
+      "Type Safety, Generics & Collections",
+      "Functional Data Transformations (map, where, fold)",
+      "Clean Code Principles & Modular Architecture"
     ],
-    competenciesId: [
-      'Deployment Server PNETlab / EVE-NG',
-      'Integrasi Node Virtual Multi-Vendor (Cisco, MikroTik)',
-      'Emulasi Topologi Jaringan Kampus & WAN Skala Besar',
-      'Packet Sniffing Real-Time dengan Wireshark',
-      'Validasi Proof-of-Concept Sebelum Implementasi Lapangan'
+    "competenciesId": [
+      "Pemrograman Berorientasi Objek (OOP) dengan Dart",
+      "Futures Asinkron, Streams & Event Loop",
+      "Type Safety, Generics & Manajemen Koleksi Data",
+      "Transformasi Data Fungsional (map, where, fold)",
+      "Prinsip Clean Code & Arsitektur Perangkat Lunak Modular"
     ],
-    summary: 'Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.',
-    summaryId: 'Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi.'
-  },
-  11: { // Dart Programming
-    code: 'LIDN-8613215252',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_dart.pdf',
-    image: '/certificates/cert_dart.png',
-    issuerFull: 'ID-Networkers Software Engineering Division',
-    issuerFullId: 'Divisi Rekayasa Perangkat Lunak ID-Networkers',
-    issuedDate: 'November 2026',
-    issuedDateId: 'November 2026',
-    competencies: [
-      'Object-Oriented Programming (OOP) in Dart',
-      'Asynchronous Futures, Streams & Event Loops',
-      'Type Safety, Generics & Collections',
-      'Functional Data Transformations (map, where, fold)',
-      'Clean Code Principles & Modular Architecture'
-    ],
-    competenciesId: [
-      'Pemrograman Berorientasi Objek (OOP) dengan Dart',
-      'Futures Asinkron, Streams & Event Loop',
-      'Type Safety, Generics & Manajemen Koleksi Data',
-      'Transformasi Data Fungsional (map, where, fold)',
-      'Prinsip Clean Code & Arsitektur Perangkat Lunak Modular'
-    ],
-    summary: 'Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.',
-    summaryId: 'Kemahiran terbukti dalam membangun aplikasi perangkat lunak berperforma tinggi dan type-safe menggunakan pemrograman asynchronous Dart modern.'
-  },
-  12: { // Publikasi Jurnal Ilmiah
-    code: 'JIK-ESAU-2025-CLOUD',
-    hasPdf: true,
-    pdfUrl: '/certificates/cert_scientific_publication_cloud.pdf',
-    image: '/certificates/cert_scientific_publication.png',
-    issuerFull: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
-    issuerFullId: 'Jurnal Ilmu Komputer (JIK) / Universitas Esa Unggul',
-    issuedDate: 'July 2025',
-    issuedDateId: 'Juli 2025',
-    competencies: [
-      'Cloud Infrastructure Migration & Architecture Design',
-      'Cost Efficiency & Digital Transformation Metrics',
-      'Empirical MSME Business Case Analysis',
-      'Peer-Reviewed Scientific Paper Publication',
-      'Academic Research & Quantitative Findings'
-    ],
-    competenciesId: [
-      'Migrasi Infrastruktur Cloud & Desain Arsitektur Sistem',
-      'Metrik Efisiensi Biaya & Transformasi Digital',
-      'Analisis Studi Kasus Lapangan Pelaku Usaha UMKM',
-      'Publikasi Karya Ilmiah Terindeks Peer-Reviewed',
-      'Riset Metodologi Akademik & Temuan Kuantitatif'
-    ],
-    summary: 'First author of a published peer-reviewed scientific paper analyzing Cloud Computing digital transformation architectures for MSMEs in Indonesia.',
-    summaryId: 'Penulis pertama karya ilmiah terpublikasi pada jurnal akademik bereputasi yang meneliti implementasi arsitektur Cloud Computing dalam mendukung UMKM nasional.'
-  },
-  13: { // Power BI Data Analyst (Custom Digital Credential)
-    code: 'MS-PBI-8842',
-    hasPdf: false,
-    image: '/certificates/cert_powerbi.png',
-    issuerFull: 'Microsoft Certified Professional / Industry Standard',
-    issuerFullId: 'Microsoft Certified Professional / Standar Industri',
-    issuedDate: 'October 2024',
-    issuedDateId: 'Oktober 2024',
-    competencies: [
-      'DAX Measures & Advanced Time Intelligence',
-      'Star Schema Relational Data Modeling',
-      'Executive Rollout KPI Dashboards',
-      'Power Query M-Code Data Transformation'
-    ],
-    competenciesId: [
-      'DAX Measures & Time Intelligence Tingkat Lanjut',
-      'Pemodelan Data Relasional Skema Star',
-      'Dashboard KPI Eksekutif Rollout Proyek',
-      'Transformasi Data Power Query (M-Code)'
-    ],
-    summary: 'Demonstrated mastery in end-to-end business intelligence, multi-table telecom data warehousing, and interactive executive reporting.',
-    summaryId: 'Penguasaan komprehensif dalam business intelligence end-to-end, pemodelan data pergudangan telekomunikasi multi-tabel, dan pelaporan eksekutif interaktif.'
-  },
-  14: { // SQL HackerRank (Custom Digital Credential)
-    code: 'HR-SQL-9104',
-    hasPdf: false,
-    image: '/certificates/cert_sql.png',
-    issuerFull: 'HackerRank Verified Skill Assessment',
-    issuerFullId: 'HackerRank Verified Skill Assessment',
-    issuedDate: 'July 2024',
-    issuedDateId: 'Juli 2024',
-    competencies: [
-      'Complex Multi-Table INNER / LEFT JOINs',
-      'Window Functions (ROW_NUMBER, RANK, DENSE_RANK)',
-      'Subqueries, CTEs & Temporary Tables',
-      'Index Optimization & High-Volume Query Tuning'
-    ],
-    competenciesId: [
-      'Query Kompleks Multi-Tabel INNER / LEFT JOIN',
-      'Fungsi Window (ROW_NUMBER, RANK, DENSE_RANK)',
-      'Subqueries, CTEs & Tabel Sementara',
-      'Optimasi Indeks & Tuning Query Skala Besar'
-    ],
-    summary: 'Validated proficiency in relational database querying, complex aggregations, telecom site metrics analysis, and schema query optimization.',
-    summaryId: 'Keahlian terverifikasi dalam query basis data relasional, agregasi metrik performa site telekomunikasi, dan optimasi arsitektur query.'
-  },
-  15: { // Project Management (Custom Digital Credential)
-    code: 'PM-ENG-40B',
-    hasPdf: false,
-    image: '/certificates/cert_pm.png',
-    issuerFull: 'Professional Engineering Standards / Telkomsel Scope',
-    issuerFullId: 'Standar Manajemen Proyek Profesional / Lingkup Telkomsel',
-    issuedDate: 'December 2023',
-    issuedDateId: 'Desember 2023',
-    competencies: [
-      'CAPEX & OPEX Budget Allocation (IDR 40B)',
-      'WBS Scheduling & Critical Path Management',
-      'Vendor SLA & Subcontractor Compliance',
-      'Telkomsel eATP & Site Acceptance Standards'
-    ],
-    competenciesId: [
-      'Alokasi Anggaran CAPEX & OPEX (Hingga Rp 40 Miliar)',
-      'Penjadwalan WBS & Manajemen Jalur Kritis (CPM)',
-      'Kepatuhan SLA Vendor & Koordinasi Subkontraktor',
-      'Standar Akseptansi Site & eATP Telkomsel'
-    ],
-    summary: 'Execution mastery over large-scale wireless infrastructure deployment, resource forecasting, and executive milestone governance.',
-    summaryId: 'Penguasaan eksekusi proyek infrastruktur seluler berskala besar, peramalan sumber daya, dan tata kelola milestone manajemen eksekutif.'
-  },
-  16: { // N8N Automation (Custom Digital Credential)
-    code: 'N8N-AUTO-771',
-    hasPdf: false,
-    image: '/certificates/cert_n8n.png',
-    issuerFull: 'Workflow Automation & Systems Integration',
-    issuerFullId: 'Otomasi Alur Kerja & Integrasi Sistem',
-    issuedDate: 'November 2024',
-    issuedDateId: 'November 2024',
-    competencies: [
-      'Custom Webhook Listeners & Trigger Logic',
-      'Multi-System API Orchestration (WhatsApp/MySQL)',
-      'Fault-Tolerant Error Handling & Retry Policies',
-      'Automated Telegram / Slack Event Notifiers'
-    ],
-    competenciesId: [
-      'Custom Webhook Listeners & Logika Trigger Otomatis',
-      'Orkestrasi API Multi-Sistem (WhatsApp/MySQL/Cloud)',
-      'Penanganan Error Toleran & Kebijakan Retry Otomatis',
-      'Notifikasi Event Otomatis Telegram & Slack'
-    ],
-    summary: 'Architecture and deployment of automated enterprise workflows connecting cellular monitoring nodes with instant messaging interfaces.',
-    summaryId: 'Perancangan dan penerapan alur kerja otomasi enterprise yang menghubungkan node monitoring jaringan seluler dengan interface pesan instan.'
-  },
-  17: { // Telecom Network Assurance (Custom Digital Credential)
-    code: 'RAN-OPT-2023',
-    hasPdf: false,
-    image: '/certificates/cert_ran_assurance.png',
-    issuerFull: 'Radio Access Network & Transmission Standards',
-    issuerFullId: 'Standar Transmisi & Jaringan Akses Radio (RAN)',
-    issuedDate: 'May 2023',
-    issuedDateId: 'Mei 2023',
-    competencies: [
-      'RAN KPI Diagnostics (PRB, Payload, Drop Rate)',
-      'RET Antenna Tilt & Azimuth Alignment Audit',
-      'Balmon Spectrum Interference Spectrum Radar',
-      'Fiber Optic / Microwave Backhaul Validation'
-    ],
-    competenciesId: [
-      'Diagnostik KPI RAN (PRB, Payload, Drop Call Rate)',
-      'Audit Kemiringan RET Antena & Penyelarasan Azimuth',
-      'Radar Interferensi Frekuensi Balmon & Analisis Spektrum',
-      'Validasi Backhaul Fiber Optik / Microwave'
-    ],
-    summary: 'Comprehensive competency in cellular RF spectrum optimization, base station transmission integrity, and mobile network QoS assurance.',
-    summaryId: 'Kompetensi mendalam dalam optimalisasi spektrum RF seluler, integritas transmisi base station (BTS), dan jaminan kualitas layanan (QoS) jaringan seluler.'
+    "summary": "Demonstrated proficiency in building performant, type-safe software applications with modern asynchronous Dart programming.",
+    "summaryId": "Kemahiran terbukti dalam membangun aplikasi perangkat lunak berperforma tinggi dan type-safe menggunakan pemrograman asynchronous Dart modern."
   }
 };
 
@@ -538,14 +372,14 @@ export default function CertificatesSection() {
                 </div>
 
                 {/* Visual Certificate Document Preview */}
-                <div className="relative mb-4 h-48 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-slate-950 transition-all duration-300 shadow-md group-hover:shadow-teal-500/20 flex items-center justify-center">
+                <div className="relative mb-4 h-48 w-full rounded-xl overflow-hidden border border-white/10 group-hover:border-teal-400/50 bg-[#0f172a] transition-all duration-300 shadow-md group-hover:shadow-teal-500/20 flex items-center justify-center p-2">
                   <img
                     src={detail.image}
                     alt={cert.name}
-                    className="w-full h-full object-contain p-1.5 transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
+                    className="w-full h-full object-contain rounded-lg shadow-sm transition-transform duration-500 group-hover:scale-105"
+                    loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 opacity-60 group-hover:opacity-20 transition-opacity pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-teal-500/0 group-hover:bg-teal-500/5 transition-colors pointer-events-none"></div>
 
                   {/* Verification Status Badge */}
                   <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-slate-900/90 backdrop-blur-md border border-teal-500/30 text-[10px] font-mono shadow-sm">

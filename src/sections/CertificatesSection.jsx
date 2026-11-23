@@ -58,6 +58,32 @@ const CERT_DETAILS = {
     "summaryId": "Sertifikasi resmi kolaborasi Cisco dan OpenEDG Python Institute, memvalidasi arsitektur perangkat lunak tingkat menengah, desain OOP, manipulasi file stream, dan persiapan sertifikasi PCAP."
   },
   "2": {
+    "code": "GCLOUD-SIMPLI-11069413",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_google_cloud_ai.pdf",
+    "image": "/certificates/cert_google_cloud_ai.png",
+    "issuerFull": "Powered by Google Cloud & Simplilearn SkillUp",
+    "issuerFullId": "Powered by Google Cloud & Simplilearn SkillUp",
+    "issuedDate": "23 November 2026",
+    "issuedDateId": "23 November 2026",
+    "competencies": [
+      "Google Cloud Generative AI & Vertex AI Foundations",
+      "Enterprise Machine Learning Model Integration",
+      "Prompt Engineering & Large Language Model (LLM) Ops",
+      "Cloud-Native AI Solutions Architecture",
+      "Responsible AI Principles & Model Governance"
+    ],
+    "competenciesId": [
+      "Fondasi Generative AI & Vertex AI Google Cloud",
+      "Integrasi Model Machine Learning Enterprise",
+      "Prompt Engineering & Operasional LLM (LLMOps)",
+      "Arsitektur Solusi AI Berbasis Cloud",
+      "Prinsip Keamanan & Tata Kelola AI Bertanggung Jawab"
+    ],
+    "summary": "Officially certified under Google Cloud and Simplilearn SkillUp, demonstrating core competence in enterprise cloud AI deployment, Vertex AI integration, and generative AI systems.",
+    "summaryId": "Tervalidasi resmi oleh Google Cloud dan Simplilearn SkillUp, membuktikan kompetensi dalam penerapan AI cloud skala enterprise, integrasi Vertex AI, dan sistem generative AI modern."
+  },
+  "3": {
     "code": "MS-SIMPLI-11066497",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_microsoft_excel.pdf",
@@ -83,7 +109,7 @@ const CERT_DETAILS = {
     "summary": "Officially certified under Microsoft and Simplilearn SkillUp, validating professional mastery in business analytics, complex spreadsheet modeling, and executive KPI dashboard generation.",
     "summaryId": "Sertifikasi resmi kolaborasi Microsoft dan Simplilearn SkillUp, memvalidasi keahlian tingkat lanjut dalam analitik bisnis, pemodelan spreadsheet kompleks, dan pembuatan dashboard KPI eksekutif."
   },
-  "3": {
+  "4": {
     "code": "MS-SIMPLI-11069067",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_microsoft_data_analyst.pdf",
@@ -109,7 +135,33 @@ const CERT_DETAILS = {
     "summary": "Officially verified under Microsoft and Simplilearn SkillUp, demonstrating core competencies across data analytics lifecycles, structured data interrogation, and operational business intelligence.",
     "summaryId": "Tervalidasi resmi di bawah program kolaborasi Microsoft dan Simplilearn SkillUp, membuktikan penguasaan siklus analitik data, investigasi data terstruktur, dan intelijen bisnis operasional."
   },
-  "4": {
+  "5": {
+    "code": "CISCO-NET-53554549",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_cisco_networking_basics.pdf",
+    "image": "/certificates/cert_cisco_networking_basics.png",
+    "issuerFull": "Cisco Networking Academy",
+    "issuerFullId": "Cisco Networking Academy",
+    "issuedDate": "23 November 2026",
+    "issuedDateId": "23 November 2026",
+    "competencies": [
+      "Network Architecture, Topologies & Standards Protocols",
+      "Ethernet Switching, Frame Traversal & Media Access Control",
+      "IPv4 & IPv6 Hierarchical Addressing & Subnetting",
+      "Router Forwarding, Gateway Routing & ARP Operations",
+      "Network Troubleshooting (Ping, Traceroute) & Wireless Security"
+    ],
+    "competenciesId": [
+      "Arsitektur Jaringan, Topologi & Standar Protokol Global",
+      "Switching Ethernet, Alur Frame & Media Access Control",
+      "Pengalamatan Hierarkis IPv4 & IPv6 serta Subnetting",
+      "Penerusan Router, Gateway Routing & Operasi ARP",
+      "Troubleshooting Konektivitas Jaringan & Keamanan Nirkabel"
+    ],
+    "summary": "Officially verified with Credly badge by Cisco Networking Academy, demonstrating comprehensive understanding of fundamental computer networking, IP addressing, and end-to-end routing operations.",
+    "summaryId": "Tervalidasi resmi dengan lencana Credly oleh Cisco Networking Academy, membuktikan penguasaan komprehensif arsitektur jaringan komputer, pengalamatan IP, dan operasi routing end-to-end."
+  },
+  "6": {
     "code": "CISCO-JS1-CA9BD0E6",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_javascript_essentials.pdf",
@@ -135,7 +187,7 @@ const CERT_DETAILS = {
     "summary": "Officially verified by Cisco Networking Academy and JS Institute for mastery of modern JavaScript programming, control flows, data structures, and algorithmic logic.",
     "summaryId": "Sertifikasi resmi terverifikasi dari Cisco Networking Academy dan JS Institute dalam penguasaan pemrograman JavaScript modern, struktur data algoritma, dan perancangan perangkat lunak modular."
   },
-  "5": {
+  "7": {
     "code": "GMI-TEL-INT-2023",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_magang_gmi.pdf",
@@ -159,7 +211,7 @@ const CERT_DETAILS = {
     "summary": "Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.",
     "summaryId": "Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi."
   },
-  "6": {
+  "8": {
     "code": "IBM-DS0101EN-7F25272A",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_datascience_idn.pdf",
@@ -183,7 +235,7 @@ const CERT_DETAILS = {
     "summary": "Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.",
     "summaryId": "Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern."
   },
-  "7": {
+  "9": {
     "code": "IBM-BD0101EN-794F2527",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_bigdata101.pdf",
@@ -207,7 +259,7 @@ const CERT_DETAILS = {
     "summary": "Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.",
     "summaryId": "Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise."
   },
-  "8": {
+  "10": {
     "code": "LIDN-1661625797",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_cisco.pdf",
@@ -233,7 +285,7 @@ const CERT_DETAILS = {
     "summary": "Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.",
     "summaryId": "Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise."
   },
-  "9": {
+  "11": {
     "code": "LIDN-4701470015",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_mikrotik.pdf",
@@ -259,7 +311,7 @@ const CERT_DETAILS = {
     "summary": "Certified competency in managing MikroTik RouterOS devices, client IP assignment, network security rules, and QoS bandwidth policies.",
     "summaryId": "Kompetensi teruji dalam mengelola perangkat MikroTik RouterOS, alokasi IP, aturan keamanan jaringan, dan kebijakan bandwidth QoS."
   },
-  "10": {
+  "12": {
     "code": "LIDN-8636166835",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_cybersecurity.pdf",
@@ -285,7 +337,7 @@ const CERT_DETAILS = {
     "summary": "Practical foundation in enterprise cybersecurity defense, threat actor mitigation, and network hardening strategies.",
     "summaryId": "Fondasi praktis pertahanan keamanan siber enterprise, mitigasi ancaman digital, dan strategi pengerasan keamanan jaringan."
   },
-  "11": {
+  "13": {
     "code": "LIDN-2321495204",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_linux.pdf",
@@ -311,7 +363,7 @@ const CERT_DETAILS = {
     "summary": "Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.",
     "summaryId": "Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background."
   },
-  "12": {
+  "14": {
     "code": "LIDN-2243638913",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_networking.pdf",
@@ -337,7 +389,7 @@ const CERT_DETAILS = {
     "summary": "Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.",
     "summaryId": "Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end."
   },
-  "13": {
+  "15": {
     "code": "LIDN-4113909330",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_pnetlab.pdf",
@@ -363,7 +415,7 @@ const CERT_DETAILS = {
     "summary": "Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.",
     "summaryId": "Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi."
   },
-  "14": {
+  "16": {
     "code": "LIDN-8613215252",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_dart.pdf",

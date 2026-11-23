@@ -524,118 +524,130 @@ export const translations = {
       "closePhoto": "Close Documentation"
     },
     "certificates": {
-      "badge": "// CREDENTIALS & CERTIFICATIONS",
-      "titleStart": "Verified Credentials &",
-      "titleEnd": "Certifications",
-      "subtitle": "Continuous upskilling in Python engineering, data analytics, cloud systems, and network infrastructure.",
-      "previewText": "Preview Credential →",
-      "closePreview": "Close Preview",
-      "verificationPlaceholder": "Official Credential Verification Placeholder",
+      "badge": "// KREDENSIAL & SERTIFIKASI",
+      "titleStart": "Kredensial & Sertifikasi",
+      "titleEnd": "Terverifikasi",
+      "subtitle": "Peningkatan kompetensi berkelanjutan dalam rekayasa Python, cloud AI, analitik data, otomasi sistem, dan infrastruktur jaringan.",
+      "previewText": "Lihat Sertifikat →",
       "items": [
         {
-                "name": "Cisco & Python Institute: Python Essentials 1",
+                "name": "Sertifikasi Cisco & Python Institute: Python Essentials 1",
                 "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
                 "year": "2026",
                 "icon": "/certificates/badge_cisco_python_1.png",
-                "category": "Software Engineering"
+                "category": "Rekayasa Perangkat Lunak"
         },
         {
-                "name": "Cisco & Python Institute: Python Essentials 2",
+                "name": "Sertifikasi Cisco & Python Institute: Python Essentials 2",
                 "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
                 "year": "2026",
                 "icon": "/certificates/badge_cisco_python_2.png",
-                "category": "Software Engineering"
+                "category": "Rekayasa Perangkat Lunak"
         },
         {
-                "name": "Microsoft: Business Analytics with Excel",
-                "issuer": "Microsoft & Simplilearn SkillUp",
+                "name": "Sertifikasi Google Cloud: Innovating with Google Cloud AI",
+                "issuer": "Powered by Google Cloud & Simplilearn SkillUp",
+                "year": "2026",
+                "icon": "/certificates/cert_google_cloud_ai.png",
+                "category": "Kecerdasan Buatan (AI)"
+        },
+        {
+                "name": "Sertifikasi Microsoft: Business Analytics with Excel",
+                "issuer": "Powered by Microsoft & Simplilearn SkillUp",
                 "year": "2026",
                 "icon": "/certificates/cert_microsoft_excel.png",
-                "category": "Business Analytics"
+                "category": "Analitik Bisnis"
         },
         {
-                "name": "Microsoft: Data Analyst 101",
-                "issuer": "Microsoft & Simplilearn SkillUp",
+                "name": "Sertifikasi Microsoft: Data Analyst 101",
+                "issuer": "Powered by Microsoft & Simplilearn SkillUp",
                 "year": "2026",
                 "icon": "/certificates/cert_microsoft_data_analyst.png",
-                "category": "Data Analytics"
+                "category": "Analisis Data"
         },
         {
-                "name": "Cisco & JS Institute: JavaScript Essentials 1",
+                "name": "Sertifikasi Cisco: Networking Basics (Credly Verified)",
+                "issuer": "Cisco Networking Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_cisco_networking_basics.png",
+                "category": "Rekayasa Jaringan"
+        },
+        {
+                "name": "Sertifikasi Cisco & JS Institute: JavaScript Essentials 1",
                 "issuer": "Cisco Networking Academy & JS Institute",
                 "year": "2026",
                 "icon": "/certificates/badge_cisco_js.png",
-                "category": "Software Engineering"
+                "category": "Rekayasa Perangkat Lunak"
         },
         {
-                "name": "Telecommunication Network Engineering Internship",
+                "name": "Sertifikat Magang Rekayasa Jaringan Telekomunikasi",
                 "issuer": "PT Ganesha Mandiri Inti (GMI)",
                 "year": "2023",
                 "icon": "/certificates/cert_magang_gmi.png",
-                "category": "Industry Internship"
+                "category": "Praktik Kerja Industri"
         },
         {
-                "name": "IBM Certification: Data Science 101",
+                "name": "Sertifikasi IBM: Data Science 101",
                 "issuer": "IBM Developer Skills Network / Cognitive Class",
                 "year": "2026",
                 "icon": "/certificates/cert_datascience_idn.png",
-                "category": "Data Science"
+                "category": "Sains Data"
         },
         {
-                "name": "IBM Certification: Big Data 101",
+                "name": "Sertifikasi IBM: Big Data 101",
                 "issuer": "IBM Developer Skills Network / Cognitive Class",
                 "year": "2026",
                 "icon": "/certificates/cert_bigdata101.png",
-                "category": "Big Data & Analytics"
+                "category": "Big Data & Analitik"
         },
         {
-                "name": "Cisco Certification — Network Fundamentals & CCNA",
-                "issuer": "ID-Networkers & Cisco Networking Academy",
+                "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
+                "issuer": "ID-Networkers & Kurikulum Cisco",
                 "year": "2026",
                 "icon": "/certificates/cert_cisco.png",
-                "category": "Network Engineering"
+                "category": "Rekayasa Jaringan"
         },
         {
                 "name": "MikroTik Certified Network Associate (MTCNA)",
                 "issuer": "ID-Networkers Certified MikroTik Associate",
                 "year": "2026",
                 "icon": "/certificates/cert_mikrotik.png",
-                "category": "Network Infrastructure"
+                "category": "Infrastruktur Jaringan"
         },
         {
-                "name": "Cyber Security Defense & Threat Modeling",
-                "issuer": "ID-Networkers Cyber Security Academy",
+                "name": "Pertahanan Cyber Security & Pemodelan Ancaman",
+                "issuer": "ID-Networkers Cyber Academy",
                 "year": "2026",
                 "icon": "/certificates/cert_cybersecurity.png",
-                "category": "Information Security"
+                "category": "Keamanan Informasi"
         },
         {
-                "name": "Linux Server Administration & Shell Automation",
+                "name": "Administrasi Server Linux & Otomasi Shell",
                 "issuer": "ID-Networkers Linux Systems Academy",
                 "year": "2026",
                 "icon": "/certificates/cert_linux.png",
-                "category": "Systems & Cloud"
+                "category": "Sistem & Cloud"
         },
         {
-                "name": "Computer Network Protocol Engineering",
+                "name": "Rekayasa Protokol Jaringan Komputer",
                 "issuer": "ID-Networkers Networking Lab",
                 "year": "2026",
                 "icon": "/certificates/cert_networking.png",
-                "category": "Telecommunications"
+                "category": "Telekomunikasi"
         },
         {
-                "name": "Enterprise Network Topology Simulation (PNETlab)",
+                "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
                 "issuer": "ID-Networkers (PNETlab)",
                 "year": "2026",
                 "icon": "/certificates/cert_pnetlab.png",
-                "category": "Network Architecture"
+                "category": "Arsitektur Jaringan"
         },
         {
-                "name": "Dart Programming & Software Architecture",
-                "issuer": "ID-Networkers Software Engineering Division",
+                "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
+                "issuer": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
                 "year": "2026",
                 "icon": "/certificates/cert_dart.png",
-                "category": "Software Engineering"
+                "category": "Rekayasa Perangkat Lunak"
         }
 ]
     },
@@ -1408,8 +1420,8 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v10')
-    const saved = localStorage.getItem('toti_live_translations_v10')
+    localStorage.removeItem('toti_live_translations_v11')
+    const saved = localStorage.getItem('toti_live_translations_v11')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

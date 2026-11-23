@@ -170,14 +170,33 @@ export default function HeroSection() {
           </div>
 
           {/* Quick tech chips */}
-          <div className="pt-4 flex items-center gap-3 text-xs text-slate-400 font-mono">
-            <span className="text-slate-500">{heroT.coreArsenal}</span>
+          <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-3 text-xs text-slate-400 font-mono">
+            <span className="text-slate-500 font-semibold uppercase tracking-wider text-[11px] shrink-0">{heroT.coreArsenal}</span>
             <div className="flex flex-wrap gap-2">
-              <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-white/5 text-slate-300">Power BI</span>
-              <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-white/5 text-slate-300">Python</span>
-              <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-white/5 text-slate-300">MySQL</span>
-              <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-white/5 text-slate-300">N8N</span>
-              <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-white/5 text-slate-300">Huawei iMAE</span>
+              <span className="px-2.5 py-1 rounded-lg bg-amber-500/10 border border-amber-500/25 text-amber-300 font-medium flex items-center gap-1.5 hover:border-amber-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                Power BI & DAX
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-teal-500/10 border border-teal-500/25 text-teal-300 font-medium flex items-center gap-1.5 hover:border-teal-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+                Python (Advanced)
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 font-medium flex items-center gap-1.5 hover:border-emerald-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                Excel Business Modeling
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-blue-500/10 border border-blue-500/25 text-blue-300 font-medium flex items-center gap-1.5 hover:border-blue-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                SQL & Data Architecture
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-orange-500/10 border border-orange-500/25 text-orange-300 font-medium flex items-center gap-1.5 hover:border-orange-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-400"></span>
+                N8N Automation
+              </span>
+              <span className="px-2.5 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 font-medium flex items-center gap-1.5 hover:border-cyan-400/50 transition-colors">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                Huawei iMAE / RAN
+              </span>
             </div>
           </div>
         </motion.div>
@@ -216,7 +235,10 @@ export default function HeroSection() {
               <div className="mt-4 flex items-center justify-between px-1">
                 <div>
                   <h3 className="font-bold text-slate-100 text-base">Toti Putra Pratama</h3>
-                  <p className="text-xs text-slate-400 font-mono">ID // TELCOM-DATA-2025</p>
+                  <p className="text-xs text-teal-400 font-mono flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse"></span>
+                    ID // TELCOM-DATA-2026
+                  </p>
                 </div>
                 <div className="text-right">
                   <span className="text-xs text-teal-400 font-medium block">{heroT.roleSubtitle}</span>

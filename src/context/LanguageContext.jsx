@@ -74,94 +74,55 @@ export const translations = {
       "badge": "// TECHNICAL ARSENAL",
       "titleStart": "Core Technical & Leadership",
       "titleEnd": "Competencies",
-      "subtitle": "Combining analytical toolsets with real-world telecommunications project engineering discipline.",
+      "subtitle": "Combining advanced analytical toolsets with real-world telecommunications project engineering discipline.",
       "categories": [
         {
           "title": "Data & Analytics",
           "skills": [
-            {
-              "name": "Power BI & DAX",
-              "tag": "Advanced"
-            },
-            {
-              "name": "MySQL & Data Modeling",
-              "tag": "Proficient"
-            },
-            {
-              "name": "Python & Analytics",
-              "tag": "Intermediate"
-            },
-            {
-              "name": "GIS & Spatial Mapping",
-              "tag": "Proficient"
-            }
+            { "name": "Power BI & DAX", "tag": "Advanced" },
+            { "name": "Python & Data Engineering", "tag": "Advanced" },
+            { "name": "Excel & Business Modeling", "tag": "Advanced" },
+            { "name": "MySQL & Data Architecture", "tag": "Proficient" },
+            { "name": "GIS & Spatial Mapping", "tag": "Proficient" },
+            { "name": "ETL & Automated Telemetry", "tag": "Proficient" }
           ]
         },
         {
           "title": "Backend & Automation",
           "skills": [
-            {
-              "name": "Node.js & REST APIs",
-              "tag": "Advanced"
-            },
-            {
-              "name": "N8N & Power Automate",
-              "tag": "Advanced"
-            },
-            {
-              "name": "AI & Agentic Pipelines",
-              "tag": "Proficient"
-            },
-            {
-              "name": "Linux Server & PM2",
-              "tag": "Proficient"
-            }
+            { "name": "Node.js & REST APIs", "tag": "Advanced" },
+            { "name": "N8N & Power Automate", "tag": "Advanced" },
+            { "name": "AI & Agentic Pipelines", "tag": "Proficient" },
+            { "name": "Linux Server & PM2", "tag": "Proficient" },
+            { "name": "Docker & Automation Daemons", "tag": "Proficient" },
+            { "name": "Bash & Shell Scripting", "tag": "Proficient" }
           ]
         },
         {
           "title": "Telecom & RAN Systems",
           "skills": [
-            {
-              "name": "Huawei iMaster / iMAE",
-              "tag": "Expert"
-            },
-            {
-              "name": "BTS & eATP Acceptance",
-              "tag": "Expert"
-            },
-            {
-              "name": "RAN KPI Optimization",
-              "tag": "Expert"
-            },
-            {
-              "name": "RF Spectrum & RET Tilt",
-              "tag": "Expert"
-            }
+            { "name": "Huawei iMaster / iMAE", "tag": "Expert" },
+            { "name": "BTS & eATP Acceptance", "tag": "Expert" },
+            { "name": "Radio KPI Optimization", "tag": "Expert" },
+            { "name": "RF Spectrum & RET Audit", "tag": "Expert" },
+            { "name": "Fiber Optics & OLT Backhaul", "tag": "Proficient" },
+            { "name": "Drive Test & Log Analysis", "tag": "Proficient" }
           ]
         },
         {
-          "title": "Engineering & PM",
+          "title": "Engineering & Management",
           "skills": [
-            {
-              "name": "SPMS & CRQ Governance",
-              "tag": "Expert"
-            },
-            {
-              "name": "Budget Mgmt (IDR 40B+)",
-              "tag": "Optimized"
-            },
-            {
-              "name": "Vendor & SLA Control",
-              "tag": "Expert"
-            },
-            {
-              "name": "AutoCAD & Dossier",
-              "tag": "Advanced"
-            }
+            { "name": "SPMS & CRQ Governance", "tag": "Expert" },
+            { "name": "Budget Management (40M+)", "tag": "Optimal" },
+            { "name": "Vendor Control & SLA", "tag": "Expert" },
+            { "name": "AutoCAD & Dossier Docs", "tag": "Advanced" },
+            { "name": "Telco K3 Safety & Compliance", "tag": "Proficient" },
+            { "name": "Cross-Functional Leadership", "tag": "Expert" }
           ]
         }
       ]
     },
+
     "projects": {
       "badge": "// FEATURED DEPLOYMENTS & LIVE SYSTEMS",
       "titleStart": "Featured Engineering &",
@@ -815,89 +776,50 @@ export const translations = {
         {
           "title": "Data & Analitik",
           "skills": [
-            {
-              "name": "Power BI & DAX",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "MySQL & Arsitektur Data",
-              "tag": "Mahir"
-            },
-            {
-              "name": "Python & Analitik Data",
-              "tag": "Menengah"
-            },
-            {
-              "name": "Pemetaan Spasial GIS",
-              "tag": "Mahir"
-            }
+            { "name": "Power BI & DAX", "tag": "Lanjutan" },
+            { "name": "Python & Analitik Data", "tag": "Lanjutan" },
+            { "name": "Excel & Pemodelan Bisnis", "tag": "Lanjutan" },
+            { "name": "MySQL & Arsitektur Data", "tag": "Mahir" },
+            { "name": "Pemetaan Spasial GIS", "tag": "Mahir" },
+            { "name": "Pipeline ETL & Telemetri", "tag": "Mahir" }
           ]
         },
         {
           "title": "Backend & Otomasi",
           "skills": [
-            {
-              "name": "Node.js & REST APIs",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "N8N & Power Automate",
-              "tag": "Lanjutan"
-            },
-            {
-              "name": "Integrasi AI & Pipeline LLM",
-              "tag": "Mahir"
-            },
-            {
-              "name": "Server Linux & PM2",
-              "tag": "Mahir"
-            }
+            { "name": "Node.js & REST APIs", "tag": "Lanjutan" },
+            { "name": "N8N & Power Automate", "tag": "Lanjutan" },
+            { "name": "Integrasi AI & Pipeline LLM", "tag": "Mahir" },
+            { "name": "Server Linux & PM2", "tag": "Mahir" },
+            { "name": "Docker & Layanan Otomasi", "tag": "Mahir" },
+            { "name": "Scripting Bash & Shell", "tag": "Mahir" }
           ]
         },
         {
           "title": "Sistem Telekomunikasi & RAN",
           "skills": [
-            {
-              "name": "Huawei iMaster / iMAE",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Administrasi BTS & eATP",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Optimasi KPI RAN",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Spektrum RF & Audit RET",
-              "tag": "Ahli"
-            }
+            { "name": "Huawei iMaster / iMAE", "tag": "Ahli" },
+            { "name": "Administrasi BTS & eATP", "tag": "Ahli" },
+            { "name": "Optimasi KPI RAN", "tag": "Ahli" },
+            { "name": "Spektrum RF & Audit RET", "tag": "Ahli" },
+            { "name": "Transmisi Fiber Optik & OLT", "tag": "Mahir" },
+            { "name": "Drive Test & Analisis Log", "tag": "Mahir" }
           ]
         },
         {
           "title": "Teknik & Manajemen",
           "skills": [
-            {
-              "name": "Tata Kelola SPMS & CRQ",
-              "tag": "Ahli"
-            },
-            {
-              "name": "Manajemen Anggaran (40M+)",
-              "tag": "Optimal"
-            },
-            {
-              "name": "Kontrol Vendor & SLA",
-              "tag": "Ahli"
-            },
-            {
-              "name": "AutoCAD & Dokumen Dossier",
-              "tag": "Lanjutan"
-            }
+            { "name": "Tata Kelola SPMS & CRQ", "tag": "Ahli" },
+            { "name": "Manajemen Anggaran (40M+)", "tag": "Optimal" },
+            { "name": "Kontrol Vendor & SLA", "tag": "Ahli" },
+            { "name": "AutoCAD & Dokumen Dossier", "tag": "Lanjutan" },
+            { "name": "Standar K3 & Kepatuhan Site", "tag": "Mahir" },
+            { "name": "Koordinasi Lintas Tim", "tag": "Ahli" }
           ]
         }
       ]
     },
+
     "projects": {
       "badge": "// PORTOPOLIO PROYEK & SISTEM LIVE",
       "titleStart": "Proyek Unggulan Teknik &",
@@ -1486,8 +1408,8 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v9')
-    const saved = localStorage.getItem('toti_live_translations_v9')
+    localStorage.removeItem('toti_live_translations_v10')
+    const saved = localStorage.getItem('toti_live_translations_v10')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

@@ -197,20 +197,20 @@ export default function ProjectsSection() {
         </p>
 
         {/* Category Filter Tabs (Non-Web3 vs Web3) */}
-        <div className="pt-4 flex flex-wrap items-center justify-center gap-2">
+        <div className="pt-4 flex flex-wrap items-center justify-center gap-2.5">
           {[
-            { id: 'all', label: lang === 'id' ? 'Semua Proyek' : 'All Projects' },
-            { id: 'non-web3', label: lang === 'id' ? 'Profesional (Non-Web3)' : 'Professional (Non-Web3)' },
-            { id: 'web3', label: 'Web3 & On-Chain' }
+            { id: 'all', label: lang === 'id' ? `Semua Proyek (${projectsT.items.length + WEB3_PROJECTS.length})` : `All Projects (${projectsT.items.length + WEB3_PROJECTS.length})` },
+            { id: 'non-web3', label: lang === 'id' ? `Profesional Telecom & Data (${projectsT.items.length})` : `Telecom & Data (${projectsT.items.length})` },
+            { id: 'web3', label: `Web3 & On-Chain (${WEB3_PROJECTS.length})` }
           ].map((tab) => (
             <button
               key={tab.id}
               type="button"
               onClick={() => setProjectCategory(tab.id)}
-              className={`px-4 py-1.5 rounded-full text-xs font-mono transition-all border ${
+              className={`px-4 py-2 rounded-full text-xs font-mono transition-all border cursor-pointer ${
                 projectCategory === tab.id
-                  ? 'bg-teal-500/20 border-teal-400 text-teal-300 font-bold shadow-sm'
-                  : 'bg-slate-900/70 border-white/10 text-slate-400 hover:text-white hover:border-white/25'
+                  ? 'bg-teal-500/25 border-teal-400 text-teal-200 font-bold shadow-lg shadow-teal-500/20 scale-105'
+                  : 'bg-slate-900/80 border-white/10 text-slate-400 hover:text-white hover:border-teal-500/30'
               }`}
             >
               {tab.label}
@@ -244,9 +244,26 @@ export default function ProjectsSection() {
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3.5">
-                      <span className="text-[11px] font-mono text-teal-300 bg-teal-500/10 px-2.5 py-1 rounded-md border border-teal-500/30">
-                        {project.category}
-                      </span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-[11px] font-mono text-teal-300 bg-teal-500/10 px-2.5 py-1 rounded-md border border-teal-500/30">
+                          {project.category}
+                        </span>
+                        {idx === 0 && (
+                          <span className="text-[10px] font-mono text-amber-300 bg-amber-500/15 px-2 py-0.5 rounded border border-amber-500/30 font-semibold">
+                            ★ FLAGSHIP
+                          </span>
+                        )}
+                        {idx === 1 && (
+                          <span className="text-[10px] font-mono text-cyan-300 bg-cyan-500/15 px-2 py-0.5 rounded border border-cyan-500/30 font-semibold">
+                            ★ GEOSPATIAL
+                          </span>
+                        )}
+                        {idx === 2 && (
+                          <span className="text-[10px] font-mono text-emerald-300 bg-emerald-500/15 px-2 py-0.5 rounded border border-emerald-500/30 font-semibold">
+                            ★ AUTOMATION
+                          </span>
+                        )}
+                      </div>
                       <span className="text-[11px] text-slate-400 font-mono">
                         PROJ-0{idx + 1}
                       </span>
@@ -284,11 +301,12 @@ export default function ProjectsSection() {
                       {project.description}
                     </p>
 
-                    <div className="p-3 rounded-xl bg-slate-950/60 border border-white/5 mb-4">
-                      <span className="text-[11px] font-semibold text-amber-400 block mb-0.5">
-                        {projectsT.impactLabel}
+                    <div className="p-3.5 rounded-xl bg-gradient-to-r from-amber-500/10 via-slate-950/70 to-transparent border border-amber-500/30 mb-4 shadow-sm">
+                      <span className="text-[11px] font-bold text-amber-400 flex items-center gap-1.5 mb-1 font-mono">
+                        <span>⚡</span>
+                        <span>{projectsT.impactLabel}</span>
                       </span>
-                      <span className="text-xs text-slate-300 line-clamp-2">
+                      <span className="text-xs text-slate-200 font-medium leading-relaxed line-clamp-2">
                         {project.impact}
                       </span>
                     </div>

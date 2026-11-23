@@ -572,83 +572,97 @@ export const translations = {
       "verificationPlaceholder": "Official Credential Verification Placeholder",
       "items": [
         {
-          "name": "Cisco & JS Institute: JavaScript Essentials 1",
-          "issuer": "Cisco Networking Academy & JS Institute",
-          "year": "2026",
-          "icon": "/certificates/badge_cisco_js.png",
-          "category": "Software Engineering"
+                "name": "Microsoft: Business Analytics with Excel",
+                "issuer": "Microsoft & Simplilearn SkillUp",
+                "year": "2026",
+                "icon": "/certificates/cert_microsoft_excel.png",
+                "category": "Business Analytics"
         },
         {
-          "name": "Telecommunication Network Engineering Internship",
-          "issuer": "PT Ganesha Mandiri Inti (GMI)",
-          "year": "2023",
-          "icon": "/certificates/cert_magang_gmi.png",
-          "category": "Industry Internship"
+                "name": "Microsoft: Data Analyst 101",
+                "issuer": "Microsoft & Simplilearn SkillUp",
+                "year": "2026",
+                "icon": "/certificates/cert_microsoft_data_analyst.png",
+                "category": "Data Analytics"
         },
         {
-          "name": "IBM Certification: Data Science 101",
-          "issuer": "IBM Developer Skills Network / Cognitive Class",
-          "year": "2026",
-          "icon": "/certificates/cert_datascience_idn.png",
-          "category": "Data Science"
+                "name": "Cisco & JS Institute: JavaScript Essentials 1",
+                "issuer": "Cisco Networking Academy & JS Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_js.png",
+                "category": "Software Engineering"
         },
         {
-          "name": "IBM Certification: Big Data 101",
-          "issuer": "IBM Developer Skills Network / Cognitive Class",
-          "year": "2026",
-          "icon": "/certificates/cert_bigdata101.png",
-          "category": "Big Data & Analytics"
+                "name": "Telecommunication Network Engineering Internship",
+                "issuer": "PT Ganesha Mandiri Inti (GMI)",
+                "year": "2023",
+                "icon": "/certificates/cert_magang_gmi.png",
+                "category": "Industry Internship"
         },
         {
-          "name": "Cisco Certification — Network Fundamentals & CCNA",
-          "issuer": "ID-Networkers & Cisco Networking Academy",
-          "year": "2026",
-          "icon": "/certificates/cert_cisco.png",
-          "category": "Network Engineering"
+                "name": "IBM Certification: Data Science 101",
+                "issuer": "IBM Developer Skills Network / Cognitive Class",
+                "year": "2026",
+                "icon": "/certificates/cert_datascience_idn.png",
+                "category": "Data Science"
         },
         {
-          "name": "MikroTik Certified Network Associate (MTCNA)",
-          "issuer": "ID-Networkers Certified MikroTik Associate",
-          "year": "2026",
-          "icon": "/certificates/cert_mikrotik.png",
-          "category": "Network Infrastructure"
+                "name": "IBM Certification: Big Data 101",
+                "issuer": "IBM Developer Skills Network / Cognitive Class",
+                "year": "2026",
+                "icon": "/certificates/cert_bigdata101.png",
+                "category": "Big Data & Analytics"
         },
         {
-          "name": "Cyber Security Defense & Threat Modeling",
-          "issuer": "ID-Networkers Cyber Security Academy",
-          "year": "2026",
-          "icon": "/certificates/cert_cybersecurity.png",
-          "category": "Information Security"
+                "name": "Cisco Certification — Network Fundamentals & CCNA",
+                "issuer": "ID-Networkers & Cisco Networking Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_cisco.png",
+                "category": "Network Engineering"
         },
         {
-          "name": "Linux Server Administration & Shell Automation",
-          "issuer": "ID-Networkers Linux Systems Academy",
-          "year": "2026",
-          "icon": "/certificates/cert_linux.png",
-          "category": "Systems & Cloud"
+                "name": "MikroTik Certified Network Associate (MTCNA)",
+                "issuer": "ID-Networkers Certified MikroTik Associate",
+                "year": "2026",
+                "icon": "/certificates/cert_mikrotik.png",
+                "category": "Network Infrastructure"
         },
         {
-          "name": "Computer Network Protocol Engineering",
-          "issuer": "ID-Networkers Networking Lab",
-          "year": "2026",
-          "icon": "/certificates/cert_networking.png",
-          "category": "Telecommunications"
+                "name": "Cyber Security Defense & Threat Modeling",
+                "issuer": "ID-Networkers Cyber Security Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_cybersecurity.png",
+                "category": "Information Security"
         },
         {
-          "name": "Enterprise Network Topology Simulation (PNETlab)",
-          "issuer": "ID-Networkers (PNETlab)",
-          "year": "2026",
-          "icon": "/certificates/cert_pnetlab.png",
-          "category": "Network Architecture"
+                "name": "Linux Server Administration & Shell Automation",
+                "issuer": "ID-Networkers Linux Systems Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_linux.png",
+                "category": "Systems & Cloud"
         },
         {
-          "name": "Dart Programming & Software Architecture",
-          "issuer": "ID-Networkers Software Engineering Division",
-          "year": "2026",
-          "icon": "/certificates/cert_dart.png",
-          "category": "Software Engineering"
+                "name": "Computer Network Protocol Engineering",
+                "issuer": "ID-Networkers Networking Lab",
+                "year": "2026",
+                "icon": "/certificates/cert_networking.png",
+                "category": "Telecommunications"
+        },
+        {
+                "name": "Enterprise Network Topology Simulation (PNETlab)",
+                "issuer": "ID-Networkers (PNETlab)",
+                "year": "2026",
+                "icon": "/certificates/cert_pnetlab.png",
+                "category": "Network Architecture"
+        },
+        {
+                "name": "Dart Programming & Software Architecture",
+                "issuer": "ID-Networkers Software Engineering Division",
+                "year": "2026",
+                "icon": "/certificates/cert_dart.png",
+                "category": "Software Engineering"
         }
-      ]
+]
     },
     "whyMe": {
       "badge": "// KEY DIFFERENTIATORS",
@@ -1271,92 +1285,106 @@ export const translations = {
       "closePhoto": "Tutup Dokumentasi"
     },
     "certificates": {
-      "badge": "// SERTIFIKAT & KREDENSIAL",
-      "titleStart": "Sertifikasi Terverifikasi &",
-      "titleEnd": "Kredensial",
-      "subtitle": "Pengembangan kemampuan berkelanjutan dalam analitik data, basis data, otomasi alur kerja, dan manajemen teknik.",
-      "previewText": "Pratinjau Sertifikat →",
+      "badge": "// KREDENSIAL & SERTIFIKASI",
+      "titleStart": "Kredensial & Sertifikasi",
+      "titleEnd": "Terverifikasi",
+      "subtitle": "Peningkatan kompetensi berkelanjutan dalam analitik data, otomasi workflow, rekayasa jaringan, dan arsitektur sistem.",
+      "previewText": "Lihat Kredensial →",
       "closePreview": "Tutup Pratinjau",
       "verificationPlaceholder": "Verifikasi Sertifikat Resmi",
       "items": [
         {
-          "name": "Sertifikasi Cisco & JS Institute: JavaScript Essentials 1",
-          "issuer": "Cisco Networking Academy & JS Institute",
-          "year": "2026",
-          "icon": "/certificates/badge_cisco_js.png",
-          "category": "Rekayasa Perangkat Lunak"
+                "name": "Sertifikasi Microsoft: Business Analytics with Excel",
+                "issuer": "Microsoft & Simplilearn SkillUp",
+                "year": "2026",
+                "icon": "/certificates/cert_microsoft_excel.png",
+                "category": "Analitik Bisnis"
         },
         {
-          "name": "Sertifikat Magang Rekayasa Jaringan Telekomunikasi",
-          "issuer": "PT Ganesha Mandiri Inti (GMI)",
-          "year": "2023",
-          "icon": "/certificates/cert_magang_gmi.png",
-          "category": "Praktik Kerja Industri"
+                "name": "Sertifikasi Microsoft: Data Analyst 101",
+                "issuer": "Microsoft & Simplilearn SkillUp",
+                "year": "2026",
+                "icon": "/certificates/cert_microsoft_data_analyst.png",
+                "category": "Analisis Data"
         },
         {
-          "name": "Sertifikasi IBM: Data Science 101",
-          "issuer": "IBM Developer Skills Network / Cognitive Class",
-          "year": "2026",
-          "icon": "/certificates/cert_datascience_idn.png",
-          "category": "Sains Data"
+                "name": "Sertifikasi Cisco & JS Institute: JavaScript Essentials 1",
+                "issuer": "Cisco Networking Academy & JS Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_js.png",
+                "category": "Rekayasa Perangkat Lunak"
         },
         {
-          "name": "Sertifikasi IBM: Big Data 101",
-          "issuer": "IBM Developer Skills Network / Cognitive Class",
-          "year": "2026",
-          "icon": "/certificates/cert_bigdata101.png",
-          "category": "Big Data & Analitik"
+                "name": "Sertifikat Magang Rekayasa Jaringan Telekomunikasi",
+                "issuer": "PT Ganesha Mandiri Inti (GMI)",
+                "year": "2023",
+                "icon": "/certificates/cert_magang_gmi.png",
+                "category": "Praktik Kerja Industri"
         },
         {
-          "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
-          "issuer": "ID-Networkers & Kurikulum Cisco",
-          "year": "2026",
-          "icon": "/certificates/cert_cisco.png",
-          "category": "Rekayasa Jaringan"
+                "name": "Sertifikasi IBM: Data Science 101",
+                "issuer": "IBM Developer Skills Network / Cognitive Class",
+                "year": "2026",
+                "icon": "/certificates/cert_datascience_idn.png",
+                "category": "Sains Data"
         },
         {
-          "name": "MikroTik Certified Network Associate (MTCNA)",
-          "issuer": "ID-Networkers Certified MikroTik Associate",
-          "year": "2026",
-          "icon": "/certificates/cert_mikrotik.png",
-          "category": "Infrastruktur Jaringan"
+                "name": "Sertifikasi IBM: Big Data 101",
+                "issuer": "IBM Developer Skills Network / Cognitive Class",
+                "year": "2026",
+                "icon": "/certificates/cert_bigdata101.png",
+                "category": "Big Data & Analitik"
         },
         {
-          "name": "Pertahanan Cyber Security & Pemodelan Ancaman",
-          "issuer": "ID-Networkers Cyber Academy",
-          "year": "2026",
-          "icon": "/certificates/cert_cybersecurity.png",
-          "category": "Keamanan Informasi"
+                "name": "Sertifikasi Cisco — Dasar Jaringan & CCNA",
+                "issuer": "ID-Networkers & Kurikulum Cisco",
+                "year": "2026",
+                "icon": "/certificates/cert_cisco.png",
+                "category": "Rekayasa Jaringan"
         },
         {
-          "name": "Administrasi Server Linux & Otomasi Shell",
-          "issuer": "ID-Networkers Linux Systems Academy",
-          "year": "2026",
-          "icon": "/certificates/cert_linux.png",
-          "category": "Sistem & Cloud"
+                "name": "MikroTik Certified Network Associate (MTCNA)",
+                "issuer": "ID-Networkers Certified MikroTik Associate",
+                "year": "2026",
+                "icon": "/certificates/cert_mikrotik.png",
+                "category": "Infrastruktur Jaringan"
         },
         {
-          "name": "Rekayasa Protokol Jaringan Komputer",
-          "issuer": "ID-Networkers Networking Lab",
-          "year": "2026",
-          "icon": "/certificates/cert_networking.png",
-          "category": "Telekomunikasi"
+                "name": "Pertahanan Cyber Security & Pemodelan Ancaman",
+                "issuer": "ID-Networkers Cyber Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_cybersecurity.png",
+                "category": "Keamanan Informasi"
         },
         {
-          "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
-          "issuer": "ID-Networkers (PNETlab)",
-          "year": "2026",
-          "icon": "/certificates/cert_pnetlab.png",
-          "category": "Arsitektur Jaringan"
+                "name": "Administrasi Server Linux & Otomasi Shell",
+                "issuer": "ID-Networkers Linux Systems Academy",
+                "year": "2026",
+                "icon": "/certificates/cert_linux.png",
+                "category": "Sistem & Cloud"
         },
         {
-          "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
-          "issuer": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
-          "year": "2026",
-          "icon": "/certificates/cert_dart.png",
-          "category": "Rekayasa Perangkat Lunak"
+                "name": "Rekayasa Protokol Jaringan Komputer",
+                "issuer": "ID-Networkers Networking Lab",
+                "year": "2026",
+                "icon": "/certificates/cert_networking.png",
+                "category": "Telekomunikasi"
+        },
+        {
+                "name": "Simulasi Topologi Jaringan Enterprise (PNETlab)",
+                "issuer": "ID-Networkers (PNETlab)",
+                "year": "2026",
+                "icon": "/certificates/cert_pnetlab.png",
+                "category": "Arsitektur Jaringan"
+        },
+        {
+                "name": "Pemrograman Dart & Arsitektur Perangkat Lunak",
+                "issuer": "Divisi Rekayasa Perangkat Lunak ID-Networkers",
+                "year": "2026",
+                "icon": "/certificates/cert_dart.png",
+                "category": "Rekayasa Perangkat Lunak"
         }
-      ]
+]
     },
     "whyMe": {
       "badge": "// KEUNGGULAN UTAMA",
@@ -1430,8 +1458,8 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v7')
-    const saved = localStorage.getItem('toti_live_translations_v4')
+    localStorage.removeItem('toti_live_translations_v8')
+    const saved = localStorage.getItem('toti_live_translations_v8')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

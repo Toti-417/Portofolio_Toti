@@ -6,12 +6,64 @@ import EditableText from '../components/EditableText'
 // Comprehensive technical competency breakdown for each certificate (Bilingual: EN & ID)
 const CERT_DETAILS = {
   "0": {
+    "code": "MS-SIMPLI-11066497",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_microsoft_excel.pdf",
+    "image": "/certificates/cert_microsoft_excel.png",
+    "issuerFull": "Powered by Microsoft & Simplilearn SkillUp",
+    "issuerFullId": "Powered by Microsoft & Simplilearn SkillUp",
+    "issuedDate": "22 November 2026",
+    "issuedDateId": "22 November 2026",
+    "competencies": [
+      "Advanced Excel Functions, Lookups & Logical Formulas",
+      "Interactive Pivot Tables, Slicers & Dynamic Reporting",
+      "Business Data Modeling & Trend Forecasting",
+      "Executive KPI Dashboard Design & Visualization",
+      "Data Cleaning, Auditing & What-If Scenario Analysis"
+    ],
+    "competenciesId": [
+      "Fungsi Lanjutan Excel, Rumus Logika & Lookup Dinamis",
+      "Pivot Table Interaktif, Slicers & Pelaporan Data Otomatis",
+      "Pemodelan Data Bisnis & Prakiraan Tren Kinerja",
+      "Perancangan Dashboard KPI & Visualisasi Eksekutif",
+      "Pembersihan Data, Audit Data & Analisis Skenario What-If"
+    ],
+    "summary": "Officially certified under Microsoft and Simplilearn SkillUp, validating professional mastery in business analytics, complex spreadsheet modeling, and executive KPI dashboard generation.",
+    "summaryId": "Sertifikasi resmi kolaborasi Microsoft dan Simplilearn SkillUp, memvalidasi keahlian tingkat lanjut dalam analitik bisnis, pemodelan spreadsheet kompleks, dan pembuatan dashboard KPI eksekutif."
+  },
+  "1": {
+    "code": "MS-SIMPLI-11069067",
+    "hasPdf": true,
+    "pdfUrl": "/certificates/cert_microsoft_data_analyst.pdf",
+    "image": "/certificates/cert_microsoft_data_analyst.png",
+    "issuerFull": "Powered by Microsoft & Simplilearn SkillUp",
+    "issuerFullId": "Powered by Microsoft & Simplilearn SkillUp",
+    "issuedDate": "23 November 2026",
+    "issuedDateId": "23 November 2026",
+    "competencies": [
+      "Data Analytics Lifecycle & Exploratory Data Analysis (EDA)",
+      "Statistical Data Interpretation & Hypothesis Evaluation",
+      "Relational Data Querying & Aggregation Logic",
+      "Business Intelligence Metrics & Storytelling with Data",
+      "Actionable Insights Generation for Operational Leadership"
+    ],
+    "competenciesId": [
+      "Siklus Analitik Data & Exploratory Data Analysis (EDA)",
+      "Interpretasi Data Statistik & Evaluasi Hipotesis Bisnis",
+      "Logika Query Data Relasional & Agregasi Metrik",
+      "Metrik Business Intelligence & Storytelling Berbasis Data",
+      "Perumusan Insight Strategis untuk Pengambilan Keputusan"
+    ],
+    "summary": "Officially verified under Microsoft and Simplilearn SkillUp, demonstrating core competencies across data analytics lifecycles, structured data interrogation, and operational business intelligence.",
+    "summaryId": "Tervalidasi resmi di bawah program kolaborasi Microsoft dan Simplilearn SkillUp, membuktikan penguasaan siklus analitik data, investigasi data terstruktur, dan intelijen bisnis operasional."
+  },
+  "2": {
     "code": "CISCO-JS1-CA9BD0E6",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_javascript_essentials.pdf",
     "image": "/certificates/cert_javascript_essentials.png",
-    "issuerFull": "Cisco Networking Academy & JS Institute (Open Education Group)",
-    "issuerFullId": "Cisco Networking Academy & JS Institute (Open Education Group)",
+    "issuerFull": "Cisco Networking Academy & JS Institute",
+    "issuerFullId": "Cisco Networking Academy & JS Institute",
     "issuedDate": "20 November 2026",
     "issuedDateId": "20 November 2026",
     "competencies": [
@@ -31,7 +83,7 @@ const CERT_DETAILS = {
     "summary": "Officially verified by Cisco Networking Academy and JS Institute for mastery of modern JavaScript programming, control flows, data structures, and algorithmic logic.",
     "summaryId": "Sertifikasi resmi terverifikasi dari Cisco Networking Academy dan JS Institute dalam penguasaan pemrograman JavaScript modern, struktur data algoritma, dan perancangan perangkat lunak modular."
   },
-  "1": {
+  "3": {
     "code": "GMI-TEL-INT-2023",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_magang_gmi.pdf",
@@ -55,7 +107,7 @@ const CERT_DETAILS = {
     "summary": "Official internship certification acknowledging outstanding dedication and technical contributions to telecommunication infrastructure deployment.",
     "summaryId": "Sertifikat resmi praktik kerja industri yang mengakui dedikasi tinggi dan kontribusi teknis pada proyek penggelaran infrastruktur telekomunikasi."
   },
-  "2": {
+  "4": {
     "code": "IBM-DS0101EN-7F25272A",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_datascience_idn.pdf",
@@ -79,7 +131,7 @@ const CERT_DETAILS = {
     "summary": "Officially validated by IBM Developer Skills Network for mastering core data science principles and analytical tooling.",
     "summaryId": "Tervalidasi resmi oleh IBM Developer Skills Network dalam penguasaan prinsip dasar sains data dan perangkat analisis modern."
   },
-  "3": {
+  "5": {
     "code": "IBM-BD0101EN-794F2527",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_bigdata101.pdf",
@@ -103,7 +155,7 @@ const CERT_DETAILS = {
     "summary": "Certified by IBM for comprehensive understanding of big data architectures, distributed computing, and enterprise analytics storage.",
     "summaryId": "Sertifikasi resmi IBM untuk pemahaman komprehensif arsitektur big data, komputasi terdistribusi, dan penyimpanan analitik enterprise."
   },
-  "4": {
+  "6": {
     "code": "LIDN-1661625797",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_cisco.pdf",
@@ -129,7 +181,7 @@ const CERT_DETAILS = {
     "summary": "Validated proficiency in configuring, verifying, and troubleshooting Cisco routers and switches in enterprise network environments.",
     "summaryId": "Keahlian terverifikasi dalam konfigurasi, verifikasi, dan troubleshooting router dan switch Cisco pada lingkungan jaringan enterprise."
   },
-  "5": {
+  "7": {
     "code": "LIDN-4701470015",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_mikrotik.pdf",
@@ -139,63 +191,63 @@ const CERT_DETAILS = {
     "issuedDate": "November 2026",
     "issuedDateId": "November 2026",
     "competencies": [
-      "RouterOS Administration & Winbox Gateway",
-      "Bandwidth Management & Simple Queues QoS",
-      "Firewall Filter Rules, NAT & Mangle Rules",
-      "DHCP Server, DNS Cache & Bridging Topologies",
-      "Point-to-Point Wireless & Hotspot Authentication"
+      "RouterOS CLI / WinBox Management",
+      "DHCP Server & Client Configuration",
+      "Firewall Filtering, NAT & Connection Tracking",
+      "Queue Management & Bandwidth Control",
+      "Wireless Point-to-Point & Hotspot Gateways"
     ],
     "competenciesId": [
-      "Administrasi RouterOS & Gateway Winbox",
-      "Manajemen Bandwidth & QoS Simple Queues",
-      "Firewall Filter Rules, NAT & Aturan Mangle",
-      "DHCP Server, DNS Cache & Topologi Bridging",
-      "Wireless Point-to-Point & Otentikasi Hotspot"
+      "Manajemen RouterOS Melalui CLI & WinBox",
+      "Konfigurasi DHCP Server & Client",
+      "Filter Firewall, NAT & Connection Tracking",
+      "Manajemen Antrean (Simple Queues) & Kontrol Bandwidth",
+      "Wireless Point-to-Point & Gateway Hotspot"
     ],
-    "summary": "Hands-on certification in architecting, managing, and securing ISP/enterprise edge routers with MikroTik RouterOS.",
-    "summaryId": "Sertifikasi praktis dalam merancang, mengelola, dan mengamankan edge router ISP dan enterprise menggunakan MikroTik RouterOS."
+    "summary": "Certified competency in managing MikroTik RouterOS devices, client IP assignment, network security rules, and QoS bandwidth policies.",
+    "summaryId": "Kompetensi teruji dalam mengelola perangkat MikroTik RouterOS, alokasi IP, aturan keamanan jaringan, dan kebijakan bandwidth QoS."
   },
-  "6": {
-    "code": "LIDN-0033078842",
+  "8": {
+    "code": "LIDN-8636166835",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_cybersecurity.pdf",
     "image": "/certificates/cert_cybersecurity.png",
     "issuerFull": "ID-Networkers Cyber Security Academy",
-    "issuerFullId": "ID-Networkers Cyber Security Academy",
+    "issuerFullId": "Akademi Cyber Security ID-Networkers",
     "issuedDate": "November 2026",
     "issuedDateId": "November 2026",
     "competencies": [
-      "Network Vulnerability Assessment & Scanning",
-      "CIA Triad & Information Security Governance",
-      "Attack Vector Mitigation (DDoS, MITM, Injection)",
-      "Port Hardening & Firewall Defense Strategy",
-      "Security Incident Triage & Event Auditing"
+      "Threat Vectors, Malware & Attack Methodologies",
+      "Defense-in-Depth & Perimeter Security",
+      "Network Vulnerability Assessment & Hardening",
+      "Security Incident Response Fundamentals",
+      "Compliance, Cryptography & Access Governance"
     ],
     "competenciesId": [
-      "Pemindaian & Penilaian Kerentanan Jaringan",
-      "Prinsip CIA Triad & Tata Kelola Keamanan Informasi",
-      "Mitigasi Vektor Serangan (DDoS, MITM, Injection)",
-      "Penguatan Port & Strategi Pertahanan Firewall",
-      "Triage Insiden Keamanan & Audit Log Aktivitas"
+      "Vektor Ancaman, Malware & Metodologi Serangan Siber",
+      "Strategi Pertahanan Berlapis (Defense-in-Depth)",
+      "Penilaian Kerentanan Jaringan & Pengerasan Sistem (Hardening)",
+      "Dasar Respons Insiden Keamanan Informasi",
+      "Kepatuhan Keamanan, Kriptografi & Tata Kelola Hak Akses"
     ],
-    "summary": "Practical foundation in defensive cybersecurity, network perimeter hardening, threat identification, and vulnerability mitigation.",
-    "summaryId": "Fondasi praktis dalam keamanan siber defensif, pengerasan perimeter jaringan, identifikasi ancaman, dan mitigasi kerentanan sistem."
+    "summary": "Practical foundation in enterprise cybersecurity defense, threat actor mitigation, and network hardening strategies.",
+    "summaryId": "Fondasi praktis pertahanan keamanan siber enterprise, mitigasi ancaman digital, dan strategi pengerasan keamanan jaringan."
   },
-  "7": {
-    "code": "LIDN-6638673257",
+  "9": {
+    "code": "LIDN-2321495204",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_linux.pdf",
     "image": "/certificates/cert_linux.png",
     "issuerFull": "ID-Networkers Linux Systems Academy",
-    "issuerFullId": "ID-Networkers Linux Systems Academy",
+    "issuerFullId": "Akademi Sistem Linux ID-Networkers",
     "issuedDate": "November 2026",
     "issuedDateId": "November 2026",
     "competencies": [
-      "Linux Filesystem Hierarchy & CLI Shell",
-      "User & Permission Management (chmod, chown, sudo)",
-      "Systemd Daemons, Process Monitoring & Crontab",
-      "Networking Configuration & SSH Key Authentication",
-      "Automated Bash Shell Scripting & PM2 Services"
+      "Linux Filesystem Hierarchy & Bash Shell CLI",
+      "User Management & Permissions (chmod, chown, sudo)",
+      "Systemd Daemons, Process Monitoring & Crontabs",
+      "Network Configuration & SSH Key Authentication",
+      "Shell Scripting Automation & PM2 Process Managers"
     ],
     "competenciesId": [
       "Hirarki Filesystem Linux & Shell Bash CLI",
@@ -207,7 +259,7 @@ const CERT_DETAILS = {
     "summary": "Validated expertise in administering production Linux Ubuntu servers, configuring headless services, and maintaining background daemons.",
     "summaryId": "Keahlian teruji dalam mengadministrasikan server produksi Linux Ubuntu, konfigurasi layanan headless, dan pemeliharaan daemon background."
   },
-  "8": {
+  "10": {
     "code": "LIDN-2243638913",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_networking.pdf",
@@ -233,7 +285,7 @@ const CERT_DETAILS = {
     "summary": "Fundamental mastery of computer networking theory, transport protocols, physical medium standards, and end-to-end packet transmission.",
     "summaryId": "Penguasaan fundamental teori jaringan komputer, protokol transport, standar media fisik, dan transmisi paket end-to-end."
   },
-  "9": {
+  "11": {
     "code": "LIDN-4113909330",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_pnetlab.pdf",
@@ -259,7 +311,7 @@ const CERT_DETAILS = {
     "summary": "Advanced capability in designing, virtualizing, and validating enterprise and carrier-grade network topologies in emulated sandboxes.",
     "summaryId": "Kemampuan tingkat lanjut dalam merancang, memvirtualisasikan, dan menguji topologi jaringan enterprise dan carrier-grade pada sandbox emulasi."
   },
-  "10": {
+  "12": {
     "code": "LIDN-8613215252",
     "hasPdf": true,
     "pdfUrl": "/certificates/cert_dart.pdf",

@@ -566,11 +566,25 @@ export const translations = {
       "badge": "// CREDENTIALS & CERTIFICATIONS",
       "titleStart": "Verified Credentials &",
       "titleEnd": "Certifications",
-      "subtitle": "Continuous upskilling in data analytics, database querying, workflow automation, and engineering management.",
+      "subtitle": "Continuous upskilling in Python engineering, data analytics, cloud systems, and network infrastructure.",
       "previewText": "Preview Credential →",
       "closePreview": "Close Preview",
       "verificationPlaceholder": "Official Credential Verification Placeholder",
       "items": [
+        {
+                "name": "Cisco & Python Institute: Python Essentials 1",
+                "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_python_1.png",
+                "category": "Software Engineering"
+        },
+        {
+                "name": "Cisco & Python Institute: Python Essentials 2",
+                "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_python_2.png",
+                "category": "Software Engineering"
+        },
         {
                 "name": "Microsoft: Business Analytics with Excel",
                 "issuer": "Microsoft & Simplilearn SkillUp",
@@ -1288,11 +1302,25 @@ export const translations = {
       "badge": "// KREDENSIAL & SERTIFIKASI",
       "titleStart": "Kredensial & Sertifikasi",
       "titleEnd": "Terverifikasi",
-      "subtitle": "Peningkatan kompetensi berkelanjutan dalam analitik data, otomasi workflow, rekayasa jaringan, dan arsitektur sistem.",
+      "subtitle": "Peningkatan kompetensi berkelanjutan dalam rekayasa Python, analitik data, otomasi sistem, dan infrastruktur jaringan.",
       "previewText": "Lihat Kredensial →",
       "closePreview": "Tutup Pratinjau",
       "verificationPlaceholder": "Verifikasi Sertifikat Resmi",
       "items": [
+        {
+                "name": "Sertifikasi Cisco & Python Institute: Python Essentials 1",
+                "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_python_1.png",
+                "category": "Rekayasa Perangkat Lunak"
+        },
+        {
+                "name": "Sertifikasi Cisco & Python Institute: Python Essentials 2",
+                "issuer": "Cisco Networking Academy & OpenEDG Python Institute",
+                "year": "2026",
+                "icon": "/certificates/badge_cisco_python_2.png",
+                "category": "Rekayasa Perangkat Lunak"
+        },
         {
                 "name": "Sertifikasi Microsoft: Business Analytics with Excel",
                 "issuer": "Microsoft & Simplilearn SkillUp",
@@ -1458,8 +1486,8 @@ export function LanguageProvider({ children }) {
 
   const [allTranslations, setAllTranslations] = useState(() => {
     // Reset old translations cache to load new skills
-    localStorage.removeItem('toti_live_translations_v8')
-    const saved = localStorage.getItem('toti_live_translations_v8')
+    localStorage.removeItem('toti_live_translations_v9')
+    const saved = localStorage.getItem('toti_live_translations_v9')
     if (saved) {
       try {
         const parsed = JSON.parse(saved)

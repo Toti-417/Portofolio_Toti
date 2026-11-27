@@ -67,8 +67,8 @@ export const translations = {
       "p1": "I began my engineering career at the core of telecommunications infrastructure — overseeing BTS equipment logistics, coordinating field teams, and steering Telkomsel network rollout projects to meet strict cost and timeline benchmarks.",
       "p2": "Through managing multi-billion rupiah site rollouts, I realized that the sharpest operational improvements come from turning operational data into actionable intelligence. That insight drove my transition into data analytics.",
       "p3": "Today, I build custom Power BI dashboards for real-time project tracking, design automated workflows with N8N and Power Automate, and leverage SQL and Python to extract precise insights from raw operational logs.",
-      "currentStatusTitle": "Current Academic Pursuit:",
-      "currentStatusDesc": "Finishing Bachelor of Informatics Engineering (Semester 9) — Universitas Esa Unggul, Bekasi."
+      "currentStatusTitle": "Academic Background:",
+      "currentStatusDesc": "Bachelor of Informatics Engineering (S1) — Graduate (Awaiting Convocation) — Universitas Esa Unggul, Bekasi."
     },
     "skills": {
       "badge": "// TECHNICAL ARSENAL",
@@ -778,8 +778,8 @@ export const translations = {
       "p1": "Saya memulai karier di jantung infrastruktur telekomunikasi — mengawasi logistik material BTS, mengoordinasikan tim lapangan, dan memimpin proyek rollout jaringan Telkomsel agar tepat waktu dan efisien secara anggaran.",
       "p2": "Melalui pengalaman mengelola proyek bernilai puluhan miliar rupiah, saya menyadari bahwa efisiensi operasional terbaik lahir dari data yang diolah menjadi insight nyata. Hal itu mendorong saya memperdalam dunia analitik data.",
       "p3": "Saat ini saya membangun dashboard Power BI interaktif untuk pemantauan proyek real-time, merancang otomasi alur kerja dengan N8N & Power Automate, serta menggunakan SQL & Python untuk mengolah data operasional secara presisi.",
-      "currentStatusTitle": "Studi Akademik Saat Ini:",
-      "currentStatusDesc": "Menyelesaikan pendidikan Sarjana Teknik Informatika (Semester 8) — Universitas Esa Unggul, Bekasi."
+      "currentStatusTitle": "Latar Belakang Akademik:",
+      "currentStatusDesc": "Sarjana Teknik Informatika (S1) — Lulus (Menunggu Wisuda) — Universitas Esa Unggul, Bekasi."
     },
     "skills": {
       "badge": "// KEAHLEAN TEKNIS",

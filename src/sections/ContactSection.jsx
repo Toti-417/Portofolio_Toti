@@ -62,8 +62,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="text-[11px] font-mono text-slate-400 block">{contactT.emailLabel}</span>
-                  <a href="mailto:Totiputra08@gmail.com" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
-                    Totiputra08@gmail.com
+                  <a href="mailto:totiputra08@gmail.com" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
+                    totiputra08@gmail.com
                   </a>
                 </div>
               </div>
@@ -74,8 +74,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="text-[11px] font-mono text-slate-400 block">{contactT.phoneLabel}</span>
-                  <a href="https://wa.me/628985903141" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
-                    +62 898-5903-141
+                  <a href="https://wa.me/6281316449746" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
+                    +62 813-1644-9746
                   </a>
                 </div>
               </div>
@@ -98,8 +98,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <span className="text-[11px] font-mono text-slate-400 block">{contactT.linkedinLabel}</span>
-                  <a href="https://linkedin.com/in/toti-putra-669490249" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
-                    linkedin.com/in/toti-putra
+                  <a href="https://www.linkedin.com/in/toti-putra-669490249" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-200 hover:text-teal-300 transition-colors">
+                    linkedin.com/in/toti-putra-669490249
                   </a>
                 </div>
               </div>
